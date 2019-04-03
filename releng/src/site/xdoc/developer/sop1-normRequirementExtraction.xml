@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+	<properties>
+		<title>SysML - Norm Requirements Extraction</title>
+	</properties>
+
+	<body>
+		<section name="Pre-requisit">
+			<p>install pdfminer <a href="http://www.unixuser.org/~euske/python/pdfminer/">http://www.unixuser.org/~euske/python/pdfminer/</a></p>
+		</section>
+
+		<section name="Extract the TOC">
+			<subsection
+				name="Extract the toc from the pdf with pdfminer">
+				<source><![CDATA[dumppdf.py -T foo.pdf > toc.xml]]> </source>
+				</subsection>
+			<subsection
+				name="Extract basic data from the generated toc file">
+				<source></source>
+			</subsection>
+			<subsection
+				name="Layout the data">
+				<p>Generate the elements for each requirements</p>
+				<p>Create a basic maven java project with the following dependencies</p>
+				<source><![CDATA[<dependency>
+			<groupId>org.eclipse.emf</groupId>
+			<artifactId>org.eclipse.emf.ecore</artifactId>
+			<version>2.11.0-v20150123-0347</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.emf</groupId>
+			<artifactId>org.eclipse.emf.common</artifactId>
+			<version>2.11.0-v20150123-0347</version>
+		</dependency> ]]></source>
+				<p>Make a main class based upon the following code: <a href="code/RequirementGenerator.java">RequirementGenerator.java</a></p>
+				</subsection>
+			<subsection name="Create a sysml model with the requirements">
+				<p>Create a sysml project and add the requirement data in it</p>
+				<p>Reference this new model/library from your MDE model project</p>
+			</subsection>
+		</section>
+
+	</body>
+
+</document>

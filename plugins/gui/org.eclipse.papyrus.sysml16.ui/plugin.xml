@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ Copyright (c) 2019 CEA LIST.
+ 
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License 2.0
+  which accompanies this distribution, and is available at
+  https://www.eclipse.org/legal/epl-2.0/ 
+
+  SPDX-License-Identifier: EPL-2.0
+ 
+ Contributors:
+   Nicolas FAUVERGUE (CEA LIST) nicolas.fauvergue@cea.fr - Initial API and implementation
+ 
+-->
+
+<plugin>
+  <extension point="org.eclipse.papyrus.emf.facet.util.emf.core.modeldeclaration">
+  	<modeldeclaration file="resources/custom/OperationalSysML16.custom"/>
+</extension> 
+   
+   <extension
+        point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+     <profile
+           description="UML profile for SysML (from OMG SysML V1.6)"
+           iconpath="resources/icons/SysMLProfile.gif"
+           name="SysML 1.6"
+           path="pathmap://SysML16_PROFILES/SysML.profile.uml"
+           provider="Eclipse Modeling Project">
+     </profile>
+  </extension>   
+   
+  <extension
+        point="org.eclipse.papyrus.uml.extensionpoints.UMLLibrary">
+     <library
+           description="SysML-Standard-Library (non stereotype part from OMG SysML V1.6 profile)"
+           iconpath="resources/icons/SysMLLibrary.gif"
+           name="SysML-Standard-Library"
+           path="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml"
+           provider="Eclipse Modeling Project">
+     </library>   
+  </extension> 
+
+  <extension
+        point="org.eclipse.papyrus.uml.extensionpoints.UMLLibrary">
+     <library
+           description="SysM QUDV Library (non stereotype part from OMG SysML V1.6 profile)"
+           iconpath="resources/icons/SysMLLibrary.gif"
+           name="SysML QUDV Library"
+           path="pathmap://SysML16_LIBRARIES/QUDV.uml"
+           provider="Eclipse Modeling Project">
+     </library>   
+  </extension> 
+     
+    <extension point="org.eclipse.papyrus.infra.ui.papyrusDiagram">
+	     <diagramCategory
+	            class="org.eclipse.papyrus.sysml16.architecture.CreateSysML16ModelCommand"
+	            description="SysML 1.6 diagrams"
+	            icon="platform:/plugin/org.eclipse.papyrus.sysml16/resources/icons/SysML.gif"
+	            id="SysML16"
+	            label="SysML 1.6">
+	     </diagramCategory>
+    </extension>
+
+   
+   <extension point="org.eclipse.papyrus.infra.newchild">
+      <menuCreationModel model="resources/SysML16.creationmenumodel"></menuCreationModel>
+      <menuCreationModel model="resources/SysML16Edges.creationmenumodel"></menuCreationModel>
+      <!--A new menu should be added UML4SysML, it's like the UML New child menu with the subset UML in the norm 
+		  See Table 4.2 - UML 2 metaclasses and datatypes included in the UML4SysML subset UML 2 in SysML 1.6 norm. -->
+      <menuCreationModel model="resources/UML4SysML16.creationmenumodel"></menuCreationModel>
+      <menuCreationModel model="resources/UML4SysML16Edges.creationmenumodel"></menuCreationModel>
+   </extension>
+       
+   <extension point="org.eclipse.papyrus.infra.properties.contexts">
+      <context contextModel="resources/properties/SysML1.6.ctx"></context>
+   </extension>
+      
+   <extension point="org.eclipse.papyrus.infra.constraints.ConstraintEnvironment">
+      <environment environmentModel="resources/SysML1.6ConstraintEnvironment.xmi"></environment>
+   </extension>      
+      
+   <extension
+         point="org.eclipse.papyrus.uml.diagram.wizards.templates">
+      <transformation
+            Transformation="org.eclipse.papyrus.sysml16.ui.template.ImportSysMLQUDVLibraryInModel"
+         	id="org.eclipse.papyrus.sysml16.templaterepository.ImportSysMLQUDVLibraryInModel"
+            language="org.eclipse.papyrus.sysml.architecture.SysML16"
+            name="A model with QUDV Library">
+      </transformation>            
+  </extension>      
+  <extension
+      point="org.eclipse.papyrus.infra.gmfdiag.common.pasteStrategy">
+   	<strategy
+         strategy="org.eclipse.papyrus.sysml16.ui.paste.PartPasteStrategy">
+   	</strategy>
+  </extension>
+
+</plugin>

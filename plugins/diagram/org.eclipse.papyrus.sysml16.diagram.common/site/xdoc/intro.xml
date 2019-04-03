@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+	<properties>
+		<title>SysML Intro</title>
+	</properties>
+
+	<body>
+
+		<section name="Introduction">
+			<subsection name="Purpose">
+				<p>In order to enhance the communauty and the diffusion of Papyrus,
+					new features and enhancements should be documented through a small
+					video uploaded to youtube channel.
+				</p>
+			</subsection>
+		</section>
+		<section name="Convention">
+			<subsection name="Palette">
+				<p>each palette should follow the convention:
+				</p>
+				<source>
+				<![CDATA[<?xml version="1.0" encoding="ASCII"?>
+<paletteconfiguration:PaletteConfiguration
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.7"
+    id="org.eclipse.papyrus.sysML.[bdd,ibd,par,req].palette.model"
+    label="SysML [BDD|IBD|PAR|REQ] Palette">
+  <drawerConfigurations
+      id="org.eclipse.papyrus.sysML.[bdd|ibd|par|req].palette.[edge|node]"
+      label="SysML IBD [Edges|Nodes]"
+      description="Nodes">
+    <ownedConfigurations
+        xsi:type="paletteconfiguration:ToolConfiguration"
+        id="org.eclipse.papyrus.sysML.[bdd|ibd|par|req].palette.[edge|node].XXXX"
+        label="Block"
+        description="Create a Block">
+      <icon
+          pluginID="org.eclipse.papyrus.sysml"
+          iconPath="icons/blocks/Block.gif"/>
+      <elementDescriptors
+          elementTypeId="org.eclipse.papyrus.SysML14.Block_3085"/>
+      <elementDescriptors
+          elementTypeId="org.eclipse.papyrus.SysML14.Block_2073"/>
+    </ownedConfigurations>
+    </drawerConfigurations>]]>
+				</source>
+			</subsection>
+		</section>
+		<section name="References">
+			<ul>
+				<li><a href="http://www.omg.org/spec/SysML/">OMG SysML</a></li>
+			</ul>
+		</section>
+	</body>
+</document>

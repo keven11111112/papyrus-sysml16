@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paletteconfiguration:PaletteConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" id="org.eclipse.papyrus.sysML.ibd.palette.model" label="SysML IBD Palette">
+  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="org.eclipse.papyrus.sysML.ibd.palette.node" label="Blocks" description="Element listed in Internal Block Diagram">
+    <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.gmf.runtime.diagram.ui" iconPath="/icons/group.gif"/>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.ibd.palette.node.ActorPart" label="ActorPart" description="An Actor Part is a property typed by an Actor" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="icons/full/obj16/Property.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ActorPart_Property_AttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ActorPart_Property_Shape"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.ibd.palette.edge.BindingConnector" label="Binding Connector" description="A Binding Connector is a connector which specifies that the properties at both ends of the connector have equal values." kind="ConnectionTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="icons/full/obj16/Connector.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.BindingConnector_Connector_Edge"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.ibd.palette.node.BoundReference" label="BoundReference" description="The BoundReference stereotype can be applied to properties that have binding connectors, to highlight their usage as" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="icons/full/obj16/Property.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.BoundReference_Property_AttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.BoundReference_Property_ClassAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.BoundReference_Property_ComponentAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.BoundReference_Property_DataTypeAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.BoundReference_Property_Edge"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.BoundReference_Property_InterfaceAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.BoundReference_Property_PrimitiveTypeAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.BoundReference_Property_Shape"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.BoundReference_Property_Shape_CN"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.BoundReference_Property_SignalAttributeLabel"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.ibd.palette.edge.Connector" label="Connector" description="A Connector specifies links that enables communication between two or more instances." kind="ConnectionTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="icons/full/obj16/Connector.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Connector_Edge"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.ibd.palette.edge.Dependency" label="Dependency" description="A Dependency is a Relationship that signifies that a single model Element or a set of model Elements requires other model Elements for their specification or implementation." kind="ConnectionTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="/icons/full/obj16/Dependency.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Dependency_Edge"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.ibd.palette.node.Part" label="Part" description="Create a Part" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="icons/full/obj16/Property.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Part_Property_Shape"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Part_Property_AttributeLabel"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.ibd.palette.node.PropertySpecificType" label="PropertySpecificType" description="The PropertySpecificType stereotype is automatically applied to the classifier that types a property with a propertyspecific type." kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="icons/full/obj16/PropertySpecificType.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.PropertySpecificType_Class_Shape_CN"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.ibd.palette.node.Reference" label="Reference" description="Create a Reference" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="icons/full/obj16/Property.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Reference_Property_Shape"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Reference_Property_AttributeLabel"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="org.eclipse.papyrus.sysML.ibd.palette.edge" label="Ports and Flow" description="Element listed in Internal Block Diagram">
+    <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.gmf.runtime.diagram.ui" iconPath="/icons/group.gif"/>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.ibd.palette.node.FlowPort" label="FlowPort" description="A FlowPorts is an interaction point through which input and/or output of items such as data, material, or energy may flow. (Deprecated)" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="icons/full/obj16/FlowPort.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FlowPort_Port_AttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FlowPort_Port_ClassAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FlowPort_Port_ComponentAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FlowPort_Port_DataTypeAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FlowPort_Port_Edge"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FlowPort_Port_InterfaceAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FlowPort_Port_PrimitiveTypeAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FlowPort_Port_Shape"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FlowPort_Port_Shape_CN"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FlowPort_Port_SignalAttributeLabel"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.ibd.palette.node.FullPort" label="Full Port" description="Full ports specify a separate element of the system from the owning block or its internal parts." kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="icons/full/obj16/FullPort.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FullPort_Port_AttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FullPort_Port_ClassAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FullPort_Port_ComponentAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FullPort_Port_DataTypeAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FullPort_Port_Edge"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FullPort_Port_InterfaceAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FullPort_Port_PrimitiveTypeAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FullPort_Port_Shape"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FullPort_Port_Shape_CN"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.FullPort_Port_SignalAttributeLabel"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.ibd.palette.edge.ItemFlow" label="Item Flow" description="An ItemFlow describes the flow of items across a connector or an association." kind="ConnectionTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="icons/full/obj16/ItemFlow.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ItemFlow_InformationFlow_Edge"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.ibd.palette.node.Port" label="Port" description="A Port is a property of an EncapsulatedClassifier that specifies a distinct interaction point between that EncapsulatedClassifier and its environment or between the (behavior of the) EncapsulatedClassifier and its internal parts." kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="icons/full/obj16/Port.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Port_Shape"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.ibd.palette.node.ProxyPort" label="Proxy Port" description="Proxy ports identify features of the owning block or its internal parts that are available to external blocks through external connectors to the ports." kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="icons/full/obj16/ProxyPort.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ProxyPort_Port_AttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ProxyPort_Port_ClassAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ProxyPort_Port_ComponentAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ProxyPort_Port_DataTypeAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ProxyPort_Port_Edge"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ProxyPort_Port_InterfaceAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ProxyPort_Port_PrimitiveTypeAttributeLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ProxyPort_Port_Shape"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ProxyPort_Port_Shape_CN"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ProxyPort_Port_SignalAttributeLabel"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+</paletteconfiguration:PaletteConfiguration>

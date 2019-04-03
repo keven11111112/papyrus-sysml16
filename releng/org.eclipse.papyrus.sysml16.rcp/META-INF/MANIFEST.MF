@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: org.eclipse.papyrus.sysml16.rcp;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: %Bundle-Vendor
+Bundle-Description: %Bundle-Description
+Bundle-ActivationPolicy: lazy
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.e4.ui.css.swt.theme;bundle-version="[0.10.0,1.0.0)"
+Eclipse-BundleShape: dir
+Automatic-Module-Name: org.eclipse.papyrus.sysml16.rcp

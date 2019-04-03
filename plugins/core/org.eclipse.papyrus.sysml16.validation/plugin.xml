@@ -1,0 +1,1536 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.4"?>
+
+<!--
+ Copyright (c) 2019 CEA LIST.
+ 
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License 2.0
+  which accompanies this distribution, and is available at
+  https://www.eclipse.org/legal/epl-2.0/ 
+
+  SPDX-License-Identifier: EPL-2.0
+ 
+ Contributors:
+   Nicolas FAUVERGUE (CEA LIST) nicolas.fauvergue@cea.fr - Initial API and implementation
+ 
+-->
+
+<plugin>
+<extension point="org.eclipse.ui.ide.markerResolution">
+      <markerResolutionGenerator
+         markerType="org.eclipse.emf.ecore.diagnostic"
+         class="org.eclipse.papyrus.sysml16.validation.quickfix.SysMLMarkerResolutionGenerator"/>
+   </extension>
+
+
+  <extension name="org.eclipse.papyrus.sysml16.validation.constraintProviders" point="org.eclipse.emf.validation.constraintProviders">
+     <category id="org.eclipse.papyrus.sysml16.validation.category.normative" mandatory="false" name="SysML 1.6 normative constraints">
+     	Constraints listed in SysML 1.6 norm.
+     </category>
+     <category id="org.eclipse.papyrus.sysml16.validation.category.optional" mandatory="false" name="SysML 1.6 optional constraints">
+     	Constraints provided to help the modeler but not required by the norm.  
+     </category>
+
+     <!-- Constraints on UML elements -->
+	 <constraintProvider cache="false" mode="Batch">
+         <package namespaceUri="http://www.eclipse.org/uml2/5.0.0/UML"/>
+         <constraints categories="org.eclipse.papyrus.sysml16.validation.category.normative">   
+            <constraint id="constraint.block.associationBlock"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="block.associationBlock"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.AssociationBlockModelConstraint">
+               <message>%inv_AssociationBlock</message>
+               <description>%inv_AssociationBlock</description>
+            </constraint>
+            
+            <constraint id="constraint.block.property.asssociationend"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="property.asssociationend"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.BlockPropertyAssociationEndModelConstraint">
+               <message>%inv_BlockPropertyAssociationEnd</message>
+                <description>%inv_BlockPropertyAssociationEnd</description>
+            </constraint>                                                           
+                                                                     
+             <constraint id="constraint.block.specialization"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="block.specialization"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.BlockSpecializationModelConstraint">
+               <message>%inv_BlockSpecialization</message>
+                <description>%inv_BlockSpecialization</description>
+            </constraint>   
+
+             <constraint id="constraint.block.propertynoname"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="block.propertynoname"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.BlockPropertyNoNameModelConstraint">
+               <message>%inv_BlockPropertyNoName</message>
+                <description>%inv_BlockPropertyNoName</description>
+            </constraint>                        
+                       
+            <constraint id="constraint.valuetype.specializationsarevaluetypes"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="valuetype.specializationsarevaluetypes"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.ValueTypeSpecilizationAreValueTypesModelConstraint">
+               <message>%inv_ValueTypeSpecializationsAreValuetypes</message>
+               <description>%inv_ValueTypeSpecializationsAreValuetypes</description>
+            </constraint>   
+
+         </constraints>
+         <constraints categories="org.eclipse.papyrus.sysml16.validation.category.optional">   
+            <constraint id="constraint.nestedConnectorEnd.missing" isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="nestedConnectorEnd.missing"
+            class="org.eclipse.papyrus.sysml16.validation.rules.nonnormative.NestedConnectorEndMissingConstraintModelConstraint">
+               <message>%inv_NestedConnectorEndMissing</message>
+               <description>%inv_NestedConnectorEndMissing</description>
+            </constraint>
+         </constraints>         
+         
+         
+         
+      </constraintProvider>
+          
+      
+  		<constraintProvider cache="false" mode="Batch">
+         <package namespaceUri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Activities"/>
+         <constraints categories="org.eclipse.papyrus.sysml16.validation.category.normative">
+            <constraint id="constraint.optional.multiplicity"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="optional.multiplicity">
+               <message>%inv_OptionalParameterMultiplicity</message>
+                <description>%inv_OptionalParameterMultiplicity</description>
+                <![CDATA[%ocl_OptionalParameterMultiplicity]]> 
+            </constraint>
+            
+            <constraint id="constraint.discrete.nocontinuous" isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="discrete.nocontinuous"
+            class="org.eclipse.papyrus.sysml16.validation.rules.activities.DiscreteNoContinuousModelConstraint">
+               <message>%inv_DiscreteNoContinuous</message>
+                <description>%inv_DiscreteNoContinuous</description>
+            </constraint>             
+ 
+            <constraint id="constraint.nobuffer.nooverwrite"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="nobuffer.nooverwrite">
+               <message>%inv_NoBufferNoOverwrite</message>
+                <description>%inv_NoBufferNoOverwrite</description>
+                <![CDATA[%ocl_NoBufferNoOverwrite]]>
+            </constraint>          
+ 
+            <constraint
+                  id="constraint.overwrite.nonobuffer"
+                  isEnabledByDefault="true"
+                  lang="OCLpivot"
+                  mode="Batch"
+                  name="overwrite.nonobuffer"
+                  severity="ERROR"
+                  statusCode="3">
+               <message>%inv_OverwriteNoNoBuffer</message>
+                <description>%inv_OverwriteNoNoBuffer</description>
+                <![CDATA[%ocl_OverwriteNoNoBuffer]]>
+            </constraint>
+
+            <constraint id="constraint.rate.parameterisstream"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="rate.parameterisstream"
+            class="org.eclipse.papyrus.sysml16.validation.rules.activities.RateParameterIsStreamModelConstraint">
+               <message>%inv_RateParameterIsStream</message>
+                <description>%inv_RateParameterIsStream</description>
+            </constraint> 
+                         
+            <constraint id="constraint.rate.parameterlessinout"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="rate.parameterlessinout"
+            class="org.eclipse.papyrus.sysml16.validation.rules.activities.RateParameterLessInoutModelConstraint">
+               <message>%inv_RateParameterLessInout</message>
+                <description>%inv_RateParameterLessInout</description>
+            </constraint> 
+                                                  
+            <constraint id="constraint.probability.alledges"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="probability.alledges"
+            class="org.eclipse.papyrus.sysml16.validation.rules.activities.ProbabilityAllEdgesModelConstraint">
+               <message>%inv_ProbabilityAllEdges</message>
+                <description>%inv_ProbabilityAllEdges</description>
+            </constraint> 
+                              
+            <constraint id="constraint.probability.baseelement"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="probability.baseelement"
+            class="org.eclipse.papyrus.sysml16.validation.rules.activities.ProbabilityBaseElementModelConstraint">
+               <message>%inv_ProbabilityBaseElement</message>
+                <description>%inv_ProbabilityBaseElement</description>
+            </constraint> 
+             
+            <constraint id="constraint.probability.outputparameters"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="probability.outputparameters"
+            class="org.eclipse.papyrus.sysml16.validation.rules.activities.ProbabilityOutputParametersModelConstraint">
+               <message>%inv_ProbabilityOutputParameters</message>
+                <description>%inv_ProbabilityOutputParameters</description>
+            </constraint> 
+            
+            <constraint id="constraint.probability.allparameterset"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="probability.allparameterset"
+            class="org.eclipse.papyrus.sysml16.validation.rules.activities.ProbabilityToAllParameterSetModelConstraint">
+               <message>%inv_ProbabilityToAllParameterSet</message>
+                <description>%inv_ProbabilityToAllParameterSet</description>
+            </constraint>
+            <constraint
+                  class="org.eclipse.papyrus.sysml16.validation.rules.activities.OperationParametersControlValueModelConstraint"
+                  id="constraint.operation.controloperator.parameterscontrolvalue"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="operation.controloperator.parameterscontrolvalue"
+                  severity="ERROR"
+                  statusCode="3">
+               %ocl_OptionalParameterMultiplicity
+               <message>
+                  %inv_ControlOperatorOneParameterControlValue
+               </message>
+               <description>
+                  %inv_ControlOperatorOneParameterControlValue
+               </description>
+            </constraint>
+            <constraint
+                  class="org.eclipse.papyrus.sysml16.validation.rules.activities.BehaviorParametersControlValueModelConstraint"
+                  id="constraint.behavior.controloperator.parameterscontrolvalue"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="behavior.controloperator.parameterscontrolvalue"
+                  severity="ERROR"
+                  statusCode="3">
+               %ocl_OptionalParameterMultiplicity
+               <message>
+                  %inv_ControlOperatorOneParameterControlValue
+               </message>
+               <description>
+                  %inv_ControlOperatorOneParameterControlValue
+               </description>
+            </constraint>
+            <constraint
+                  class="org.eclipse.papyrus.sysml16.validation.rules.activities.ControlOperatorOperationMethodModelConstraint"
+                  id="constraint.controloperator.operationmethod"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="controloperator.operationmethod"
+                  severity="ERROR"
+                  statusCode="3">
+               %ocl_OptionalParameterMultiplicity
+               <message>
+                  %inv_ControlOperatorOperationMethod
+               </message>
+               <description>
+                  %inv_ControlOperatorOperationMethod
+               </description>
+            </constraint> 
+                                                                                
+         </constraints>
+      </constraintProvider>
+  
+  		<constraintProvider cache="false" mode="Batch">
+         <package namespaceUri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Allocations"/>
+         <constraints categories="org.eclipse.papyrus.sysml16.validation.category.normative">
+            <constraint id="constraint.allocate.oneclientsupplier" isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="allocate.oneclientsupplier"
+            class="org.eclipse.papyrus.sysml16.validation.rules.allocations.AllocateOneClientSupplierModelConstraint">
+               <message>%inv_AllocateOneClientSupplier</message>
+               <description>%inv_AllocateOneClientSupplier</description>
+            </constraint>
+            <constraint
+                  class="org.eclipse.papyrus.sysml16.validation.rules.allocations.AllocateActivityPartitionActionsOnClientEndsModelConstraint"
+                  id="constraint.allocateactivitypartition.actionsonclientends"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="allocateactivitypartition.actionsonclientends"
+                  severity="ERROR"
+                  statusCode="3">
+               <message>
+                  %inv_AllocateActivityPartitionActionsOnClientEnds
+               </message>
+               <description>
+                  %inv_AllocateActivityPartitionActionsOnClientEnds
+               </description>
+            </constraint>             
+                                                                 
+         </constraints>
+      </constraintProvider>  
+  
+  
+      
+    <constraintProvider cache="false" mode="Batch">
+         <package namespaceUri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks"/>
+         <constraints categories="org.eclipse.papyrus.sysml16.validation.category.normative">
+
+            <constraint id="constraint.boundreference.1"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="BoundReference [1]">
+               <message>%inv_BoundReference1</message>
+                <description>%inv_BoundReference1</description>
+                <![CDATA[%ocl_BoundReference1]]>
+            </constraint>         
+            <constraint id="constraint.boundreference.2"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="BoundReference [2]">
+               <message>%inv_BoundReference2</message>
+                <description>%inv_BoundReference2</description>
+                <![CDATA[%ocl_BoundReference2]]>
+            </constraint>   
+            
+            <constraint id="constraint.boundreference.4"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="BoundReference [4]">
+               <message>%inv_BoundReference4</message>
+                <description>%inv_BoundReference4</description>
+                <![CDATA[%ocl_BoundReference4]]>
+            </constraint>   
+            <constraint id="constraint.boundreference.5"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="BoundReference [5]">
+               <message>%inv_BoundReference5</message>
+                <description>%inv_BoundReference5</description>
+                <![CDATA[%ocl_BoundReference5]]>
+            </constraint>
+            <constraint id="constraint.boundreference.6"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="BoundReference [6]">
+               <message>%inv_BoundReference6</message>
+                <description>%inv_BoundReference6</description>
+                <![CDATA[%ocl_BoundReference6]]>
+            </constraint>
+            <constraint id="constraint.boundreference.7"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="BoundReference [7]">
+               <message>%inv_BoundReference7</message>
+                <description>%inv_BoundReference7</description>
+                <![CDATA[%ocl_BoundReference7]]>
+            </constraint>
+            <constraint id="constraint.boundreference.8"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="BoundReference [8]">
+               <message>%inv_BoundReference8</message>
+                <description>%inv_BoundReference8</description>
+                <![CDATA[%ocl_BoundReference8]]>
+            </constraint>               
+            
+             <constraint id="constraint.directedrelationshippropertypath.requiresourcecontext"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="directedrelationshippropertypath.requiresourcecontext"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.DirectedRelationshipPropertyPathRequireSourceContextModelConstraint">
+               <message>%inv_DirectedRelationshipPropertyPathRequireSourceContext</message>
+                <description>%inv_DirectedRelationshipPropertyPathRequireSourceContext</description>
+            </constraint>  
+  			<constraint id="constraint.directedrelationshippropertypath.requiretargetcontext"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="directedrelationshippropertypath.requiretargetcontext"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.DirectedRelationshipPropertyPathRequireTargetContextModelConstraint">
+               <message>%inv_DirectedRelationshipPropertyPathRequireTargetContext</message>
+                <description>%inv_DirectedRelationshipPropertyPathRequireTargetContext</description>
+            </constraint>
+            <constraint id="constraint.directedrelationshippropertypath.sourcefirst"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="directedrelationshippropertypath.sourcefirst"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.DirectedRelationshipPropertyPathSourceFirstModelConstraint">
+               <message>%inv_DirectedRelationshipPropertyPathSourceFirst</message>
+                <description>%inv_DirectedRelationshipPropertyPathSourceFirst</description>
+            </constraint>
+            <constraint id="constraint.directedrelationshippropertypath.targetfirst"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="directedrelationshippropertypath.targetfirst"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.DirectedRelationshipPropertyPathTargetFirstModelConstraint">
+               <message>%inv_DirectedRelationshipPropertyPathTargetFirst</message>
+                <description>%inv_DirectedRelationshipPropertyPathTargetFirst</description>
+            </constraint>
+            <constraint id="constraint.directedrelationshippropertypath.sourcelast"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="directedrelationshippropertypath.sourcelast"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.DirectedRelationshipPropertyPathSourceLastModelConstraint">
+               <message>%inv_DirectedRelationshipPropertyPathSourceLast</message>
+                <description>%inv_DirectedRelationshipPropertyPathSourceLast</description>
+            </constraint>
+            <constraint id="constraint.directedrelationshippropertypath.targetlast"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="directedrelationshippropertypath.targetlast"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.DirectedRelationshipPropertyPathRequireSourceContextModelConstraint">
+               <message>%inv_DirectedRelationshipPropertyPathTargetLast</message>
+                <description>%inv_DirectedRelationshipPropertyPathTargetLast</description>
+            </constraint>  
+            <constraint id="constraint.directedrelationshippropertypath.sourcecontextifproperty"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="directedrelationshippropertypath.sourcecontextifproperty">
+               <message>%inv_DirectedRelationshipPropertyPathSourceContextIfProperty</message>
+               <description>%inv_DirectedRelationshipPropertyPathSourceContextIfProperty</description>
+               <![CDATA[%ocl_DirectedRelationshipPropertyPathSourceContextIfProperty]]>
+            </constraint>  
+            <constraint id="constraint.directedrelationshippropertypath.targetcontextifproperty"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="directedrelationshippropertypath.targetcontextifproperty">
+               <message>%inv_DirectedRelationshipPropertyPathTargetContextIfProperty</message>
+               <description>%inv_DirectedRelationshipPropertyPathTargetContextIfProperty</description>
+               <![CDATA[%ocl_DirectedRelationshipPropertyPathTargetContextIfProperty]]>
+            </constraint>  
+            <constraint id="constraint.directedrelationshippropertypath.sourcepropertypathimpliesproperty"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="directedrelationshippropertypath.sourcepropertypathimpliesproperty">
+               <message>%inv_DirectedRelationshipPropertyPathSourcePropertyPathImpliesProperty</message>
+               <description>%inv_DirectedRelationshipPropertyPathSourcePropertyPathImpliesProperty</description>
+               <![CDATA[%ocl_DirectedRelationshipPropertyPathSourcePropertyPathImpliesProperty]]>
+            </constraint>   
+            <constraint id="constraint.directedrelationshippropertypath.targetpropertypathimpliesproperty"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="directedrelationshippropertypath.targetpropertypathimpliesproperty">
+               <message>%inv_DirectedRelationshipPropertyPathTargetPropertyPathImpliesProperty</message>
+               <description>%inv_DirectedRelationshipPropertyPathTargetPropertyPathImpliesProperty</description>
+               <![CDATA[%ocl_DirectedRelationshipPropertyPathTargetPropertyPathImpliesProperty]]>
+            </constraint> 
+            <constraint id="constraint.block.propertycomposite"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="block.propertycomposite"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.BlockPropertyCompositeModelConstraint">
+               <message>%inv_BlockPropertyComposite</message>
+               <description>%inv_BlockPropertyComposite</description>
+            </constraint>  
+
+             <constraint id="constraint.block.connectortwoends"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="block.connectortwoends"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.BlockConnectorTwoEndsModelConstraint">
+               <message>%inv_BlockConnectorTwoEnds</message>
+                <description>%inv_BlockConnectorTwoEnds</description>
+            </constraint> 
+
+             <constraint id="constraint.elementpropertypath.propertiesowner"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="elementpropertypath.propertiesowner"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.ElementPropertyPathPropertiesOwnerModelConstraint">
+               <message>%inv_ElementPropertyPathPropertiesOwner</message>
+                <description>%inv_ElementPropertyPathPropertiesOwner</description>
+            </constraint>  
+ 
+            <constraint id="constraint.nestedconnectorend.onlyconnectorends"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="nestedconnectorend.onlyconnectorends"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.NestedConnectorEndOnlyConnectorEndsModelConstraint">
+               <message>%inv_NestedConnectorEndOnlyConnectorEnds</message>
+                <description>%inv_NestedConnectorEndOnlyConnectorEnds</description>
+            </constraint>  
+
+            <constraint id="constraint.nestedconnectorend.lastproperty"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="nestedconnectorend.lastproperty"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.NestedConnectorEndLastPropertyModelConstraint">
+               <message>%inv_NestedConnectorEndLastProperty</message>
+                <description>%inv_NestedConnectorEndLastProperty</description>
+            </constraint> 
+            
+            <constraint id="constraint.nestedconnectorend.firstproperty"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="nestedconnectorend.firstproperty"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.NestedConnectorEndFirstPropertyModelConstraint">
+               <message>%inv_NestedConnectorEndFirstProperty</message>
+                <description>%inv_NestedConnectorEndFirstProperty</description>
+            </constraint> 
+             
+            <constraint id="constraint.propertyspecifictype.missingname"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="propertyspecifictype.missingname"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.PropertySpecificTypeMissingNameModelConstraint">
+               <message>%inv_PropertySpecificTypeMissingName</message>
+                <description>%inv_PropertySpecificTypeMissingName</description>
+            </constraint> 
+            
+             <constraint id="constraint.propertyspecifictype.uniqueproperty"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="propertyspecifictype.uniqueproperty"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.PropertySpecificTypeUniquePropertyModelConstraint">
+               <message>%inv_PropertySpecificTypeUniqueProperty</message>
+                <description>%inv_PropertySpecificTypeUniqueProperty</description>
+            </constraint> 
+            
+            
+            <constraint id="constraint.endpathmultiplicity.boundreferenceproperty"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="endpathmultiplicity.boundreferenceproperty"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.EndPathMultiplicityBoundReferencePropertyModelConstraint">
+               <message>%inv_EndPathMultiplicityBoundReferenceProperty</message>
+                <description>%inv_EndPathMultiplicityBoundReferenceProperty</description>
+            </constraint>
+      
+            <constraint id="constraint.endpathmultiplicity.notnegative"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="endpathmultiplicity.notnegative">
+               <message>%inv_EndPathMultiplicityNotNegative</message>
+                <description>%inv_EndPathMultiplicityNotNegative</description>
+                <![CDATA[%ocl_EndPathMultiplicityNotNegative]]>
+            </constraint>         
+            
+            <constraint id="constraint.distributedproperty.typedby"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="distributedproperty.typedby"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.DistributedPropertyTypedByModelConstraint">
+               <message>%inv_DistributedPropertyTypedBy</message>
+                <description>%inv_DistributedPropertyTypedBy</description>
+            </constraint>        
+  
+          <constraint id="constraint.classifierbehaviorproperty.iscomposite"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="classifierbehaviorproperty.iscomposite">
+               <message>%inv_ClassifierBehaviorPropertyIsComposite</message>
+                <description>%inv_ClassifierBehaviorPropertyIsComposite</description>
+                <![CDATA[%ocl_ClassifierBehaviorPropertyIsComposite]]>
+            </constraint> 
+            
+          <constraint id="constraint.classifierbehaviorproperty.onblock"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="classifierbehaviorproperty.onblock"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.ClassifierBehaviorPropertyOnBlockModelConstraint">
+               <message>%inv_ClassifierBehaviorPropertyOnBlock</message>
+                <description>%inv_ClassifierBehaviorPropertyOnBlock</description>
+            </constraint>             
+
+          <constraint id="constraint.classifierbehaviorproperty.typedby"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="classifierbehaviorproperty.typedby"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.ClassifierBehaviorPropertyTypedByModelConstraint">
+               <message>%inv_ClassifierBehaviorPropertyTypedBy</message>
+                <description>%inv_ClassifierBehaviorPropertyTypedBy</description>
+            </constraint>
+            
+          <constraint id="constraint.connectorproperty.onlycomposite"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="connectorproperty.onlycomposite" >
+               <message>%inv_ConnectorPropertyOnlyComposite</message>
+               <description>%inv_ConnectorPropertyOnlyComposite</description>
+               <![CDATA[%ocl_ConnectorPropertyOnlyComposite]]>
+            </constraint>    
+                            
+          <constraint id="constraint.connectorproperty.onlyonblock"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="connectorproperty.onlyonblock"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.ConnectorPropertyOnlyOnBlockModelConstraint">
+               <message>%inv_ConnectorPropertyOnlyOnBlock</message>
+                <description>%inv_ConnectorPropertyOnlyOnBlock</description>
+            </constraint>
+          <constraint id="constraint.connectorproperty.referownedconnector"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="connectorproperty.referownedconnector"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.ConnectorPropertyReferOwnedConnectorModelConstraint">
+               <message>%inv_ConnectorPropertyReferOwnedConnector</message>
+                <description>%inv_ConnectorPropertyReferOwnedConnector</description>
+            </constraint>
+            <constraint id="constraint.connectorproperty.samename"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="connectorproperty.samename"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.ConnectorPropertySameNameModelConstraint">
+               <message>%inv_ConnectorPropertySameName</message>
+                <description>%inv_ConnectorPropertySameName</description>
+            </constraint>
+            <constraint id="constraint.connectorproperty.typedbyassociationblock"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="connectorproperty.typedbyassociationblock"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.ConnectorPropertyTypedByAssociationBlockModelConstraint">
+               <message>%inv_ConnectorPropertyTypedByAssociationBlock</message>
+                <description>%inv_ConnectorPropertyTypedByAssociationBlock</description>
+            </constraint>
+            
+            <constraint id="constraint.bindingconnector.sameendstype"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="bindingconnector.sameendstype"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.BindingConnectorSameEndsTypeModelConstraint">
+               <message>%inv_BindingConnectorSameEndsType</message>
+                <description>%inv_BindingConnectorSameEndsType</description>
+            </constraint>    
+                     
+                       
+           <constraint id="constraint.participantproperty.endmultiplicity"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="participantproperty.endmultiplicity"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.ParticipantPropertyEndMultiplicityModelConstraint">
+               <message>%inv_ParticipantPropertyEndMultiplicity</message>
+                <description>%inv_ParticipantPropertyEndMultiplicity</description>
+            </constraint> 
+            
+             <constraint id="constraint.participantproperty.noassociationmemberends"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="participantproperty.noassociationmemberends"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.ParticipantPropertyNoAssociationMemberEndsModelConstraint">
+               <message>%inv_ParticipantPropertyNoAssociationMemberEnds</message>
+                <description>%inv_ParticipantPropertyNoAssociationMemberEnds</description>
+            </constraint> 
+            
+           <constraint id="constraint.participantproperty.onlyassociationblock"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="participantproperty.onlyassociationblock"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.ParticipantPropertyOnlyAssociationBlockModelConstraint">
+               <message>%inv_ParticipantPropertyOnlyAssociationBlock</message>
+                <description>%inv_ParticipantPropertyOnlyAssociationBlock</description>
+            </constraint> 
+            
+            <constraint id="constraint.participantproperty.onlynoneaggregation"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="participantproperty.onlynoneaggregation"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.ParticipantPropertyOnlyNoneAggregationModelConstraint">
+               <message>%inv_ParticipantPropertyOnlyNoneAggregation</message>
+                <description>%inv_ParticipantPropertyOnlyNoneAggregation</description>
+            </constraint> 
+            
+             <constraint id="constraint.participantproperty.sameend"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="participantproperty.sameend"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.ParticipantPropertySameEndModelConstraint">
+               <message>%inv_ParticipantPropertySameEnd</message>
+                <description>%inv_ParticipantPropertySameEnd</description>
+            </constraint> 
+            
+            <constraint id="constraint.participantproperty.sametype"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="participantproperty.sametype"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.ParticipantPropertySameTypeModelConstraint">
+               <message>%inv_ParticipantPropertySameType</message>
+                <description>%inv_ParticipantPropertySameType</description>
+            </constraint>                         
+                       
+            <constraint id="constraint.valuetype.unit"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="valuetype.unit"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.ValueTypeUnitModelConstraint">
+               <message>%inv_ValueTypeUnit</message>
+               <description>%inv_ValueTypeUnit</description>
+            </constraint>                        
+                       
+            <constraint id="constraint.valuetype.quantitykind"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="valuetype.quantitykind"
+            class="org.eclipse.papyrus.sysml16.validation.rules.blocks.ValueTypeQuantityKindModelConstraint">
+               <message>%inv_ValueTypeQuantityKind</message>
+               <description>%inv_ValueTypeQuantityKind</description>
+            </constraint>  
+                                                                                
+         </constraints>
+   </constraintProvider>
+    <constraintProvider
+          cache="false"
+          mode="Batch">
+       <package
+             namespaceUri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ConstraintBlocks">
+       </package>
+       <constraints
+             categories="org.eclipse.papyrus.sysml16.validation.category.normative">
+          <constraint
+                class="org.eclipse.papyrus.sysml16.validation.rules.constraintblocks.ConstraintBlockCompositeModelConstraint"
+                id="constraint.constraintblock.composite"
+                isEnabledByDefault="true"
+                lang="Java"
+                mode="Batch"
+                name="constraintblock.composite"
+                severity="ERROR"
+                statusCode="3">
+             %ocl_RequirementEmptyOwnedAttribute
+             <message>
+                %inv_ConstraintBlockComposite
+             </message>
+             <description>
+                %inv_ConstraintBlockComposite
+             </description>
+          </constraint>
+       </constraints>
+    </constraintProvider>
+ 
+    <constraintProvider cache="false" mode="Batch">
+         <package namespaceUri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements"/>
+         <constraints categories="org.eclipse.papyrus.sysml16.validation.category.normative">
+         
+           <constraint id="constraint.view.singleviewpoint"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="view.singleviewpoint"
+            class="org.eclipse.papyrus.sysml16.validation.rules.modelelements.ViewSingleViewpointModelConstraint">
+               <message>%inv_ViewSingleViewpoint</message>
+                <description>%inv_ViewSingleViewpoint</description>
+            </constraint> 
+
+           <constraint id="constraint.viewpoint.ownedview"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="viewpoint.ownedview"
+            class="org.eclipse.papyrus.sysml16.validation.rules.modelelements.ViewpointOwnedViewModelConstraint">
+               <message>%inv_ViewpointOwnedView</message>
+                <description>%inv_ViewpointOwnedView</description>
+            </constraint> 
+         
+            <constraint id="constraint.expose.clientview"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="expose.clientview"
+            class="org.eclipse.papyrus.sysml16.validation.rules.modelelements.ExposeClientStereotypedByViewModelConstraint">
+               <message>%inv_ExposeClientStereotypedByView</message>
+                <description>%inv_ExposeClientStereotypedByView</description>
+            </constraint> 
+            
+            <constraint id="constraint.conform.generalviewpoint"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="conform.generalviewpoint">
+               <message>%inv_ConformGeneralClassifierViewpoint</message>
+               <description>%inv_ConformGeneralClassifierViewpoint</description>
+               <![CDATA[%ocl_ConformGeneralClassifierViewpoint]]>   
+            </constraint> 
+            
+            <constraint id="constraint.conform.specificview"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="conform.specificview">
+               <message>%inv_ConformSpecificClassifierView</message>
+               <description>%inv_ConformSpecificClassifierView</description>
+               <![CDATA[%ocl_ConformSpecificClassifierView]]>
+            </constraint> 
+            
+            <constraint
+                  class="org.eclipse.papyrus.sysml16.validation.rules.modelelements.StakeholderNotAssociationModelConstraint"
+                  id="constraint.stakeholder.notassociation"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="stakeholder.notassociation"
+                  severity="ERROR"
+                  statusCode="3">
+               <message>%inv_StakeholderNotAssociation</message>
+               <description>%inv_StakeholderNotAssociation</description>
+            </constraint>                         
+                                                  
+         </constraints>         
+      </constraintProvider>    
+      
+      
+  		<constraintProvider cache="false" mode="Batch">
+         <package namespaceUri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows"/>
+         <constraints categories="org.eclipse.papyrus.sysml16.validation.category.normative">
+ 
+            
+            <!--constraint id="constraint.itemflow.sourceandtargetlinked"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="itemflow.sourceandtargetlinked">
+               <message>%inv_ItemFlowSourceAndTargetLinked</message>
+               <description>%inv_ItemFlowSourceAndTargetLinked</description>
+               <![CDATA[%ocl_ItemFlowSourceAndTargetLinked]]>
+            </constraint-->
+
+            <constraint id="constraint.itemflow.propertytypedby"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="itemflow.propertytypedby"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.ItemFlowSamePropertyTypedByModelConstraint">
+               <message>%inv_ItemFlowSamePropertyTypedBy</message>
+                <description>%inv_ItemFlowSamePropertyTypedBy</description>
+            </constraint>
+            
+            <!--constraint id="constraint.itemflow.itempropertycommonowner"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="itemflow.itempropertycommonowner">
+               <message>%inv_ItemFlowItemPropertyCommonOwner</message>
+               <description>%inv_ItemFlowItemPropertyCommonOwner</description>
+               <![CDATA[%ocl_ItemFlowItemPropertyCommonOwner]]>
+            </constraint-->
+            
+            <constraint id="constraint.itemflow.associationxoritemproperty"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="itemflow.associationxoritemproperty">
+               <message>%inv_ItemFlowAssociationXorItemProperty</message>
+               <description>%inv_ItemFlowAssociationXorItemProperty</description>
+               <![CDATA[%ocl_ItemFlowAssociationXorItemProperty]]>
+            </constraint>
+            
+            <constraint id="constraint.itemflow.sametype"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="constraint.itemflow.sametype">
+               <message>%inv_ItemFlowSameType</message>
+               <description>%inv_ItemFlowSameType</description>
+               <![CDATA[%ocl_ItemFlowSameType]]>
+            </constraint>
+            
+            <constraint id="constraint.itemflow.sameproperty"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="itemflow.sameproperty"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.ItemFlowSamePropertyNameModelConstraint">
+               <message>%inv_ItemFlowSamePropertyName</message>
+                <description>%inv_ItemFlowSamePropertyName</description>
+            </constraint>
+            
+            <constraint id="constraint.invocationonnestedportaction.requiredonport"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="invocationonnestedport.requiredonport"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.InvocationOnNestedPortActionRequiredOnPortModelConstraint">
+               <message>%inv_InvocationOnNestedPortActionRequiredOnPort</message>
+                <description>%inv_InvocationOnNestedPortActionRequiredOnPort</description>
+            </constraint>
+            
+            <constraint id="constraint.invocationonnestedportaction.pathconsistency"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="invocationonnestedportaction.pathconsistency"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.InvocationOnNestedPortActionPathConsistencyModelConstraint">
+               <message>%inv_InvocationOnNestedPortActionPathConsistency</message>
+               <description>%inv_InvocationOnNestedPortActionPathConsistency</description>
+            </constraint>     
+                            
+            <constraint id="constraint.invocationonnestedportaction.onnestedportfirstownedbytargettype"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="invocationonnestedportaction.onnestedportfirstownedbytargettype">
+               <message>%inv_InvocationOnNestedPortActionOnNestedPortFirstOwnedByTargetType</message>
+               <description>%inv_InvocationOnNestedPortActionOnNestedPortFirstOwnedByTargetType</description>
+               <![CDATA[%ocl_InvocationOnNestedPortActionOnNestedPortFirstOwnedByTargetType]]>
+            </constraint>    
+                            
+            <constraint id="constraint.invocationonnestedportaction.onnestedportlasttypeownsinvocationonport"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="invocationonnestedportaction.onnestedportlasttypeownsinvocationonport">
+               <message>%inv_InvocationOnNestedPortActionOnNestedPortLastTypeOwnsInvocationOnPort</message>
+               <description>%inv_InvocationOnNestedPortActionOnNestedPortLastTypeOwnsInvocationOnPort</description>
+               <![CDATA[%ocl_InvocationOnNestedPortActionOnNestedPortLastTypeOwnsInvocationOnPort]]>
+            </constraint>
+
+            <constraint id="constraint.directedfeature.onlybehavioral"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="directedfeature.onlybehavioral"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.DirectedFeatureOnlyBehavioralModelConstraint">
+               <message>%inv_DirectedFeatureOnlyBehavioral</message>
+                <description>%inv_DirectedFeatureOnlyBehavioral</description>
+            </constraint> 
+         
+            <constraint id="constraint.changestrucuralfeatureevent.notstatic"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="changestrucuralfeatureevent.notstatic"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.ChangeStructuralFeatureEventNotStaticModelConstraint">
+               <message>%inv_ChangeStructuralFeatureEventNotStatic</message>
+                <description>%inv_ChangeStructuralFeatureEventNotStatic</description>
+            </constraint> 
+            
+            
+            <constraint id="constraint.changestrucuralfeatureevent.onefeaturingclassifier"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="changestrucuralfeatureevent.onefeaturingclassifier"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.ChangeStructuralFeatureEventOneFeaturingClassifierModelConstraint">
+               <message>%inv_ChangeStructuralFeatureEventOneFeaturingClassifier</message>
+                <description>%inv_ChangeStructuralFeatureEventOneFeaturingClassifier</description>
+            </constraint>                      
+         
+            <constraint id="constraint.flowproperty.typedby"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="flowproperty.typedby"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.FlowPropertyTypedByModelConstraint">
+               <message>%inv_FlowPropertyTypedBy</message>
+                <description>%inv_FlowPropertyTypedBy</description>
+            </constraint>                    
+            <constraint id="constraint.fullport.notproxyport"  isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="fullport.notproxyport"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.FullPortNotProxyPortModelConstraint">
+               <message>%inv_FullPortNotProxyPort</message>
+                <description>%inv_FullPortNotProxyPort</description>
+            </constraint>                    
+            <constraint id="constraint.fullport.notboundtofullport"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="fullport.notboundtofullport">
+               <message>%inv_FullPortNotBoundToFullPort</message>
+               <description>%inv_FullPortNotBoundToFullPort</description>
+               <![CDATA[%ocl_FullPortNotBoundToFullPort]]>
+            </constraint>                                  
+            <constraint id="constraint.fullport.notbehavioral"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="fullport.notbehavioral">
+               <message>%inv_FullPortNotBehavioral</message>
+                <description>%inv_FullPortNotBehavioral</description>
+               <![CDATA[%ocl_FullPortNotBehavioral]]>
+            </constraint>
+            
+            <constraint id="constraint.proxyport.notfullport" isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="proxyport.notfullport"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.ProxyPortNotFullPortModelConstraint">
+               <message>%inv_ProxyPortNotFullPort</message>
+                <description>%inv_ProxyPortNotFullPort</description>
+            </constraint>  
+            <constraint id="constraint.proxyport.typedinterfaceblock" isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="proxyport.typedinterfaceblock"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.ProxyPortTypedByInterfaceBlockModelConstraint">
+               <message>%inv_ProxyPortTypedByInterfaceBlock</message>
+                <description>%inv_ProxyPortTypedByInterfaceBlock</description>
+            </constraint>
+            <constraint id="constraint.proxyport.innerproxyport" isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="proxyport.innerproxyport"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.ProxyPortForceInnerProxyPortModelConstraint">
+               <message>%inv_ProxyPortForceInnerProxyPort</message>
+                <description>%inv_ProxyPortForceInnerProxyPort</description>
+            </constraint>   
+                                           
+            <constraint id="constraint.triggeronnestedport.triggeronnestedportsingleproxyport"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="triggeronnestedport.triggeronnestedportsingleproxyport">
+               <message>%inv_TriggerOnNestedPortSingleProxyPort</message>
+                <description>%inv_TriggerOnNestedPortSingleProxyPort</description>
+               <![CDATA[%ocl_TriggerOnNestedPortSingleProxyPort]]>
+            </constraint>   
+                                           
+            <constraint id="constraint.triggeronnestedport.triggeronnestedportnofullport"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="triggeronnestedport.triggeronnestedportnofullport">
+               <message>%inv_TriggerOnNestedPortNoFullPort</message>
+                <description>%inv_TriggerOnNestedPortNoFullPort</description>
+               <![CDATA[%ocl_TriggerOnNestedPortNoFullPort]]>
+            </constraint>   
+                                           
+            <constraint id="constraint.triggeronnestedport.triggeronnestedportonnextedportfirstownedbycontext"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="triggeronnestedport.triggeronnestedportonnextedportfirstownedbycontext">
+               <message>%inv_TriggerOnNestedPortOnNextedPortFirstOwnedByContext</message>
+                <description>%inv_TriggerOnNestedPortOnNextedPortFirstOwnedByContext</description>
+               <![CDATA[%ocl_TriggerOnNestedPortOnNextedPortFirstOwnedByContext]]>
+            </constraint>
+            
+            <constraint id="constraint.triggeronnestedport.triggeronnestedportpathconsistency" isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="constraint.triggeronnestedport.triggeronnestedportpathconsistency"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.TriggerOnNestedPortPathConsistencyModelConstraint">
+               <message>%inv_TriggerOnNestedPortPathConsistency</message>
+                <description>%inv_TriggerOnNestedPortPathConsistency</description>
+            </constraint>   
+                                           
+            <!--constraint id="constraint.triggeronnestedport.triggeronnestedportonnestedportlasttypeownstriggerport"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="triggeronnestedport.triggeronnestedportonnestedportlasttypeownstriggerport">
+               <message>%inv_TriggerOnNestedPortOnNestedPortLastTypeOwnsTriggerPort</message>
+                <description>%inv_TriggerOnNestedPortOnNestedPortLastTypeOwnsTriggerPort</description>
+               <![CDATA[%ocl_TriggerOnNestedPortOnNestedPortLastTypeOwnsTriggerPort]]>
+            </constraint--> 
+            
+            <constraint id="constraint.interfaceblock.porttype" isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="interfaceblock.porttype"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.InterfaceBlockPortTypeModelConstraint">
+               <message>%inv_InterfaceBlockPortType</message>
+                <description>%inv_InterfaceBlockPortType</description>
+            </constraint>            
+ 
+            <constraint id="constraint.interfaceblock.nobehavior" isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="interfaceblock.nobehavior"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.InterfaceBlockNoBehaviorConstraint">
+               <message>%inv_InterfaceBlockNoBehavior</message>
+                <description>%inv_InterfaceBlockNoBehavior</description>
+            </constraint>
+            
+            <constraint id="constraint.interfaceblock.nocompositeproperty" isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="interfaceblock.nocompositeproperty"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.InterfaceBlockNoCompositePropertyModelConstraint">
+               <message>%inv_InterfaceBlockNoCompositeProperty</message>
+                <description>%inv_InterfaceBlockNoCompositeProperty</description>
+            </constraint>
+            
+            <constraint id="constraint.interfaceblock.isconguratednotused" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="interfaceblock.isconguratednotused">
+               <message>%inv_InterfaceBlockIsConjugatedNotUsed</message>
+                <description>%inv_InterfaceBlockIsConjugatedNotUsed</description>
+               <![CDATA[%ocl_InterfaceBlockIsConjugatedNotUsed]]>
+            </constraint>
+            
+            <constraint id="constraint.conjugatedinterfaceblock.enforcedname" isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="conjugatedinterfaceblock.enforcedname">
+               <message>%inv_ConjugatedInterfaceBlockEnforcedName</message>
+                <description>%inv_ConjugatedInterfaceBlockEnforcedName</description>
+               <![CDATA[%ocl_ConjugatedInterfaceBlockEnforcedName]]>
+            </constraint>     
+                                           
+            <constraint id="constraint.acceptchangestructuralfeatureeventaction.onetrigger"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="acceptchangestructuralfeatureeventaction.onetrigger">
+               <message>%inv_AcceptChangeStructuralFeatureEventActionOneTrigger</message>
+                <description>%inv_AcceptChangeStructuralFeatureEventActionOneTrigger</description>
+               <![CDATA[%ocl_AcceptChangeStructuralFeatureEventActionOneTrigger]]>
+            </constraint>  
+                                           
+            <constraint id="constraint.acceptchangestructuralfeatureeventaction.tworesultpin"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="acceptchangestructuralfeatureeventaction.tworesultpin">
+               <message>%inv_AcceptChangeStructuralFeatureEventActiontwoResultPin</message>
+                <description>%inv_AcceptChangeStructuralFeatureEventActiontwoResultPin</description>
+               <![CDATA[%ocl_AcceptChangeStructuralFeatureEventActiontwoResultPin]]>
+            </constraint>  
+                                           
+            <constraint id="constraint.acceptchangestructuralfeatureeventaction.contextownsstructuralfeature"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="acceptchangestructuralfeatureeventaction.contextownsstructuralfeature">
+               <message>%inv_AcceptChangeStructuralFeatureEventActionContextOwnsStructuralFeature</message>
+                <description>%inv_AcceptChangeStructuralFeatureEventActionContextOwnsStructuralFeature</description>
+               <![CDATA[%ocl_AcceptChangeStructuralFeatureEventActionContextOwnsStructuralFeature]]>
+            </constraint>  
+                                           
+            <constraint id="constraint.acceptchangestructuralfeatureeventaction.canaccessstructuralfeature"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="acceptchangestructuralfeatureeventaction.canaccessstructuralfeature">
+               <message>%inv_AcceptChangeStructuralFeatureEventActionCanAccessStructuralFeature</message>
+                <description>%inv_AcceptChangeStructuralFeatureEventActionCanAccessStructuralFeature</description>
+               <![CDATA[%ocl_AcceptChangeStructuralFeatureEventActionCanAccessStructuralFeature]]>
+            </constraint>  
+                                           
+            <constraint id="constraint.addflowpropertyvalueonnestedportaction.featureflowproperty"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="addflowpropertyvalueonnestedportaction.featureflowproperty">
+               <message>%inv_AddFlowPropertyValueOnNestedPortActionFeatureFlowProperty</message>
+                <description>%inv_AddFlowPropertyValueOnNestedPortActionFeatureFlowProperty</description>
+               <![CDATA[%ocl_AddFlowPropertyValueOnNestedPortActionFeatureFlowProperty]]>
+            </constraint>  
+                                           
+            <constraint id="constraint.addflowpropertyvalueonnestedportaction.onnestedportfirstownedbytargettype"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="addflowpropertyvalueonnestedportaction.onnestedportfirstownedbytargettype">
+               <message>%inv_AddFlowPropertyValueOnNestedPortActionOnNestedPortFirstOwnedByTargetType</message>
+                <description>%inv_AddFlowPropertyValueOnNestedPortActionOnNestedPortFirstOwnedByTargetType</description>
+               <![CDATA[%ocl_AddFlowPropertyValueOnNestedPortActionOnNestedPortFirstOwnedByTargetType]]>
+            </constraint>            
+ 
+            <constraint id="constraint.addflowpropertyvalueonnestedportaction.pathconsistency" isEnabledByDefault="true" lang="Java" mode="Batch" severity="ERROR" statusCode="3" name="addflowpropertyvalueonnestedportaction.pathconsistency"
+            class="org.eclipse.papyrus.sysml16.validation.rules.portsandflows.AddFlowPropertyValueOnNestedPortActionPathConsistencyModelConstraint">
+               <message>%inv_AddFlowPropertyValueOnNestedPortActionPathConsistency</message>
+                <description>%inv_AddFlowPropertyValueOnNestedPortActionPathConsistency</description>
+            </constraint>
+                                           
+            <constraint id="constraint.addflowpropertyvalueonnestedportaction.onnestedportlasttypeownsinvocationonport"  isEnabledByDefault="true" lang="OCLpivot" mode="Batch" severity="ERROR" statusCode="3" name="addflowpropertyvalueonnestedportaction.onnestedportlasttypeownsinvocationonport">
+               <message>%inv_AddFlowPropertyValueOnNestedPortActionOnNestedPortLastTypeOwnsInvocationOnPort</message>
+                <description>%inv_AddFlowPropertyValueOnNestedPortActionOnNestedPortLastTypeOwnsInvocationOnPort</description>
+               <![CDATA[%ocl_AddFlowPropertyValueOnNestedPortActionOnNestedPortLastTypeOwnsInvocationOnPort]]>
+            </constraint>       
+                                                                                                        
+         </constraints>                  
+      </constraintProvider>
+    <constraintProvider
+          cache="false"
+          mode="Batch">
+       <package
+             namespaceUri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements">
+       </package>
+       <constraints
+             categories="org.eclipse.papyrus.sysml16.validation.category.optional">
+          <constraint
+                id="constraint.requirement.requireId"
+                isEnabledByDefault="true"
+                lang="OCLpivot"
+                mode="Batch"
+                name="requirement.requireId"
+                severity="WARNING"
+                statusCode="1">
+             %ocl_RequirementId
+             <message>
+                %inv_RequirementId
+             </message>
+             <description>
+                %inv_RequirementId
+             </description>
+          </constraint>
+          <constraint
+                id="constraint.requirement.requireText"
+                isEnabledByDefault="true"
+                lang="OCLpivot"
+                mode="Batch"
+                name="requirement.requireText"
+                severity="WARNING"
+                statusCode="1">
+             %ocl_RequirementText
+             <message>
+                %inv_RequirementText
+             </message>
+             <description>
+                %inv_RequirementText
+             </description>
+          </constraint>
+       </constraints>
+       <constraints
+             categories="org.eclipse.papyrus.sysml16.validation.category.normative">
+          <constraint
+                id="constraint.requirement.emptyownedattribute"
+                isEnabledByDefault="true"
+                lang="OCLpivot"
+                mode="Batch"
+                name="requirement.emptyownedattribute"
+                severity="ERROR"
+                statusCode="3">
+             %ocl_RequirementEmptyOwnedAttribute
+             <message>
+                %inv_RequirementEmptyOwnedAttribute
+             </message>
+             <description>
+                %inv_RequirementEmptyOwnedAttribute
+             </description>
+          </constraint>
+          <constraint
+                id="constraint.requirement.emptyownedoperation"
+                isEnabledByDefault="true"
+                lang="OCLpivot"
+                mode="Batch"
+                name="requirement.emptyownedoperation"
+                severity="ERROR"
+                statusCode="3">
+             %ocl_RequirementEmptyOwnedOperation
+             <message>
+                %inv_RequirementEmptyOwnedOperation
+             </message>
+             <description>
+                %inv_RequirementEmptyOwnedOperation
+             </description>
+          </constraint>
+          <constraint
+                class="org.eclipse.papyrus.sysml16.validation.rules.requirements.RequirementNestedRequirementModelConstraint"
+                id="constraint.requirement.nestedrequirement"
+                isEnabledByDefault="true"
+                lang="Java"
+                mode="Batch"
+                name="requirement.nestedrequirement"
+                severity="ERROR"
+                statusCode="3">
+             <message>
+                %inv_RequirementNestedRequirementModelConstraint
+             </message>
+             <description>
+                %inv_RequirementNestedRequirementModelConstraint
+             </description>
+          </constraint>
+          <constraint
+                class="org.eclipse.papyrus.sysml16.validation.rules.requirements.RequirementNoAssociationModelConstraint"
+                id="constraint.requirement.noassociation"
+                isEnabledByDefault="true"
+                lang="Java"
+                mode="Batch"
+                name="requirement.noassociation"
+                severity="ERROR"
+                statusCode="3">
+             <message>
+                %inv_RequirementNoAssociationModelConstraint
+             </message>
+             <description>
+                %inv_RequirementNoAssociationModelConstraint
+             </description>
+          </constraint>
+          <constraint
+                class="org.eclipse.papyrus.sysml16.validation.rules.requirements.RequirementNoGeneralizationModelConstraint"
+                id="constraint.requirement.nogeneralization"
+                isEnabledByDefault="true"
+                lang="Java"
+                mode="Batch"
+                name="requirement.nogeneralization"
+                severity="ERROR"
+                statusCode="3">
+             <message>
+                %inv_RequirementNoGeneralizationModelConstraint
+             </message>
+             <description>
+                %inv_RequirementNoGeneralizationModelConstraint
+             </description>
+          </constraint>
+          <constraint
+                class="org.eclipse.papyrus.sysml16.validation.rules.requirements.RequirementNotTypeModelConstraint"
+                id="constraint.requirement.notype"
+                isEnabledByDefault="true"
+                lang="Java"
+                mode="Batch"
+                name="requirement.notype"
+                severity="ERROR"
+                statusCode="3">
+             <message>
+                %inv_RequirementNotType
+             </message>
+             <description>
+                %inv_RequirementNotType
+             </description>
+          </constraint>
+          <constraint
+                class="org.eclipse.papyrus.sysml16.validation.rules.requirements.DeriveReqtClientModelConstraint"
+                id="constraint.derivereqt.client"
+                isEnabledByDefault="true"
+                lang="Java"
+                mode="Batch"
+                name="derivereqt.client"
+                severity="ERROR"
+                statusCode="3">
+             <message>
+                %inv_DeriveReqtClientModelConstraint
+             </message>
+             <description>
+                %inv_DeriveReqtClientModelConstraint
+             </description>
+          </constraint>
+          <constraint
+                class="org.eclipse.papyrus.sysml16.validation.rules.requirements.DeriveReqtSupplierModelConstraint"
+                id="constraint.derivereqt.supplier"
+                isEnabledByDefault="true"
+                lang="Java"
+                mode="Batch"
+                name="derivereqt.supplier"
+                severity="ERROR"
+                statusCode="3">
+             <message>
+                %inv_DeriveReqtSupplierModelConstraint
+             </message>
+             <description>
+                %inv_DeriveReqtSupplierModelConstraint
+             </description>
+          </constraint>
+          <constraint
+                class="org.eclipse.papyrus.sysml16.validation.rules.requirements.RefineOneClientSupplierModelConstraint"
+                id="constraint.refine.oneclientsupplier"
+                isEnabledByDefault="true"
+                lang="Java"
+                mode="Batch"
+                name="refine.oneclientsupplier"
+                severity="ERROR"
+                statusCode="3">
+             <message>
+                %inv_RefineOneClientSupplierModelConstraint
+             </message>
+             <description>
+                %inv_RefineOneClientSupplierModelConstraint
+             </description>
+          </constraint>
+          <constraint
+                class="org.eclipse.papyrus.sysml16.validation.rules.requirements.VerifySupplierModelConstraint"
+                id="constraint.verify.supplier"
+                isEnabledByDefault="true"
+                lang="Java"
+                mode="Batch"
+                name="verify.supplier"
+                severity="ERROR"
+                statusCode="3">
+             <message>
+                %inv_VerifySupplierModelConstraint
+             </message>
+             <description>
+                %inv_VerifySupplierModelConstraint
+             </description>
+          </constraint>
+          <constraint
+                class="org.eclipse.papyrus.sysml16.validation.rules.requirements.SatisfySupplierModelConstraint"
+                id="constraint.satisfy.supplier"
+                isEnabledByDefault="true"
+                lang="Java"
+                mode="Batch"
+                name="satisfy.supplier"
+                severity="ERROR"
+                statusCode="3">
+             <message>
+                %inv_SatisfySupplierModelConstraint
+             </message>
+             <description>
+                %inv_SatisfySupplierModelConstraint
+             </description>
+          </constraint>
+          <constraint
+                class="org.eclipse.papyrus.sysml16.validation.rules.requirements.TraceDependencyModelConstraint"
+                id="constraint.trace.dependency"
+                isEnabledByDefault="true"
+                lang="Java"
+                mode="Batch"
+                name="trace.dependency"
+                severity="ERROR"
+                statusCode="3">
+             <message>
+                %inv_TraceDependencyModelConstraint
+             </message>
+             <description>
+                %inv_TraceDependencyModelConstraint
+             </description>
+          </constraint>
+          <constraint
+                class="org.eclipse.papyrus.sysml16.validation.rules.requirements.CopyBetweenRequirementsModelConstraint"
+                id="constraint.copy.betweenrequirements"
+                isEnabledByDefault="true"
+                lang="Java"
+                mode="Batch"
+                name="copy.betweenrequirements"
+                severity="ERROR"
+                statusCode="3">
+             <message>
+                %inv_CopyBetweenRequirementsModelConstraint
+             </message>
+             <description>
+                %inv_CopyBetweenRequirementsModelConstraint
+             </description>
+          </constraint>
+          <constraint
+                class="org.eclipse.papyrus.sysml16.validation.rules.requirements.CopyReadOnlyModelConstraint"
+                id="constraint.copy.readonly"
+                isEnabledByDefault="true"
+                lang="Java"
+                mode="Batch"
+                name="copy.readonly"
+                severity="ERROR"
+                statusCode="3">
+             <message>
+                %inv_CopyReadOnlyModelConstraint
+             </message>
+             <description>
+                %inv_CopyReadOnlyModelConstraint
+             </description>
+          </constraint>
+          <constraint
+                class="org.eclipse.papyrus.sysml16.validation.rules.requirements.TestCaseParamVerdictKindModelConstraint"
+                id="constraint.testcase.parameterverdictkind"
+                isEnabledByDefault="true"
+                lang="Java"
+                mode="Batch"
+                name="testcase.parameterverdictkind"
+                severity="ERROR"
+                statusCode="3">
+             <message>
+                %inv_TestCaseParameterVerdictKindModelConstraint
+             </message>
+             <description>
+                %inv_TestCaseParameterVerdictKindModelConstraint
+             </description>
+          </constraint>
+       </constraints>
+    </constraintProvider>
+   </extension>
+   <extension name="org.eclipse.papyrus.sysml16.validation.constraintBindings" point="org.eclipse.emf.validation.constraintBindings">
+      
+      <!-- UML fake context (should be replaced by filter see Bug 487500)-->
+      <clientContext id="TrueContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.TrueSelector"/>
+      </clientContext>
+      <binding context="TrueContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.block.property.asssociationend"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.block.associationBlock"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.block.specialization"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.block.propertynoname"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.nestedConnectorEnd.missing"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.valuetype.specializationsarevaluetypes"/> 
+      </binding>  
+       
+      <!-- Requirement Context -->
+      <clientContext id="CopyClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.CopySelector"/>
+      </clientContext>    
+      <binding context="CopyClientContext">
+     	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.copy.betweenrequirements"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.copy.readonly"/>
+      </binding>
+      <clientContext id="DeriveReqtClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.DeriveReqtSelector"/>
+      </clientContext>
+      <binding context="DeriveReqtClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.derivereqt.client"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.derivereqt.supplier"/>
+      </binding>
+      <clientContext id="RefineClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.RefineSelector"/>
+      </clientContext>  
+      <binding context="RefineClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.refine.oneclientsupplier"/>
+      </binding>                  
+      <clientContext id="RequirementClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.RequirementSelector"/>
+      </clientContext>    
+      <binding context="RequirementClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.requirement.requireId"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.requirement.requireText"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.requirement.emptyownedattribute"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.requirement.emptyownedoperation"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.requirement.nestedrequirement"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.requirement.noassociation"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.requirement.nogeneralization"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.requirement.notype"/>
+      </binding>
+      <clientContext id="TestCaseClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.TestCaseSelector"/>
+      </clientContext>    
+      <binding context="TestCaseClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.testcase.parameterverdictkind"/>
+      </binding>      
+      <clientContext id="SatisfyClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.SatisfySelector"/>
+      </clientContext>    
+      <binding context="SatisfyClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.satisfy.supplier"/>
+      </binding>       
+      <clientContext id="TraceClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.TraceSelector"/>
+      </clientContext>    
+      <binding context="TraceClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.trace.dependency"/>
+      </binding>           
+      <clientContext id="VerifyClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.VerifySelector"/>
+      </clientContext>    
+      <binding context="VerifyClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.verify.supplier"/>
+      </binding>           
+      
+      <!-- Blocks context -->  
+      <clientContext id="BoundReferenceContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.BoundReferenceSelector"/>
+      </clientContext>
+      <binding context="BoundReferenceContext">
+      	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.boundreference.1"/>
+      	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.boundreference.2"/>
+      	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.boundreference.4"/>
+      	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.boundreference.5"/>
+      	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.boundreference.6"/>
+      	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.boundreference.7"/>
+      	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.boundreference.8"/>
+      </binding>  
+  
+      <clientContext id="DirectedRelationshipPropertyPathContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.DirectedRelationshipPropertyPathSelector"/>
+      </clientContext>
+      <binding context="DirectedRelationshipPropertyPathContext">
+      	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.directedrelationshippropertypath.requiresourcecontext"/>
+      	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.directedrelationshippropertypath.requiretargetcontext"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.directedrelationshippropertypath.sourcefirst"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.directedrelationshippropertypath.targetfirst"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.directedrelationshippropertypath.sourcelast"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.directedrelationshippropertypath.targetlast"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.directedrelationshippropertypath.sourcecontextifproperty"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.directedrelationshippropertypath.targetcontextifproperty"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.directedrelationshippropertypath.sourcepropertypathimpliesproperty"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.directedrelationshippropertypath.targetpropertypathimpliesproperty"/>
+      </binding>    
+
+      <clientContext id="BlockContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.BlockSelector"/>
+      </clientContext>
+      <binding context="BlockContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.block.propertycomposite"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.block.connectortwoends"/>
+      </binding>             
+ 
+      <clientContext id="ElementPropertyPathContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ElementPropertyPathSelector"/>
+      </clientContext>
+      <binding context="ElementPropertyPathContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.elementpropertypath.propertiesowner"/>
+      </binding>              
+      
+      <clientContext id="NestedConnectorEndClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.NestedConnectorEndSelector"/>
+      </clientContext>
+      <binding context="NestedConnectorEndClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.nestedconnectorend.onlyconnectorends"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.nestedconnectorend.lastproperty"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.nestedconnectorend.firstproperty"/>
+      </binding>   
+
+     <clientContext id="PropertySpecificTypeMissingNameClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.PropertySpecificTypeSelector"/>
+      </clientContext>
+      <binding context="PropertySpecificTypeMissingNameClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.propertyspecifictype.missingname"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.propertyspecifictype.uniqueproperty"/>
+      </binding> 
+
+       <clientContext id="EndPathMultiplicityClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.EndPathMultiplicitySelector"/>
+      </clientContext>
+      <binding context="EndPathMultiplicityClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.endpathmultiplicity.boundreferenceproperty"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.endpathmultiplicity.notnegative"/>
+      </binding>       
+      
+      <clientContext id="DistributedPropertyClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.DistributedPropertySelector"/>
+      </clientContext>
+      <binding context="DistributedPropertyClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.distributedproperty.typedby"/>
+      </binding>      
+      
+       <clientContext id="ClassifierBehaviorPropertyContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ClassifierBehaviorPropertySelector"/>
+      </clientContext>
+      <binding context="ClassifierBehaviorPropertyContext">
+     	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.classifierbehaviorproperty.onblock"/>
+      	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.classifierbehaviorproperty.iscomposite"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.classifierbehaviorproperty.typedby"/>
+      </binding>        
+  
+      <clientContext id="ConnectorPropertyClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ConnectorPropertySelector"/>
+      </clientContext>
+      <binding context="ConnectorPropertyClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.connectorproperty.onlyonblock"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.connectorproperty.onlycomposite"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.connectorproperty.referownedconnector"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.connectorproperty.samename"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.connectorproperty.typedbyassociationblock"/>       
+      </binding>
+
+      <clientContext id="BindingConnectorClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.BindingConnectorSelector"/>
+      </clientContext>
+      <binding context="BindingConnectorClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.bindingconnector.sameendstype"/>       
+      </binding>
+
+      <clientContext id="ParticipantPropertyClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ParticipantPropertySelector"/>
+      </clientContext>
+      <binding context="ParticipantPropertyClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.participantproperty.endmultiplicity"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.participantproperty.noassociationmemberends"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.participantproperty.onlyassociationblock"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.participantproperty.onlynoneaggregation"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.participantproperty.sameend"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.participantproperty.sametype"/>      
+      </binding>
+       
+      <clientContext id="ValueTypeClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ValueTypeSelector"/>
+      </clientContext>
+      <binding context="ValueTypeClientContext">   
+      	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.valuetype.unit"/>   
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.valuetype.quantitykind"/>   
+      </binding>
+       
+       <!-- ModelElements context -->
+      <clientContext id="ExposeClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ExposeSelector"/>
+      </clientContext>
+      <binding context="ExposeClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.expose.clientview"/>
+      </binding>        
+      <clientContext id="ConformClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ConformSelector"/>
+      </clientContext>
+      <binding context="ConformClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.conform.generalviewpoint"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.conform.specificview"/>
+      </binding>         
+      <clientContext id="StakeholderClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.StakeholderSelector"/>
+      </clientContext>
+      <binding context="StakeholderClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.stakeholder.notassociation"/>
+      </binding>    
+      
+      <clientContext id="ViewClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ViewSelector"/>
+      </clientContext>
+      <binding context="ViewClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.view.singleviewpoint"/>
+      </binding>   
+          
+     <clientContext id="ViewpointClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ViewpointSelector"/>
+      </clientContext>
+      <binding context="ViewpointClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.viewpoint.ownedview"/>
+      </binding> 
+            
+      <!-- Activities context -->
+      <clientContext id="OperationClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.OperationSelector"/>
+      </clientContext>
+      <binding context="OperationClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.operation.controloperator.parameterscontrolvalue"/>
+      </binding>
+      
+      <clientContext id="BehaviorClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.BehaviorSelector"/>
+      </clientContext>
+      <binding context="BehaviorClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.behavior.controloperator.parameterscontrolvalue"/>
+      </binding>
+      
+      <clientContext id="ControlOperatorClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ControlOperatorSelector"/>
+      </clientContext>
+      <binding context="ControlOperatorClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.controloperator.operationmethod"/>
+      </binding>
+      
+      <clientContext id="OptionalClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.OptionalSelector"/>
+      </clientContext>
+      <binding context="OptionalClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.optional.multiplicity"/>
+      </binding>       
+       
+      <clientContext id="DiscreteClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.DiscreteSelector"/>
+      </clientContext>
+      <binding context="DiscreteClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.discrete.nocontinuous"/>
+      </binding>    
+            
+      <clientContext id="NoBufferClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.NoBufferSelector"/>
+      </clientContext>     
+      <binding context="NoBufferClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.nobuffer.nooverwrite"/>
+      </binding>  
+      
+      <clientContext id="OverwriteClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.OverwriteSelector"/>
+      </clientContext>     
+      <binding context="OverwriteClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.overwrite.nonobuffer"/>
+      </binding>  
+      
+      <clientContext id="RateClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.RateSelector"/>
+      </clientContext>     
+      <binding context="RateClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.rate.parameterisstream"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.rate.parameterlessinout"/>
+      </binding> 
+                 
+       <clientContext id="ProbabilityClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ProbabilitySelector"/>
+      </clientContext>     
+      <binding context="ProbabilityClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.probability.alledges"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.probability.baseelement"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.probability.outputparameters"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.probability.allparameterset"/>
+      </binding> 
+         
+ 	  <!-- Alocations context -->
+      <clientContext id="AllocateClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.AllocateSelector"/>
+      </clientContext>
+      <binding context="AllocateClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.allocate.oneclientsupplier"/>
+      </binding>
+      
+      <clientContext id="AllocateActivityPartitionClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.AllocateActivityPartitionSelector"/>
+      </clientContext>
+      <binding context="AllocateActivityPartitionClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.allocateactivitypartition.actionsonclientends"/>
+      </binding>            
+         
+      <!-- Ports and Flows -->
+      <clientContext id="ItemFlowClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ItemFlowSelector"/>
+      </clientContext>
+      <binding context="ItemFlowClientContext">
+         <!--constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.itemflow.sourceandtargetlinked"/-->
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.itemflow.propertytypedby"/>
+         <!--constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.itemflow.itempropertycommonowner"/-->
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.itemflow.associationxoritemproperty"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.itemflow.sametype"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.itemflow.sameproperty"/>
+      </binding>  
+      
+      <clientContext id="InvocationOnNestedPortActionClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.InvocationOnNestedPortActionSelector"/>
+      </clientContext>
+      <binding context="InvocationOnNestedPortActionClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.invocationonnestedportaction.requiredonport"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.invocationonnestedportaction.pathconsistency"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.invocationonnestedportaction.onnestedportfirstownedbytargettype"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.invocationonnestedportaction.onnestedportlasttypeownsinvocationonport"/>
+      	 </binding>  
+      
+        <clientContext id="DirectedFeatureClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.DirectedFeatureSelector"/>
+      </clientContext>
+      <binding context="DirectedFeatureClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.directedfeature.onlybehavioral"/>
+      </binding>  
+ 
+        <clientContext id="ChangeStructuralFeatureEventClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ChangeStructuralFeatureEventSelector"/>
+      </clientContext>
+      <binding context="ChangeStructuralFeatureEventClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.changestrucuralfeatureevent.onefeaturingclassifier"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.changestrucuralfeatureevent.notstatic"/>
+      </binding>        
+           
+       <clientContext id="ChangeStructuralFeatureEventClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ChangeStructuralFeatureEventSelector"/>
+      </clientContext>
+      <binding context="ChangeStructuralFeatureEventClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.changestrucuralfeatureevent.onefeaturingclassifier"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.changestrucuralfeatureevent.notstatic"/>
+      </binding>        
+      
+      <clientContext id="FlowPropertyClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.FlowPropertySelector"/>
+      </clientContext>
+      <binding context="FlowPropertyClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.flowproperty.typedby"/>
+      </binding>   
+      
+      <clientContext id="FullPortClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.FullPortSelector"/>
+      </clientContext>
+      <binding context="FullPortClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.fullport.notproxyport"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.fullport.notboundtofullport"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.fullport.notbehavioral"/>
+      </binding> 
+      
+      <clientContext id="InterfaceBlockClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.InterfaceBlockSelector"/>
+      </clientContext>     
+      <binding context="InterfaceBlockClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.interfaceblock.porttype"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.interfaceblock.nobehavior"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.interfaceblock.nocompositeproperty"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.interfaceblock.isconguratednotused"/>
+      </binding> 
+      
+      <clientContext id="ConjugatedInterfaceBlockClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ConjugatedInterfaceBlockSelector"/>
+      </clientContext>     
+      <binding context="ConjugatedInterfaceBlockClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.conjugatedinterfaceblock.enforcedname"/>
+      </binding>
+      
+      <clientContext id="AcceptChangeStructuralFeatureEventActionClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.AcceptChangeStructuralFeatureEventActionSelector"/>
+      </clientContext>     
+      <binding context="AcceptChangeStructuralFeatureEventActionClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.acceptchangestructuralfeatureeventaction.onetrigger"/>
+       	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.acceptchangestructuralfeatureeventaction.tworesultpin"/>
+       	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.acceptchangestructuralfeatureeventaction.contextownsstructuralfeature"/>
+       	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.acceptchangestructuralfeatureeventaction.canaccessstructuralfeature"/>
+      </binding>
+      
+      <clientContext id="AddFlowPropertyValueOnNestedPortActionClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.AddFlowPropertyValueOnNestedPortActionSelector"/>
+      </clientContext>     
+      <binding context="AddFlowPropertyValueOnNestedPortActionClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.addflowpropertyvalueonnestedportaction.featureflowproperty"/>
+       	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.addflowpropertyvalueonnestedportaction.onnestedportfirstownedbytargettype"/>
+       	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.addflowpropertyvalueonnestedportaction.pathconsistency"/>
+       	 <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.addflowpropertyvalueonnestedportaction.onnestedportlasttypeownsinvocationonport"/>
+      </binding>
+      
+      <clientContext id="ProxyPortClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ProxyPortSelector"/>
+      </clientContext>  
+      <binding context="ProxyPortClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.proxyport.notfullport"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.proxyport.typedinterfaceblock"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.proxyport.innerproxyport"/>
+      </binding>
+      
+      <clientContext id="TriggerOnNestedPortClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.TriggerOnNestedPortSelector"/>
+      </clientContext>  
+      <binding context="TriggerOnNestedPortClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.triggeronnestedport.triggeronnestedportsingleproxyport"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.triggeronnestedport.triggeronnestedportnofullport"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.triggeronnestedport.triggeronnestedportonnextedportfirstownedbycontext"/>
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.triggeronnestedport.triggeronnestedportpathconsistency"/>
+         <!--constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.triggeronnestedport.triggeronnestedportonnestedportlasttypeownstriggerport"/-->
+      </binding>
+      
+      <!-- ContraintBlocks -->
+      <clientContext id="ConstraintBlockClientContext">
+         <selector class="org.eclipse.papyrus.sysml16.validation.selectors.ConstraintBlockSelector"/>
+      </clientContext>
+      <binding context="ConstraintBlockClientContext">
+         <constraint ref="org.eclipse.papyrus.sysml16.validation.constraint.constraintblock.composite"/>
+      </binding>
+   </extension>
+</plugin>

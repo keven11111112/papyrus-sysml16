@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nattableconfiguration:TableConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:nattableaxis="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis" xmlns:nattableaxisconfiguration="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration" xmlns:nattableaxisprovider="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider" xmlns:nattableconfiguration="http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration" xmlns:nattablelabelprovider="http://www.eclipse.org/papyrus/nattable/model/table/nattablecontentprovider" xmlns:nattablestyle="http://www.eclipse.org/papyrus/nattable/model/table/nattablestyle" xmi:id="_QpaQsF9WEeibbMBxjCBt2w" description="This table allows to display owned requirements of the context of the table as tree" name="RequirementTreeTable" type="PapyrusSysML16RequirementTreeTable" iconPath="platform:/plugin/org.eclipse.papyrus.sysml16.nattable.requirement/icons/table_SysML_Tree_Requirement.png" cellEditorDeclaration="COLUMN" defaultRowAxisProvider="_QpaQ1F9WEeibbMBxjCBt2w" defaultColumnAxisProvider="_QpaQ0V9WEeibbMBxjCBt2w">
+  <styles xmi:type="nattablestyle:TableDisplayStyle" xmi:id="_QpaQsV9WEeibbMBxjCBt2w" displayStyle="HIERARCHIC_SINGLE_TREE_COLUMN"/>
+  <styles xmi:type="nattablestyle:StringListValueStyle" xmi:id="_QpaQsl9WEeibbMBxjCBt2w" name="dragRegions">
+    <stringListValue>ROW_HEADER</stringListValue>
+  </styles>
+  <styles xmi:type="nattablestyle:BooleanValueStyle" xmi:id="_QpaQs19WEeibbMBxjCBt2w" name="expandAll" booleanValue="true"/>
+  <styles xmi:type="nattablestyle:IntListValueStyle" xmi:id="_QpaQtF9WEeibbMBxjCBt2w" name="hiddenCategoriesByDepth">
+    <intListValue>0</intListValue>
+    <intListValue>1</intListValue>
+    <intListValue>2</intListValue>
+    <intListValue>3</intListValue>
+    <intListValue>4</intListValue>
+  </styles>
+  <rowHeaderAxisConfiguration xmi:type="nattableaxisconfiguration:TableHeaderAxisConfiguration" xmi:id="_QpaQtl9WEeibbMBxjCBt2w" indexStyle="NUMERIC" displayLabel="true" displayFilter="false" displayIndex="false">
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:ObjectLabelProviderConfiguration" xmi:id="_QpaQt19WEeibbMBxjCBt2w" displayIcon="true" displayLabel="true"/>
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:FeatureLabelProviderConfiguration" xmi:id="_QpaQuF9WEeibbMBxjCBt2w" displayIcon="true" displayLabel="true" displayIsDerived="true" displayType="false" displayMultiplicity="false" displayName="true"/>
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:OperationLabelProviderConfiguration" xmi:id="_QpaQuV9WEeibbMBxjCBt2w" displayIcon="true" displayLabel="true" displayType="false" displayMultiplicity="false" displayName="true"/>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_QpaQul9WEeibbMBxjCBt2w" pasteConfiguration="_QpaQxF9WEeibbMBxjCBt2w" labelProvider="_QpaQuF9WEeibbMBxjCBt2w" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_QpaQu19WEeibbMBxjCBt2w" alias="nestedRequirements">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+      </axisUsedAsAxisProvider>
+    </ownedAxisConfigurations>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_QpaQvF9WEeibbMBxjCBt2w" pasteConfiguration="_QpaQxl9WEeibbMBxjCBt2w" depth="1" labelProvider="_QpaQuF9WEeibbMBxjCBt2w" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_QpaQvV9WEeibbMBxjCBt2w" alias="nestedRequirements">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/nestedClassifier"/>
+      </axisUsedAsAxisProvider>
+    </ownedAxisConfigurations>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_QpaQvl9WEeibbMBxjCBt2w" pasteConfiguration="_QpaQyF9WEeibbMBxjCBt2w" depth="2" labelProvider="_QpaQuF9WEeibbMBxjCBt2w" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_QpaQv19WEeibbMBxjCBt2w" alias="nestedRequirements">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/nestedClassifier"/>
+      </axisUsedAsAxisProvider>
+    </ownedAxisConfigurations>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_QpaQwF9WEeibbMBxjCBt2w" pasteConfiguration="_QpaQyF9WEeibbMBxjCBt2w" depth="3" labelProvider="_QpaQuF9WEeibbMBxjCBt2w" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_QpaQwV9WEeibbMBxjCBt2w" alias="nestedRequirements">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/nestedClassifier"/>
+      </axisUsedAsAxisProvider>
+    </ownedAxisConfigurations>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_QpaQwl9WEeibbMBxjCBt2w" pasteConfiguration="_QpaQyF9WEeibbMBxjCBt2w" depth="4" labelProvider="_QpaQuF9WEeibbMBxjCBt2w" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_QpaQw19WEeibbMBxjCBt2w" alias="nestedRequirements">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/nestedClassifier"/>
+      </axisUsedAsAxisProvider>
+    </ownedAxisConfigurations>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:PasteEObjectConfiguration" xmi:id="_QpaQxF9WEeibbMBxjCBt2w" detachedMode="false" pastedElementId="org.eclipse.papyrus.SysML16.Requirement">
+      <pasteElementContainementFeature xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package/packagedElement"/>
+      <axisIdentifier xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_QpaQxV9WEeibbMBxjCBt2w" manager="org.eclipse.papyrus.sysml16.nattable.requirementtree.stereotype.property.axis.manager" element="property_of_stereotype:/SysML::Requirements::Requirement::text"/>
+    </ownedAxisConfigurations>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:PasteEObjectConfiguration" xmi:id="_QpaQxl9WEeibbMBxjCBt2w" detachedMode="false" pastedElementId="org.eclipse.papyrus.SysML16.Requirement">
+      <pasteElementContainementFeature xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/nestedClassifier"/>
+      <axisIdentifier xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_QpaQx19WEeibbMBxjCBt2w" manager="org.eclipse.papyrus.sysml16.nattable.requirementtree.stereotype.property.axis.manager" element="property_of_stereotype:/SysML::Requirements::Requirement::text"/>
+    </ownedAxisConfigurations>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:PasteEObjectConfiguration" xmi:id="_QpaQyF9WEeibbMBxjCBt2w" detachedMode="false" pastedElementId="org.eclipse.papyrus.SysML16.Requirement">
+      <pasteElementContainementFeature xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class/nestedClassifier"/>
+      <axisIdentifier xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_QpaQyV9WEeibbMBxjCBt2w" manager="org.eclipse.papyrus.sysml16.nattable.requirementtree.stereotype.property.axis.manager" element="property_of_stereotype:/SysML::Requirements::Requirement::text"/>
+    </ownedAxisConfigurations>
+    <axisManagers xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" xmi:id="_QpaQyl9WEeibbMBxjCBt2w" axisManagerId="org.eclipse.papyrus.sysml16.nattable.requirement.tree.axis.manager" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.labelprovider" headerLabelConfiguration="_QpaQt19WEeibbMBxjCBt2w" specificAxisConfigurations="_QpaQul9WEeibbMBxjCBt2w _QpaQvF9WEeibbMBxjCBt2w _QpaQvl9WEeibbMBxjCBt2w _QpaQwF9WEeibbMBxjCBt2w _QpaQwl9WEeibbMBxjCBt2w"/>
+  </rowHeaderAxisConfiguration>
+  <columnHeaderAxisConfiguration xmi:type="nattableaxisconfiguration:TableHeaderAxisConfiguration" xmi:id="_QpaQy19WEeibbMBxjCBt2w" displayLabel="true" displayFilter="false" displayIndex="false">
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:FeatureLabelProviderConfiguration" xmi:id="_QpaQzF9WEeibbMBxjCBt2w" displayIcon="true" displayLabel="true" displayIsDerived="true" displayType="false" displayMultiplicity="false" displayName="true"/>
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:OperationLabelProviderConfiguration" xmi:id="_QpaQzV9WEeibbMBxjCBt2w" displayIcon="true" displayLabel="true" displayType="true" displayMultiplicity="true" displayName="true"/>
+    <axisManagers xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" xmi:id="org.eclipse.papyrus.sysml16.nattable.requirementtree.feature.axis.manager" axisManagerId="org.eclipse.papyrus.uml.nattable.feature.axis.manager" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.feature.labelprovider" headerLabelConfiguration="_QpaQzF9WEeibbMBxjCBt2w"/>
+    <axisManagers xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" xmi:id="org.eclipse.papyrus.sysml16.nattable.requirementtree.stereotype.property.axis.manager" axisManagerId="org.eclipse.papyrus.uml.nattable.stereotype.property.axis.manager" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.feature.labelprovider" headerLabelConfiguration="_QpaQzF9WEeibbMBxjCBt2w"/>
+    <axisManagers xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" xmi:id="org.eclipse.papyrus.sysml16.nattable.requirementtree.operation.axis.manager" axisManagerId="org.eclipse.papyrus.uml.nattable.operation.axis.manager" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.operation.labelprovider" headerLabelConfiguration="_QpaQzV9WEeibbMBxjCBt2w"/>
+  </columnHeaderAxisConfiguration>
+  <columnAxisProviders xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_QpaQ0V9WEeibbMBxjCBt2w" description="Provides the columns of the tables with a default configuration" name="Requirements Feature Columns Provider">
+    <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_QpaQ0l9WEeibbMBxjCBt2w" manager="org.eclipse.papyrus.sysml16.nattable.requirementtree.stereotype.property.axis.manager" element="property_of_stereotype:/SysML::Requirements::AbstractRequirement::id"/>
+    <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_QpaQ019WEeibbMBxjCBt2w" manager="org.eclipse.papyrus.sysml16.nattable.requirementtree.stereotype.property.axis.manager" element="property_of_stereotype:/SysML::Requirements::AbstractRequirement::text"/>
+  </columnAxisProviders>
+  <rowAxisProviders xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_QpaQ1F9WEeibbMBxjCBt2w" description="This axis provider manages the rows, according to the wanted hierarchy" name="HierarchicalRowAxisManager" disconnectSlave="true"/>
+</nattableconfiguration:TableConfiguration>

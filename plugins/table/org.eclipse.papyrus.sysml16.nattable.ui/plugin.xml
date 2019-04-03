@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+
+<!--
+ Copyright (c) 2019 CEA LIST.
+ 
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License 2.0
+  which accompanies this distribution, and is available at
+  https://www.eclipse.org/legal/epl-2.0/ 
+
+  SPDX-License-Identifier: EPL-2.0
+ 
+ Contributors:
+   Nicolas FAUVERGUE (CEA LIST) nicolas.fauvergue@cea.fr - Initial API and implementation
+ 
+-->
+
+<plugin>
+	<extension point="org.eclipse.ui.handlers">
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.ActorPartPropertyHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.ActorPartCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	    </handler>
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.BlockHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.BlockCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	    </handler>
+		<handler 
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.ConstraintBlockHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.ConstraintBlockCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	    </handler>
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.ConstraintBlockParameterHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.ConstraintBlockParameterCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	    </handler>
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.ConstraintPropertyHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.ConstraintPropertyCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	    </handler>
+		<handler 
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.FlowPortHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.FlowPortCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	    </handler>
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.FlowPortNAHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.FlowPort_NACreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	    </handler>
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.FlowPropertyHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.FlowPropertyCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	   	</handler>
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.FlowSpecificationHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.FlowSpecificationCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+		</handler>
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.PartPropertyHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.PartPropertyCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	    </handler>
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.ProblemHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.ProblemCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	    </handler>
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.RationaleHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.RationaleCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	    </handler>
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.ReferencePropertyHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.ReferencePropertyCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	    </handler>
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.RequirementHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.RequirementCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	    </handler>
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.UnitHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.UnitCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	    </handler>
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.ValuePropertyHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.ValuePropertyCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	    </handler>
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.ValueTypeHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.ValueTypeCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+		</handler>
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.ViewHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.ViewCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	    </handler>
+		<handler
+			class= "org.eclipse.papyrus.sysml16.nattable.ui.handlers.ViewPointHandler"
+			commandId="org.eclipse.papyrus.sysml16.service.types.ViewPointCreateCommand" >
+		    <activeWhen>
+		       <with
+		             variable="selection">
+		          <test
+		                property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+		                value="true">
+		          </test>
+		       </with>
+		    </activeWhen>
+	    </handler>
+	</extension>
+
+	<extension
+        point="org.eclipse.ui.menus">
+   		<menuContribution
+         	allPopups="true"
+         	locationURI="popup:org.eclipse.papyrus.infra.nattable.widget.menu?after=org.eclipse.papyrus.uml.nattable.create.uml.menu">
+      		<menu
+            	id="org.eclipse.papyrus.sysml16.nattable.ui.menu"
+            	label="Create SysML 1.6 Element">
+        		<visibleWhen
+               		checkEnabled="false">
+            		<with
+                  		variable="selection">
+               			<test
+                     		property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+                    		value="true">
+               			</test>
+            		</with>
+         		</visibleWhen>
+      		</menu>
+   		</menuContribution>
+      	<menuContribution
+            allPopups="false"
+            class="org.eclipse.papyrus.sysml16.nattable.ui.handlers.SysmlNattableCreateMenu"
+            locationURI="popup:org.eclipse.papyrus.sysml16.nattable.ui.menu">
+      	</menuContribution>
+   	</extension>
+   
+   
+	<!-- SysML ElementType bindings to Papyrus shared IClientContext -->
+	<extension point="org.eclipse.ui.commands">
+	
+		<!-- Creation command for ActorPart -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new ActorPart" id="org.eclipse.papyrus.sysml16.service.types.ActorPartCreateCommand" name="Create a new ActorPart">
+		</command>
+		
+		<!-- Creation command for Allocate -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new Allocate" id="org.eclipse.papyrus.sysml16.service.types.AllocateCreateCommand" name="Create a new Allocate">
+		</command>
+		
+		<!-- Creation command for Association -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new Association" id="org.eclipse.papyrus.sysml16.service.types.AssociationCreateCommand" name="Create a new Association">
+		</command>
+		
+		<!-- Creation command for AssociationComposite -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new AssociationComposite" id="org.eclipse.papyrus.sysml16.service.types.AssociationCompositeCreateCommand" name="Create a new AssociationComposite">
+		</command>
+		
+		<!-- Creation command for AssociationCompositeDirected -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new AssociationCompositeDirected" id="org.eclipse.papyrus.sysml16.service.types.AssociationCompositeDirectedCreateCommand" name="Create a new AssociationCompositeDirected">
+		</command>
+		
+		<!-- Creation command for AssociationNone -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new AssociationNone" id="org.eclipse.papyrus.sysml16.service.types.AssociationNoneCreateCommand" name="Create a new AssociationNone">
+		</command>
+		
+		<!-- Creation command for AssociationNoneDirected -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new AssociationNoneDirected" id="org.eclipse.papyrus.sysml16.service.types.AssociationNoneDirectedCreateCommand" name="Create a new AssociationNoneDirected">
+		</command>
+		
+		<!-- Creation command for AssociationShared -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new AssociationShared" id="org.eclipse.papyrus.sysml16.service.types.AssociationSharedCreateCommand" name="Create a new AssociationShared">
+		</command>
+		
+		<!-- Creation command for AssociationSharedDirected -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new AssociationSharedDirected" id="org.eclipse.papyrus.sysml16.service.types.AssociationSharedDirectedCreateCommand" name="Create a new AssociationSharedDirected">
+		</command>
+		
+		<!-- Creation command for Block -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new Block" id="org.eclipse.papyrus.sysml16.service.types.BlockCreateCommand" name="Create a new Block">
+		</command>
+		
+		<!-- Creation command for Conform -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new Conform" id="org.eclipse.papyrus.sysml16.service.types.ConformCreateCommand" name="Create a new Conform">
+		</command>
+			
+		<!-- Creation command for ConstraintBlock -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new ConstraintBlock" id="org.eclipse.papyrus.sysml16.service.types.ConstraintBlockCreateCommand" name="Create a new ConstraintBlock">
+		</command>
+	
+		<!-- Creation command for ConstraintBlockParameter -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new Parameter" id="org.eclipse.papyrus.sysml16.service.types.ConstraintBlockParameterCreateCommand" name="Create a new Parameter">
+		</command>
+	
+		<!-- Creation command for ConstraintProperty -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new ConstraintProperty" id="org.eclipse.papyrus.sysml16.service.types.ConstraintPropertyCreateCommand" name="Create a new ConstraintProperty">
+		</command>
+		
+		<!-- Creation command for Copy -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new Copy" id="org.eclipse.papyrus.sysml16.service.types.CopyCreateCommand" name="Create a new Copy">
+		</command>
+		
+		<!-- Creation command for DeriveReqt -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new DeriveReqt" id="org.eclipse.papyrus.sysml16.service.types.DeriveReqtCreateCommand" name="Create a new DeriveReqt">
+		</command>
+		
+		<!-- Creation command for FlowPort -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new FlowPort" id="org.eclipse.papyrus.sysml16.service.types.FlowPortCreateCommand" name="Create a new FlowPort">
+		</command>
+	
+		<!-- Creation command for FlowPort_NA -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new FlowPort (non atomic)" id="org.eclipse.papyrus.sysml16.service.types.FlowPort_NACreateCommand" name="Create a new FlowPort (non atomic)">
+		</command>
+	
+		<!-- Creation command for FlowProperty -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new FlowProperty" id="org.eclipse.papyrus.sysml16.service.types.FlowPropertyCreateCommand" name="Create a new FlowProperty">
+		</command>
+		
+		<!-- Creation command for FlowSpecification -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new FlowSpecification" id="org.eclipse.papyrus.sysml16.service.types.FlowSpecificationCreateCommand" name="Create a new FlowSpecification">
+		</command>
+		
+		<!-- Creation command for ItemFlow -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new ItemFlow" id="org.eclipse.papyrus.sysml16.service.types.ItemFlowCreateCommand" name="Create a new ItemFlow">
+		</command>
+	
+		<!-- Creation command for PartProperty -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new PartProperty" id="org.eclipse.papyrus.sysml16.service.types.PartPropertyCreateCommand" name="Create a new PartProperty">
+		</command>
+			
+		<!-- Creation command for Problem -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new Problem" id="org.eclipse.papyrus.sysml16.service.types.ProblemCreateCommand" name="Create a new Problem">
+		</command>
+		
+		<!-- Creation command for Rationale -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new Rationale" id="org.eclipse.papyrus.sysml16.service.types.RationaleCreateCommand" name="Create a new Rationale">
+		</command>
+		
+		<!-- Creation command for ReferenceProperty -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new ReferenceProperty" id="org.eclipse.papyrus.sysml16.service.types.ReferencePropertyCreateCommand" name="Create a new ReferenceProperty">
+		</command>
+		
+		<!-- Creation command for Requirement -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new Requirement" id="org.eclipse.papyrus.sysml16.service.types.RequirementCreateCommand" name="Create a new Requirement">
+		</command>
+		
+		<!-- Creation command for Satisfy -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new Satisfy" id="org.eclipse.papyrus.sysml16.service.types.SatisfyCreateCommand" name="Create a new Satisfy">
+		</command>
+		
+		<!-- Creation command for Unit -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new Unit" id="org.eclipse.papyrus.sysml16.service.types.UnitCreateCommand" name="Create a new Unit">
+		</command>
+		
+		<!-- Creation command for ValueProperty -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new ValueProperty" id="org.eclipse.papyrus.sysml16.service.types.ValuePropertyCreateCommand" name="Create a new ValueProperty">
+		</command>
+		
+		<!-- Creation command for ValueType -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new ValueType" id="org.eclipse.papyrus.sysml16.service.types.ValueTypeCreateCommand" name="Create a new ValueType">
+		</command>
+		
+		<!-- Creation command for ValueType_Enumeration -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new ValueType_Enumeration" id="org.eclipse.papyrus.sysml16.service.types.ValueType_EnumerationCreateCommand" name="Create a new ValueType_Enumeration">
+		</command>
+		
+		<!-- Creation command for ValueType_PrimitiveType -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new ValueType_PrimitiveType" id="org.eclipse.papyrus.sysml16.service.types.ValueType_PrimitiveTypeCreateCommand" name="Create a new ValueType_PrimitiveType">
+		</command>
+		
+		<!-- Creation command for Verify -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new Verify" id="org.eclipse.papyrus.sysml16.service.types.VerifyCreateCommand" name="Create a new Verify">
+		</command>
+		
+		<!-- Creation command for View -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new View" id="org.eclipse.papyrus.sysml16.service.types.ViewCreateCommand" name="Create a new View">
+		</command>
+		
+		<!-- Creation command for ViewPoint -->
+		<command categoryId="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands" description="Create a new ViewPoint" id="org.eclipse.papyrus.sysml16.service.types.ViewPointCreateCommand" name="Create a new ViewPoint">
+		</command>
+		
+		<!-- Category for the creation of Sysml elements-->
+		
+	</extension>
+	
+	<extension
+	      point="org.eclipse.ui.commands">
+	   <category
+	         id="org.eclipse.papyrus.sysml16.service.types.sysmlElementCreationCommands"
+	         name="Commands for the creation of SysML 1.6 elements">
+	   </category>
+	</extension>
+	
+	<extension
+	      point="org.eclipse.ui.commandImages">
+	   
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.ActorPartCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
+	
+			</image>
+	
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.AllocateCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Abstraction.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.AssociationCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Association.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.AssociationCompositeCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Association.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.AssociationCompositeDirectedCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Association.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.AssociationNoneCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Association.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.AssociationNoneDirectedCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Association.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.AssociationSharedCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Association.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.AssociationSharedDirectedCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Association.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.BlockCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Block.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.ConformCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Conform.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.ConstraintBlockCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/ConstraintBlock.gif">
+	
+			</image>
+	
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.ConstraintBlockParameterCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
+	
+			</image>
+	
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.ConstraintPropertyCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/ConstraintProperty.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.CopyCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Copy.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.DeriveReqtCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/DeriveReqt.gif">
+	
+			</image>
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.FlowPortCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/FlowPort.gif">
+	
+			</image>
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.FlowPort_NACreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/FlowPort_NA.gif">
+	
+			</image>
+	
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.FlowPropertyCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/FlowProperty.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.FlowSpecificationCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/FlowSpecification.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.ItemFlowCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/ItemFlow.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.PartPropertyCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
+	
+			</image>
+					
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.ProblemCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Problem.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.RationaleCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Rationale.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.ReferencePropertyCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
+	
+			</image>
+					
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.RequirementCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Requirement.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.SatisfyCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Satisfy.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.UnitCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Unit.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.ValuePropertyCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
+	
+			</image>
+					
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.ValueTypeCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/ValueType.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.ValueType_EnumerationCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/ValueType.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.ValueType_PrimitiveTypeCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/ValueType.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.VerifyCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Verify.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.ViewCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/View.gif">
+	
+			</image>
+			
+			
+			<image commandId="org.eclipse.papyrus.sysml16.service.types.ViewPointCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Viewpoint.gif">
+	
+			</image>
+	</extension>
+   
+      <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="org.eclipse.papyrus.sysml16.nattable.ui.handlers.CreateAllocateHandler"
+            commandId="org.eclipse.papyrus.sysml16.service.types.AllocateCreateCommand">
+      </handler>
+   </extension>
+</plugin>

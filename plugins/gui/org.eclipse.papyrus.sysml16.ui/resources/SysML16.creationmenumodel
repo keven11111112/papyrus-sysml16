@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ElementCreationMenuModel:Folder xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ElementCreationMenuModel="http://www.eclipse.org/papyrus/infra/newchild/elementcreationmenumodel" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:filters="http://www.eclipse.org/Papyrus/2014/common/filters" xmlns:umlfilters="http://www.eclipse.org/Papyrus/2014/uml/filters" label="SysML 1.6 Child" icon="platform:/plugin/org.eclipse.papyrus.sysml16/resources/icons/full/obj16/SysML.gif">
+  <filter xsi:type="filters:CompoundFilter" filter="//@filter/@ownedFilter.0">
+    <ownedFilter xsi:type="umlfilters:ProfileApplied" name="isSysML16ProfileApplied" profileQualifiedName="SysML" profileURI="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+  </filter>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="AcceptChangeStructuralFeatureEventAction">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.AcceptChangeStructuralFeatureEventAction"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="AddFlowPropertyValueOnNestedPortAction">
+  	<elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.AddFlowPropertyValueOnNestedPortAction"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="AdjunctProperty">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.AdjunctProperty"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="AllocateActivityPartition">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.AllocateActivityPartition"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Block" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Block.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Block"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="BoundReference" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/BoundReference.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.BoundReference"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="ChangeStructuralFeatureEvent" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/ChangeStructuralFeatureEvent.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.ChangeStructuralFeatureEvent"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="ClassifierBehaviorProperty" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/ClassifierBehaviorProperty.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.ClassifierBehaviorProperty"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="ConjugatedInterfaceBlock">
+  	<elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.ConjugatedInterfaceBlock"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="ConnectorProperty" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/ConnectorProperty.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.ConnectorProperty"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="ConstraintBlock" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/ConstraintBlock.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.ConstraintBlock"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Continuous ActivityEdge">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Continuous_ActivityEdge"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Continuous Parameter">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Continuous_Parameter"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="ControlOperator Behavior" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/ControlOperator_Behavior.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.ControlOperator_Behavior"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="ControlOperator Operation" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/ControlOperator_Operation.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.ControlOperator_Operation"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="DirectedFeature">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.DirectedFeature"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="DirectedRelationshipPropertyPath">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.DirectedRelationshipPropertyPath"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Discrete ActivityEdge">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Discrete_ActivityEdge"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Discrete Parameter">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Discrete_Parameter"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="DistributedProperty" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/DistributedProperty.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.DistributedProperty"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="ElementGroup" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/ElementGroup.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.ElementGroup"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="ElementPropertyPath">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.ElementPropertyPath"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="EndPathMultiplicity" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/EndPathMultiplicity.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.EndPathMultiplicity"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="FlowProperty" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/FlowProperty.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.FlowProperty"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="FlowPort" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/FlowPort.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.FlowPort"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="FlowSpecification" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/FlowSpecification.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.FlowSpecification"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="FullPort" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/FullPort.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.FullPort"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="InterfaceBlock" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/InterfaceBlock.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.InterfaceBlock"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="InvocationOnNestedPortAction InvocationAction">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.InvocationOnNestedPortAction_InvocationAction"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="InvocationOnNestedPortAction Element">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.InvocationOnNestedPortAction_Element"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="NestedConnectorEnd ConnectorEnd" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/NestedConnectorEnd_ConnectorEnd.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.NestedConnectorEnd_ConnectorEnd"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="NestedConnectorEnd Element" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/NestedConnectorEnd_Element.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.NestedConnectorEnd_Element"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="NoBuffer">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.NoBuffer"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Optional" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Optional.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Optional"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Overwrite">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Overwrite"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Parameter" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16-extension.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Parameter"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="ParticipantProperty" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/ParticipantProperty.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.ParticipantProperty"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Problem" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Problem.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Problem"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Probability ActivityEdge">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Probability_ActivityEdge"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Probability ParameterSet">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Probability_ParameterSet"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="PropertySpecificType" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/PropertySpecificType.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.PropertySpecificType"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="ProxyPort" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/FullPort.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.ProxyPort"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="QuantityKind" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/InstanceSpecification.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16-extension.elementtypesconfigurations#org.eclipse.papyrus.SysML16.QuantityKind"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Rate ActivityEdge">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Rate_ActivityEdge"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Rate Parameter">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Rate_Parameter"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Rationale" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Rationale.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Rationale"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Requirement" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Requirement.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Requirement"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Stakeholder" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Stakeholder.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Stakeholder"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="TestCase Operation" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/TestCase_Operation.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.TestCase_Operation"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="TestCase Behavior" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/TestCase_Behavior.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.TestCase_Behavior"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="TriggerOnNestedPort Element" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/TriggerOnNestedPort_Element.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.TriggerOnNestedPort_Element"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="TriggerOnNestedPort Trigger" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/TriggerOnNestedPort_Trigger.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.TriggerOnNestedPort_Trigger"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Unit" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Unit.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16-extension.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Unit"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="ValueType" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/ValueType.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.ValueType"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="View" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/View.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.View"/>
+  </menu>
+  <menu xsi:type="ElementCreationMenuModel:CreationMenu" label="Viewpoint" icon="platform:/plugin/org.eclipse.papyrus.sysml16.edit/icons/full/obj16/Viewpoint.gif">
+    <elementType xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="../../../plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Viewpoint"/>
+  </menu>
+</ElementCreationMenuModel:Folder>

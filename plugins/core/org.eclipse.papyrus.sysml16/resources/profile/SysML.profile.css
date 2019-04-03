@@ -1,0 +1,31 @@
+Association > Label:sourceMultiplicity {
+	visible:true;
+}
+
+Association > Label:targetMultiplicity {
+	visible:false;
+}
+
+Association > Label:sourceRole {
+	visible:true;
+}
+
+Association > Label:targetRole {
+	visible:false;
+}
+
+Association > Label:name {
+	visible:false;
+}
+
+Extension {
+	routing:Rectilinear;
+}
+
+Generalization {
+	routing:Rectilinear;
+}
+
+Association {
+	routing:Rectilinear;
+}

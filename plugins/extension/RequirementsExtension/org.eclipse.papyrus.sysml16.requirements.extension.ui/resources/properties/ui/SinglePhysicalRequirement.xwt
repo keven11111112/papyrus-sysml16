@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composite xmlns="http://www.eclipse.org/xwt/presentation"
+	xmlns:j="clr-namespace:java.lang"
+	xmlns:ppe="clr-namespace:org.eclipse.papyrus.infra.properties.ui.widgets"
+	xmlns:ppel="clr-namespace:org.eclipse.papyrus.infra.properties.ui.widgets.layout"
+	xmlns:x="http://www.eclipse.org/xwt">
+	<Composite.layout>
+		<ppel:PropertiesLayout></ppel:PropertiesLayout>
+	</Composite.layout>
+	<Composite>
+		<Composite.layout>
+			<ppel:PropertiesLayout numColumns="2"></ppel:PropertiesLayout>
+		</Composite.layout>
+		<ppe:StringEditor input="{Binding}"
+			property="SysML:Requirements:AbstractRequirement:id"></ppe:StringEditor>
+		<ppe:StringEditor input="{Binding}"
+			property="UML:NamedElement:name"></ppe:StringEditor>
+	</Composite>
+	<Composite>
+		<Composite.layout>
+			<ppel:PropertiesLayout numColumns="1"></ppel:PropertiesLayout>
+		</Composite.layout>
+		<ppe:StringEditor input="{Binding}"
+			property="RequirementsExtension:ExtendedRequirement:source"></ppe:StringEditor>
+	</Composite>
+	<Composite>
+		<Composite.layout>
+			<ppel:PropertiesLayout numColumns="1"></ppel:PropertiesLayout>
+		</Composite.layout>
+		<ppe:EnumCombo input="{Binding}"
+			property="RequirementsExtension:ExtendedRequirement:risk"></ppe:EnumCombo>
+		<ppe:EnumCombo input="{Binding}"
+			property="RequirementsExtension:ExtendedRequirement:verifyMethod"></ppe:EnumCombo>
+	</Composite>
+	<Composite>
+		<Composite.layout>
+			<ppel:PropertiesLayout></ppel:PropertiesLayout>
+		</Composite.layout>
+		<ppe:StringMultiline input="{Binding}"
+			property="SysML:Requirements:AbstractRequirement:text"></ppe:StringMultiline>
+	</Composite>
+	<Composite>
+		<Composite.layout>
+			<ppel:PropertiesLayout numColumns="2"></ppel:PropertiesLayout>
+		</Composite.layout>
+		<ppe:BooleanRadio input="{Binding}"
+			property="UML:Classifier:isAbstract"></ppe:BooleanRadio>
+		<ppe:BooleanRadio input="{Binding}"
+			property="UML:RedefinableElement:isLeaf"></ppe:BooleanRadio>
+	</Composite>
+	<Composite>
+		<Composite.layout>
+			<ppel:PropertiesLayout></ppel:PropertiesLayout>
+		</Composite.layout>
+		<ppe:MultiReference input="{Binding}"
+			property="SysML:Requirements:AbstractRequirement:master"></ppe:MultiReference>
+	</Composite>
+	<Composite>
+		<Composite.layout>
+			<ppel:PropertiesLayout numColumns="2"></ppel:PropertiesLayout>
+		</Composite.layout>
+		<ppe:MultiReference input="{Binding}"
+			property="SysML:Requirements:AbstractRequirement:derived"></ppe:MultiReference>
+		<ppe:MultiReference input="{Binding}"
+			property="SysML:Requirements:AbstractRequirement:derivedFrom"></ppe:MultiReference>
+		<ppe:MultiReference input="{Binding}"
+			property="SysML:Requirements:AbstractRequirement:refinedBy"></ppe:MultiReference>
+		<ppe:MultiReference input="{Binding}"
+			property="SysML:Requirements:AbstractRequirement:satisfiedBy"></ppe:MultiReference>
+		<ppe:MultiReference input="{Binding}"
+			property="SysML:Requirements:AbstractRequirement:tracedTo"></ppe:MultiReference>
+		<ppe:MultiReference input="{Binding}"
+			property="SysML:Requirements:AbstractRequirement:verifiedBy"></ppe:MultiReference>
+	</Composite>
+</Composite>

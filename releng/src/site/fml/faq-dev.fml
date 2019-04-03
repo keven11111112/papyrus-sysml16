@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faqs xmlns="http://maven.apache.org/FML/1.0.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/FML/1.0.1 http://maven.apache.org/xsd/fml-1.0.1.xsd"
+  title="Frequently Asked Questions"
+  toplink="false">
+
+  <part id="general">
+    <title>General</title>
+
+    <faq id="get-code">
+      <question>
+        Where to retrieve the code?
+      </question>
+      <answer>
+        <p>You have to clone the git repository</p>
+        <source>git clone https://git.eclipse.org/r/papyrus/org.eclipse.papyrus-sysml</source>
+      </answer>
+    </faq>
+    
+    <faq id="get-website">
+      <question>
+        Where is the website of the project?
+      </question>
+      <answer>
+        <p>You have to go <a href="https://hudson.eclipse.org/papyrus/view/Sysml/job/papyrus-sysml-website/ws/site-staging/index.html">https://hudson.eclipse.org/papyrus/view/Sysml/job/papyrus-sysml-website/ws/site-staging/index.html</a></p>
+      </answer>
+    </faq>
+    
+        <faq id="get-javadoc">
+      <question>
+        Where is the javadoc of the project?
+      </question>
+      <answer>
+        <p>You have to go <a href="https://hudson.eclipse.org/papyrus/view/Sysml/job/papyrus-sysml-website/ws/site-staging/apidocs/index.html">https://hudson.eclipse.org/papyrus/view/Sysml/job/papyrus-sysml-website/ws/site-staging/apidocs/index.html</a></p>
+      </answer>
+    </faq>
+    
+            <faq id="get-hudson">
+      <question>
+        Where are the continuous integration jobs?
+      </question>
+      <answer>
+        <p>You have to go <a href="https://hudson.eclipse.org/papyrus/view/Sysml/">https://hudson.eclipse.org/papyrus/view/Sysml/</a></p>
+      </answer>
+    </faq>
+    
+                <faq id="get-gerrit">
+      <question>
+        Where is the review server?
+      </question>
+      <answer>
+        <p>You have to go to gerrit: <a href=" https://git.eclipse.org/r/#/q/status:open+project:papyrus/org.eclipse.papyrus-sysml"> https://git.eclipse.org/r/#/q/status:open+project:papyrus/org.eclipse.papyrus-sysml</a></p>
+      </answer>
+    </faq>
+
+  </part>
+
+  <part id="install">
+
+    <title>Installation</title>
+
+    <faq id="how-install">
+      <question>
+        How do I install SysML?
+      </question>
+      <answer>
+        <p>SysMl 1.6 is an eclipse project and follow the standard recommendation of the Eclipse Foundation for installation.</p>
+      </answer>
+    </faq>
+
+  </part>
+
+</faqs>

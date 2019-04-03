@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paletteconfiguration:PaletteConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:paletteconfiguration="http://www.eclipse.org/papyrus/diagram/paletteconfiguration/0.8" id="org.eclipse.papyrus.sysML.req.palette.model" label="SysML REQ Palette">
+  <drawerConfigurations xmi:type="paletteconfiguration:DrawerConfiguration" id="org.eclipse.papyrus.sysML.req.palette.node" label="Requirement" description="Nodes listed in Requirement Diagram">
+    <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.gmf.runtime.diagram.ui" iconPath="/icons/group.gif"/>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.req.palette.edge.ContainmentLink" label="Containment Link" description="A Containment Link indicate that a element is owned by an other element" kind="ConnectionTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.uml.diagram.clazz" iconPath="/icons/obj16/ContainmentConnection.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Element_ContainmentEdge"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.req.palette.edge.Copy_Abstraction" label="Copy" description="A Copy relationship is a dependency between a supplier requirement and a client requirement that specifies that the text of the client requirement is a read-only copy of the text of the supplier requirement." kind="ConnectionTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="icons/full/obj16/Copy.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Copy_Abstraction_Abstraction_Edge"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.req.palette.edge.DeriveReqt_Abstraction" label="DeriveReqt" description="A DeriveReqt relationship is a dependency between two requirements in which a client requirement can be derived from the supplier requirement." kind="ConnectionTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="icons/full/obj16/DeriveReqt.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.DeriveReqt_Abstraction_Abstraction_Edge"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.req.palette.node.Package" label="Package" description="A package is used to group elements, and provides a namespace for the grouped elements" kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="icons/full/obj16/Package.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Package_Shape"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/umldi.elementtypesconfigurations#org.eclipse.papyrus.umldi.Package_Shape_CN"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.req.palette.edge.Refine_Abstraction" label="Refine" description="The Refine stereotype specializes UML4SysML Refine and DirectedRelationshipPropertyPath to enable refinements to identify their sources and targets by a multi-level path of accessible properties from context blocks for the sources and targets." kind="ConnectionTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="icons/full/obj16/Refine.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Refine_Abstraction_Abstraction_Edge"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.req.palette.node.Requirement" label="Requirement" description="A requirement specifies a capability or condition that must (or should) be satisfied." kind="CreationTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="icons/full/obj16/Requirement.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Requirement_Class_Shape"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Requirement_Class_ComponentNestedClassifierLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Requirement_Class_InterfaceNestedClassifierLabel"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Requirement_Class_Shape_CN"/>
+      </elementDescriptors>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Requirement_Class_ClassNestedClassifierLabel"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.req.palette.edge.Satisfy_Abstraction" label="Satisfy" description="A Satisfy relationship is a dependency between a requirement and a model element that fulfills the requirement." kind="ConnectionTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="icons/full/obj16/Satisfy.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Satisfy_Abstraction_Abstraction_Edge"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:StackConfiguration" id="org.eclipse.papyrus.sysML.req.palette.node.stack.TestCase" label="TestCase" description="Behavior for TestCase creation">
+      <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.req.palette.node.TestCase_Behavior_Activity" label="TestCase Activity" description="A test case is a method for verifying a requirement is satisfied." kind="CreationTool">
+        <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="icons/full/obj16/Activity.gif"/>
+        <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+          <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.TestCase_Activity_NamedElement_Shape"/>
+        </elementDescriptors>
+      </ownedConfigurations>
+      <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.req.palette.node.TestCase_Behavior_FunctionBehavior" label="TestCase FunctionBehavior" description="A test case is a method for verifying a requirement is satisfied." kind="CreationTool">
+        <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="icons/full/obj16/FunctionBehavior.gif"/>
+        <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+          <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.TestCase_FunctionBehavior_NamedElement_Shape"/>
+        </elementDescriptors>
+      </ownedConfigurations>
+      <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.req.palette.node.TestCase_Behavior_Interaction" label="TestCase Interaction" description="A test case is a method for verifying a requirement is satisfied." kind="CreationTool">
+        <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="icons/full/obj16/Interaction.gif"/>
+        <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+          <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.TestCase_Interaction_NamedElement_Shape"/>
+        </elementDescriptors>
+      </ownedConfigurations>
+      <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.req.palette.node.TestCase_Behavior_OpaqueBehavior" label="TestCase OpaqueBehavior" description="A test case is a method for verifying a requirement is satisfied." kind="CreationTool">
+        <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="icons/full/obj16/OpaqueBehavior.gif"/>
+        <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+          <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.TestCase_OpaqueBehavior_NamedElement_Shape"/>
+        </elementDescriptors>
+      </ownedConfigurations>
+      <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.req.palette.node.TestCase_Operation" label="TestCase Operation" description="A test case is a method for verifying a requirement is satisfied." kind="CreationTool">
+        <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="icons/full/obj16/Operation.gif"/>
+        <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+          <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.TestCase_Operation_Operation_ClassOperationLabel"/>
+        </elementDescriptors>
+        <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+          <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.TestCase_Operation_Operation_ComponentOperationLabel"/>
+        </elementDescriptors>
+        <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+          <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.TestCase_Operation_Operation_DataTypeOperationLabel"/>
+        </elementDescriptors>
+        <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+          <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.TestCase_Operation_Operation_InterfaceOperationLabel"/>
+        </elementDescriptors>
+        <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+          <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.TestCase_Operation_Operation_OperationLabel"/>
+        </elementDescriptors>
+        <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+          <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.TestCase_Operation_Operation_PrimitiveTypeOperationLabel"/>
+        </elementDescriptors>
+      </ownedConfigurations>
+      <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.req.palette.node.TestCase_Behavior_ProtocolStateMachine" label="TestCase ProtocolStateMachine" description="A test case is a method for verifying a requirement is satisfied." kind="CreationTool">
+        <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="icons/full/obj16/ProtocolStateMachine.gif"/>
+        <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+          <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.TestCase_ProtocolStateMachine_NamedElement_Shape"/>
+        </elementDescriptors>
+      </ownedConfigurations>
+      <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.req.palette.node.TestCase_Behavior_StateMachine" label="TestCase StateMachine" description="A test case is a method for verifying a requirement is satisfied." kind="CreationTool">
+        <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.uml2.uml.edit" iconPath="icons/full/obj16/StateMachine.gif"/>
+        <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+          <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.TestCase_StateMachine_NamedElement_Shape"/>
+        </elementDescriptors>
+      </ownedConfigurations>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.req.palette.edge.Trace_Abstraction" label="Trace" description="The Trace stereotype specializes UML4SysML Trace and DirectedRelationshipPropertyPath to enable traces to identify their sources and targets by a multi-level path of accessible properties from context blocks for the sources and targets." kind="ConnectionTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="icons/full/obj16/Trace.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Trace_Abstraction_Abstraction_Edge"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+    <ownedConfigurations xmi:type="paletteconfiguration:ToolConfiguration" id="org.eclipse.papyrus.sysML.req.palette.edge.Verify_Abstraction" label="Verify" description="A Verify relationship is a dependency between a requirement and a test case or other model element that can determine whether a system fulfills the requirement." kind="ConnectionTool">
+      <icon xmi:type="paletteconfiguration:IconDescriptor" pluginID="org.eclipse.papyrus.sysml16.edit" iconPath="icons/full/obj16/Verify.gif"/>
+      <elementDescriptors xmi:type="paletteconfiguration:ElementDescriptor">
+        <elementType xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16DiUML.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Verify_Abstraction_Abstraction_Edge"/>
+      </elementDescriptors>
+    </ownedConfigurations>
+  </drawerConfigurations>
+</paletteconfiguration:PaletteConfiguration>

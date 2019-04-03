@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+	<properties>
+		<title>SysML - Tools Generation Standard Operating Procedure</title>
+	</properties>
+
+	<body>
+		<section name="Contexte">
+			<p>Sometimes the sysml profile norm do not reflect the text/pdf norm
+				document. It is pertinent to modify the sysml profile to add new
+				operations.
+			</p>
+		</section>
+
+		<section name="SOP">
+			<subsection name="Documentation">
+				<p>Reference your new operations here, in order to be able to process the model automatically in a near future.:
+					/org.eclipse.papyrus.sysml16/doc/SysML-Extension.di
+				</p>
+				<p>Open it with UML Editor to access UML type and cardinality</p>
+				<p>Add your requirements here by creating a new derive requirement with Papyrus Req plugin:
+					/org.eclipse.papyrus.sysml16/doc/org.eclipse.papyrus.sysml16.di
+				</p>
+				<p>You should export the org.eclipse.papyrus.sysml16 plugin to have access to the pathmap for the different UML models, such as:</p>
+				<ul>
+					<li>OMG norm: resources/doc/omg.sysml.uml</li>
+					<li>MDE model: resources/doc/org.eclipse.papyrus.sysml16.uml</li>
+					<li>SysML 1.6 extension model: resources/doc/SysML-Extension.uml</li>
+				</ul>
+			</subsection>
+			<subsection name="SysML profile: semantic upgrade">
+				<p>Modify
+					/org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.uml to
+					add a new operation, with its parameters.
+				</p>
+				<p>Open the genmodel, right click on ti and click on Reload the UML profile and regenerate the Model and Edit code.
+				</p>
+				<p>Validate your enhancement by looking in	/org.eclipse.papyrus.sysml16/src-gen
+				</p>
+				<p>Implement the function in the /org.eclipse.papyrus.sysml16/src; do not forget to reference the requirement
+				</p>
+				<p>You have to procide eventually a new XFactoryCustomImpl that has to be referenced in the plugin.xml</p>
+			</subsection>
+			<subsection name="SysML diagram upgrade">
+				<p>Modify the Expansion diagram of your
+					/org.eclipse.papyrus.sysml16.diagram.blockdefinition/resources/configuration/blockDefinitionDiagramConfig.expansionmodel
+				</p>
+				<p>Add new representation, a new induced representation and do not forget to add it to the context.</p>
+				<p>Becareful to replace with text editor the kind href="../../../../plugin/org.eclipse.papyrus.uml.diagram.common/ with kind href="platform:/plugin/ </p>
+
+			</subsection>
+			<subsection name="SysML element type">
+				<p>/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations
+				</p>
+				<p>Add a new Specialization type configuration and eventually its edit helper</p>
+			</subsection>
+			<subsection name="Palette">
+				<p>Add your element in the palette:
+					/org.eclipse.papyrus.sysml16.diagram.blockdefinition/resources/palette/blockDefinitionDiagram.paletteconfiguration
+				</p>
+			</subsection>
+			<subsection name="CSS">
+				<p>Modify the CSS to display your compartment:/org.eclipse.papyrus.sysml16.diagram.blockdefinition/resources/style/blockDefinitionDiagram.css
+				</p>
+			</subsection>
+			<subsection name="Test">
+				<p>Implement your test in
+					/org.eclipse.papyrus.sysml16.tests/src/org/eclipse/papyrus/sysml16/tests/blocks/BlockTest.java
+				</p>
+				<p>Open a runtime, you should be able to do the move from the palette to your compartment
+				</p>
+			</subsection>
+			<subsection name="todo">
+				<img alt=""
+					src="../img/developer/normUpgrade/SysML16Di-extension.elementtypesconfigurations.png" />
+
+			</subsection>
+		</section>
+
+	</body>
+
+</document>

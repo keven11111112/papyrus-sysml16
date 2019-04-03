@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+
+<!--
+ Copyright (c) 2019 CEA LIST.
+ 
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License 2.0
+  which accompanies this distribution, and is available at
+  https://www.eclipse.org/legal/epl-2.0/ 
+
+  SPDX-License-Identifier: EPL-2.0
+ 
+ Contributors:
+   Nicolas FAUVERGUE (CEA LIST) nicolas.fauvergue@cea.fr - Initial API and implementation
+ 
+-->
+
+<plugin>
+   <extension
+         point="org.eclipse.papyrus.infra.services.labelprovider.labelProvider">
+      <labelProvider
+            priority="1700"
+            provider="org.eclipse.papyrus.sysml16.nattable.common.provider.SysMLFlowPortDirectionLabelProvider">
+         <labelProviderContext
+               context="org.eclipse.papyrus.infra.nattable.body.labelprovider">
+         </labelProviderContext>
+      </labelProvider>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.infra.nattable.cellmanager">
+      <cellManager
+            id="org.eclipse.papyrus.sysml16.nattable.common.stereotype.property.cell.manager"
+            manager="org.eclipse.papyrus.sysml16.nattable.common.manager.cell.SysMLStereotypePropertyCellManager"
+            order="250">
+      </cellManager>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.infra.nattable.axismanager">
+      <axisManager
+            id="org.eclipse.papyrus.sysml16.nattable.requirement.axis.manager"
+            manager="org.eclipse.papyrus.sysml16.nattable.common.manager.axis.RequirementAxisManager">
+      </axisManager>
+      <axisManager
+            id="org.eclipse.papyrus.sysml16.nattable.requirement.tree.axis.manager"
+            manager="org.eclipse.papyrus.sysml16.nattable.common.manager.axis.RequirementTreeAxisManager">
+      </axisManager>      
+      
+      <axisManager
+            id="org.eclipse.papyrus.sysml16.nattable.allocate.axis.manager"
+            manager="org.eclipse.papyrus.sysml16.nattable.common.manager.axis.AllocateAxisManager">
+      </axisManager>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.infra.emf.expressions.expressionCatalog">
+      <catalog
+            file="resources/SysML16.expressions">
+      </catalog>
+   </extension>   
+</plugin>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.eclipse.papyrus.sysml</groupId>	
+		<artifactId>org.eclipse.papyrus.sysml16.diagram</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>org.eclipse.papyrus.sysml16.diagram.internalblock</artifactId>
+	<packaging>eclipse-plugin</packaging>
+	<name>org.eclipse.papyrus.sysml16.diagram.internalblock</name>
+	<description>This plugin is in charge of defining the SysML 1.6 Internal Block Diagram using the following frameworks: viewpoint, expansion model, palette and css.</description>
+</project>

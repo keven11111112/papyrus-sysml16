@@ -1,0 +1,15 @@
+bin/
+target/
+*.java._trace
+*.pyc
+.DS_Store
+*.xtendbin
+*~
+# Workspace metadata folder created by Oomph when launching tests.
+tests/**/.metadata/
+**/src/site/resources/images/rcptt-screenshots
+# sonarlint temporary directory
+sonarlint/
+# Files and directory used by RcpTT
+workspace/
+*.log

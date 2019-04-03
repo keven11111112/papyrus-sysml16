@@ -1,0 +1,22 @@
+
+= 1 Introduction =
+
+
+= 2 Convention =
+
+==Palette==
+
+All palette should follow the following convention:
+* drawerConfigurations.id=org.eclipse.papyrus.sysML.[bdd|ibd|par|req].palette.[edge|node]
+* drawerConfigurations.label=SysML [BDD|IBD|PAR|REQ] [Edges|Nodes]
+* ownedConfigurations.id=org.eclipse.papyrus.sysML.[bdd|ibd|par|req].palette.[edge|node].XXX
+
+= 3 Support =
+
+To report bugs, suggest improvements, view the status of the Papyrus SysML project, discuss different Papyrus subjects, etc. please use the following references:
+
+* [http://www.eclipse.org/papyrus/ The Papyrus project home page]
+* [https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Papyrus The Papyrus bug submission home page]
+
+= 4 References =
+# [http://www.omg.org/spec/SysML/ OMG SysML]

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Profile xmi:id="RequirementsExtensionProfile" name="RequirementsExtension" URI="http://www.eclipse.org/papyrus/sysml/1.6/RequirementsExtension">
+    <ownedComment xmi:type="uml:Comment" xmi:id="RequirementsExtensionProfile.OwnedComment" annotatedElement="RequirementsExtensionProfile">
+      <body>This non-normative extension includes stereotypes for a simplified requirements taxonomy that is intended to be further adapted as required to support the particular needs of the application or organization. The requirements categories in this example include functional, interface, performance, physical requirements, and design constraints&#xD;
+&#xD;
+Some general guidance for applying a requirements profile is as follows:&#xD;
+- The categories should be adapted for the specific application or organization and reflected in the table. This includes agreement on the categories and their associated descriptions, stereotype properties, and constraints. Additional categories can be added by further subclassing the categories in the table below, or adding additional categories at the pier level of these categories.&#xD;
+- The default requirement category should be the generic «requirement».&#xD;
+- Apply the more specialized requirement stereotype (functional, interface, performance, physical, design constraint) as applicable and ensure consistency with the description, stereotype properties, and constraints.&#xD;
+- A specific text requirement can include the application of more than one requirement category, in which case, each stereotype should be shown in guillemets.</body>
+    </ownedComment>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="RequirementsExtensionProfile.PackageImport.UML_PrimitiveTypes">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="RequirementsExtensionProfile.PackageImport.UML_Metamodel">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="RequirementsExtensionProfile.PackageImport.SysML_Requirements">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="RequirementsExtensionProfile.PackageImport.SysML">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="RequirementsExtensionProfile.RiskKind" name="RiskKind">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="RequirementsExtensionProfile.RiskKind.High" name="High">
+        <ownedComment xmi:type="uml:Comment" xmi:id="RequirementsExtensionProfile.RiskKind.High.OwnedComment" annotatedElement="RequirementsExtensionProfile.RiskKind.High">
+          <body>High indicates an unacceptable level of risk</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="RequirementsExtensionProfile.RiskKind.Medium" name="Medium">
+        <ownedComment xmi:type="uml:Comment" xmi:id="RequirementsExtensionProfile.RiskKind.Medium.OwnedComment" annotatedElement="RequirementsExtensionProfile.RiskKind.Medium">
+          <body>Medium indicates an acceptable level of risk</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="RequirementsExtensionProfile.RiskKind.Low" name="Low">
+        <ownedComment xmi:type="uml:Comment" xmi:id="RequirementsExtensionProfile.RiskKind.Low.OwnedComment" annotatedElement="RequirementsExtensionProfile.RiskKind.Low">
+          <body>Low indicates a minimal level of risk or no risk</body>
+        </ownedComment>
+      </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="RequirementsExtensionProfile.VerificationMethodKind" name="VerificationMethodKind">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="RequirementsExtensionProfile.VerificationMethodKind.Analysis" name="Analysis">
+        <ownedComment xmi:type="uml:Comment" xmi:id="RequirementsExtensionProfile.VerificationMethodKind.Analysis.OwnedComment" annotatedElement="RequirementsExtensionProfile.VerificationMethodKind.Analysis">
+          <body>Analysis indicates that verification will be performed by technical evaluation using mathematical representations, charts, graphs, circuit diagrams, data reduction, or representative data. Analysis also includes the verification of requirements under conditions, which are simulated or modeled; where the results are derived from the analysis of the results produced by the model.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="RequirementsExtensionProfile.VerificationMethodKind.Demonstration" name="Demonstration">
+        <ownedComment xmi:type="uml:Comment" xmi:id="RequirementsExtensionProfile.VerificationMethodKind.Demonstration.OwnedComment" annotatedElement="RequirementsExtensionProfile.VerificationMethodKind.Demonstration">
+          <body>Demonstration indicates that verification will be performed by operation, movement or adjustment of the item under specific conditions to perform the design functions without recording of quantitative data.. Demonstration is typically considered the least restrictive of the verification types.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="RequirementsExtensionProfile.VerificationMethodKind.Inspection" name="Inspection">
+        <ownedComment xmi:type="uml:Comment" xmi:id="RequirementsExtensionProfile.VerificationMethodKind.Inspection.OwnedComment" annotatedElement="RequirementsExtensionProfile.VerificationMethodKind.Inspection">
+          <body>Inspection indicates that verification will be performed by examination of the item, reviewing descriptive documentation, and comparing the appropriate characteristics with a predetermined standard to determine conformance to requirements without the use of special laboratory equipment or procedures.</body>
+        </ownedComment>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="RequirementsExtensionProfile.VerificationMethodKind.Test" name="Test">
+        <ownedComment xmi:type="uml:Comment" xmi:id="RequirementsExtensionProfile.VerificationMethodKind.Test.OwnedComment" annotatedElement="RequirementsExtensionProfile.VerificationMethodKind.Test">
+          <body>Test indicates that verification will be performed through systematic exercising of the applicable item under appropriate conditions with instrumentation to measure required parameters and the collection, analysis, and evaluation of quantitative data to show that measured parameters equal or exceed specified requirements.</body>
+        </ownedComment>
+      </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="RequirementsExtensionProfile.ExtendedRequirement" name="ExtendedRequirement" isAbstract="true">
+      <ownedComment xmi:type="uml:Comment" xmi:id="RequirementsExtensionProfile.ExtendedRequirement.OwnedComment" annotatedElement="RequirementsExtensionProfile.ExtendedRequirement">
+        <body>A mix-in stereotype that contains generally useful attributes for requirements.</body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="RequirementsExtensionProfile.ExtendedRequirement.Generalization_ExtendedRequirement_Requirement">
+        <general xmi:type="uml:Stereotype" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements.stereotype_packagedElement_Requirement"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="RequirementsExtensionProfile.ExtendedRequirement.Property.source" name="source">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="RequirementsExtensionProfile.ExtendedRequirement.Property.source.lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="RequirementsExtensionProfile.ExtendedRequirement.Property.source.upperValue" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="RequirementsExtensionProfile.ExtendedRequirement.Property.risk" name="risk" type="RequirementsExtensionProfile.RiskKind">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="RequirementsExtensionProfile.ExtendedRequirement.Property.risk.lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="RequirementsExtensionProfile.ExtendedRequirement.Property.risk.upperValue" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="RequirementsExtensionProfile.ExtendedRequirement.Property.verifyMethod" name="verifyMethod" type="RequirementsExtensionProfile.VerificationMethodKind">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="RequirementsExtensionProfile.ExtendedRequirement.Property.verifyMethod.lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="RequirementsExtensionProfile.ExtendedRequirement.Property.verifyMethod.upperValue" value="1"/>
+      </ownedAttribute>
+      <icon xmi:type="uml:Image" xmi:id="RequirementsExtensionProfile.ExtendedRequirement.Icon" format="GIF" location="platform:/plugin/org.eclipse.papyrus.sysml16.requirements.extension.edit/icons/full/obj16/ExtendedRequirement.gif">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="RequirementsExtensionProfile.ExtendedRequirement.Icon.EAnnotation" source="image_papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="RequirementsExtensionProfile.ExtendedRequirement.Icon.EAnnotation.image_kind.key" key="image_kind_key" value="icon"/>
+        </eAnnotations>
+      </icon>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="RequirementsExtensionProfile.FunctionalRequirement" name="FunctionalRequirement">
+      <ownedComment xmi:type="uml:Comment" xmi:id="RequirementsExtensionProfile.FunctionalRequirement.OwnedComment" annotatedElement="RequirementsExtensionProfile.FunctionalRequirement">
+        <body>Requirement that specifies an operation or behavior that a system, or part of a system, must perform.</body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="RequirementsExtensionProfile.FunctionalRequirement.Generalization_FunctionalRequirement_ExtendedRequirement" general="RequirementsExtensionProfile.ExtendedRequirement"/>
+      <icon xmi:type="uml:Image" xmi:id="RequirementsExtensionProfile.FunctionalRequirement.Icon" format="GIF" location="platform:/plugin/org.eclipse.papyrus.sysml16.requirements.extension.edit/icons/full/obj16/FunctionalRequirement.gif">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="RequirementsExtensionProfile.FunctionalRequirement.Icon.EAnnotation" source="image_papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="RequirementsExtensionProfile.FunctionalRequirement.Icon.EAnnotation.image_kind_key" key="image_kind_key" value="icon"/>
+        </eAnnotations>
+      </icon>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="RequirementsExtensionProfile.InterfaceRequirement" name="InterfaceRequirement">
+      <ownedComment xmi:type="uml:Comment" xmi:id="RequirementsExtensionProfile.InterfaceRequirement.OwnedComment" annotatedElement="RequirementsExtensionProfile.InterfaceRequirement">
+        <body>Requirement that specifies the ports for connecting systems and system parts and the optionally may include the item flows across the connector and/or interface constraints.</body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="RequirementsExtensionProfile.InterfaceRequirement.Generalization_InterfaceRequirement_ExtendedRequirement" general="RequirementsExtensionProfile.ExtendedRequirement"/>
+      <icon xmi:type="uml:Image" xmi:id="RequirementsExtensionProfile.InterfaceRequirement.Icon" format="GIF" location="platform:/plugin/org.eclipse.papyrus.sysml16.requirements.extension.edit/icons/full/obj16/InterfaceRequirement.gif">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="RequirementsExtensionProfile.InterfaceRequirement.Icon.EAnnotation" source="image_papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="RequirementsExtensionProfile.InterfaceRequirement.Icon.EAnnotation.image_kind_key" key="image_kind_key" value="icon"/>
+        </eAnnotations>
+      </icon>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="RequirementsExtensionProfile.PerformanceRequirement" name="PerformanceRequirement">
+      <ownedComment xmi:type="uml:Comment" xmi:id="RequirementsExtensionProfile.PerformanceRequirement.OwnedComment" annotatedElement="RequirementsExtensionProfile.PerformanceRequirement">
+        <body>Requirement that quantitavely measures the extent to which a system, or a system part, satisfies a required capability or condition.</body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="RequirementsExtensionProfile.PerformanceRequirement.Generalization_PerformanceRequirement_ExtendedRequirement" general="RequirementsExtensionProfile.ExtendedRequirement"/>
+      <icon xmi:type="uml:Image" xmi:id="RequirementsExtensionProfile.PerformanceRequirement.Icon" format="GIF" location="platform:/plugin/org.eclipse.papyrus.sysml16.requirements.extension.edit/icons/full/obj16/PerformanceRequirement.gif">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="RequirementsExtensionProfile.PerformanceRequirement.EAnnotation" source="image_papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="RequirementsExtensionProfile.PerformanceRequirement.EAnnotation.image_kind_key" key="image_kind_key" value="icon"/>
+        </eAnnotations>
+      </icon>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="RequirementsExtensionProfile.PhysicalRequirement" name="PhysicalRequirement">
+      <ownedComment xmi:type="uml:Comment" xmi:id="RequirementsExtensionProfile.PhysicalRequirement.OwnedComment" annotatedElement="RequirementsExtensionProfile.PhysicalRequirement">
+        <body>Requirement that specifies physical characteristics and/or physical constraints of the system, or a system part.</body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="RequirementsExtensionProfile.PhysicalRequirement.Generalization_PhysicalRequirement_ExtendedRequirement" general="RequirementsExtensionProfile.ExtendedRequirement"/>
+      <icon xmi:type="uml:Image" xmi:id="RequirementsExtensionProfile.PhysicalRequirement.Icon" format="GIF" location="platform:/plugin/org.eclipse.papyrus.sysml16.requirements.extension.edit/icons/full/obj16/PhysicalRequirement.gif">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="RequirementsExtensionProfile.PhysicalRequirement.Icon.EAnnotation" source="image_papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="RequirementsExtensionProfile.PhysicalRequirement.Icon.EAnnotation.image_kind_key" key="image_kind_key" value="icon"/>
+        </eAnnotations>
+      </icon>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="RequirementsExtensionProfile.DesignConstraint" name="DesignConstraint">
+      <ownedComment xmi:type="uml:Comment" xmi:id="RequirementsExtensionProfile.DesignConstraint.OwnedComment" annotatedElement="RequirementsExtensionProfile.DesignConstraint">
+        <body>Requirement that specifies a constraint on the implementation of the system or system part, such as the system must use a commercial off the shelf component.</body>
+      </ownedComment>
+      <generalization xmi:type="uml:Generalization" xmi:id="RequirementsExtensionProfile.DesignConstraint.OwnedComment.Generalization_DesignConstraint_ExtendedRequirement" general="RequirementsExtensionProfile.ExtendedRequirement"/>
+      <icon xmi:type="uml:Image" xmi:id="RequirementsExtensionProfile.DesignConstraint.OwnedComment.Icon" format="GIF" location="platform:/plugin/org.eclipse.papyrus.sysml16.requirements.extension.edit/icons/full/obj16/DesignConstraint.gif">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="RequirementsExtensionProfile.DesignConstraint.OwnedComment.Icon.EAnnotation" source="image_papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="RequirementsExtensionProfile.DesignConstraint.OwnedComment.Icon.EAnnotation.image_kind_key" key="image_kind_key" value="icon"/>
+        </eAnnotations>
+      </icon>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="RequirementsExtensionProfile.ProfileApplication.Ecore">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="RequirementsExtensionProfile.ProfileApplication.Ecore.EAnnotation" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Profile>
+  <Ecore:EPackage xmi:id="RequirementsExtensionProfile.AppliedStereotype.Ecore__EPackage.ExtendedRequirement" base_Package="RequirementsExtensionProfile" packageName="requirementsextension" nsPrefix="RequirementsExtension" nsURI="http://www.eclipse.org/papyrus/SysML/1.6/RequirementsExtension" basePackage="org.eclipse.papyrus.sysml16" prefix="RequirementsExtension"/>
+</xmi:XMI>

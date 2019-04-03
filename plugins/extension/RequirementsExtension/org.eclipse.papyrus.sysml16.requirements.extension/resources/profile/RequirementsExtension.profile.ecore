@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="requirementsextension" nsURI="http://www.eclipse.org/papyrus/SysML/1.6/RequirementsExtension"
+    nsPrefix="RequirementsExtension">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="documentation" value="This non-normative extension includes stereotypes for a simplified requirements taxonomy that is intended to be further adapted as required to support the particular needs of the application or organization. The requirements categories in this example include functional, interface, performance, physical requirements, and design constraints&#xD;&#xA;&#xD;&#xA;Some general guidance for applying a requirements profile is as follows:&#xD;&#xA;- The categories should be adapted for the specific application or organization and reflected in the table. This includes agreement on the categories and their associated descriptions, stereotype properties, and constraints. Additional categories can be added by further subclassing the categories in the table below, or adding additional categories at the pier level of these categories.&#xD;&#xA;- The default requirement category should be the generic «requirement».&#xD;&#xA;- Apply the more specialized requirement stereotype (functional, interface, performance, physical, design constraint) as applicable and ensure consistency with the description, stereotype properties, and constraints.&#xD;&#xA;- A specific text requirement can include the application of more than one requirement category, in which case, each stereotype should be shown in guillemets."/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <details key="originalName" value="RequirementsExtension"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EEnum" name="RiskKind">
+    <eLiterals name="High">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="High indicates an unacceptable level of risk"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="Medium" value="1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Medium indicates an acceptable level of risk"/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="Low" value="2">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Low indicates a minimal level of risk or no risk"/>
+      </eAnnotations>
+    </eLiterals>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="VerificationMethodKind">
+    <eLiterals name="Analysis">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Analysis indicates that verification will be performed by technical evaluation using mathematical representations, charts, graphs, circuit diagrams, data reduction, or representative data. Analysis also includes the verification of requirements under conditions, which are simulated or modeled; where the results are derived from the analysis of the results produced by the model."/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="Demonstration" value="1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Demonstration indicates that verification will be performed by operation, movement or adjustment of the item under specific conditions to perform the design functions without recording of quantitative data.. Demonstration is typically considered the least restrictive of the verification types."/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="Inspection" value="2">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Inspection indicates that verification will be performed by examination of the item, reviewing descriptive documentation, and comparing the appropriate characteristics with a predetermined standard to determine conformance to requirements without the use of special laboratory equipment or procedures."/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals name="Test" value="3">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Test indicates that verification will be performed through systematic exercising of the applicable item under appropriate conditions with instrumentation to measure required parameters and the collection, analysis, and evaluation of quantitative data to show that measured parameters equal or exceed specified requirements."/>
+      </eAnnotations>
+    </eLiterals>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExtendedRequirement" abstract="true"
+      eSuperTypes="../../../org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//requirements/Requirement">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A mix-in stereotype that contains generally useful attributes for requirements."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" ordered="false"
+        eType="ecore:EDataType ../../../org.eclipse.uml2.types/model/Types.ecore#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="risk" ordered="false" eType="#//RiskKind"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="verifyMethod" ordered="false"
+        eType="#//VerificationMethodKind"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionalRequirement" eSuperTypes="#//ExtendedRequirement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="InterfaceRequirement" eSuperTypes="#//ExtendedRequirement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PerformanceRequirement" eSuperTypes="#//ExtendedRequirement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PhysicalRequirement" eSuperTypes="#//ExtendedRequirement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DesignConstraint" eSuperTypes="#//ExtendedRequirement"/>
+</ecore:EPackage>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:constraints="http://www.eclipse.org/papyrus/constraints/0.9" xmlns:contexts="http://www.eclipse.org/papyrus/properties/contexts/0.9">
+  <contexts:Context xmi:id="_zKeWgFIFEemVYZ-fKVkVmQ" name="RequirementsExtension">
+    <dependencies href="ppe:/context/org.eclipse.papyrus.uml.properties/Model/UML/UML.ctx#_69QJkKDJEeSZxfCXzZz3-w"/>
+    <dependencies href="ppe:/context/org.eclipse.papyrus.sysml16.ui/resources/properties/SysML1.6.ctx#_z-Na8M1XEeSGVbFNM4m8gQ"/>
+    <tabs xmi:id="_0HKoQFIFEemVYZ-fKVkVmQ" label="SysML 1.6" id="osysml16" category="org.eclipse.papyrus" priority="5">
+      <sections xmi:id="_0HUZQFIFEemVYZ-fKVkVmQ" name="Single InterfaceRequirement" sectionFile="ui/SingleInterfaceRequirement.xwt">
+        <widget href="ui/SingleInterfaceRequirement.xwt#/"/>
+      </sections>
+      <sections xmi:id="_0HUZQVIFEemVYZ-fKVkVmQ" name="Multiple InterfaceRequirement" sectionFile="ui/MultipleInterfaceRequirement.xwt">
+        <widget href="ui/MultipleInterfaceRequirement.xwt#/"/>
+      </sections>
+      <sections xmi:id="_0HVAUFIFEemVYZ-fKVkVmQ" name="Single ExtendedRequirement" sectionFile="ui/SingleExtendedRequirement.xwt">
+        <widget href="ui/SingleExtendedRequirement.xwt#/"/>
+      </sections>
+      <sections xmi:id="_0HVAUVIFEemVYZ-fKVkVmQ" name="Multiple ExtendedRequirement" sectionFile="ui/MultipleExtendedRequirement.xwt">
+        <widget href="ui/MultipleExtendedRequirement.xwt#/"/>
+      </sections>
+      <sections xmi:id="_0HVnYFIFEemVYZ-fKVkVmQ" name="Single PhysicalRequirement" sectionFile="ui/SinglePhysicalRequirement.xwt">
+        <widget href="ui/SinglePhysicalRequirement.xwt#/"/>
+      </sections>
+      <sections xmi:id="_0HVnYVIFEemVYZ-fKVkVmQ" name="Multiple PhysicalRequirement" sectionFile="ui/MultiplePhysicalRequirement.xwt">
+        <widget href="ui/MultiplePhysicalRequirement.xwt#/"/>
+      </sections>
+      <sections xmi:id="_0HVnYlIFEemVYZ-fKVkVmQ" name="Single DesignConstraint" sectionFile="ui/SingleDesignConstraint.xwt">
+        <widget href="ui/SingleDesignConstraint.xwt#/"/>
+      </sections>
+      <sections xmi:id="_0HWOcFIFEemVYZ-fKVkVmQ" name="Multiple DesignConstraint" sectionFile="ui/MultipleDesignConstraint.xwt">
+        <widget href="ui/MultipleDesignConstraint.xwt#/"/>
+      </sections>
+      <sections xmi:id="_0HWOcVIFEemVYZ-fKVkVmQ" name="Single PerformanceRequirement" sectionFile="ui/SinglePerformanceRequirement.xwt">
+        <widget href="ui/SinglePerformanceRequirement.xwt#/"/>
+      </sections>
+      <sections xmi:id="_0HWOclIFEemVYZ-fKVkVmQ" name="Multiple PerformanceRequirement" sectionFile="ui/MultiplePerformanceRequirement.xwt">
+        <widget href="ui/MultiplePerformanceRequirement.xwt#/"/>
+      </sections>
+      <sections xmi:id="_0HW1gFIFEemVYZ-fKVkVmQ" name="Single FunctionalRequirement" sectionFile="ui/SingleFunctionalRequirement.xwt">
+        <widget href="ui/SingleFunctionalRequirement.xwt#/"/>
+      </sections>
+      <sections xmi:id="_0HXckFIFEemVYZ-fKVkVmQ" name="Multiple FunctionalRequirement" sectionFile="ui/MultipleFunctionalRequirement.xwt">
+        <widget href="ui/MultipleFunctionalRequirement.xwt#/"/>
+      </sections>
+    </tabs>
+    <views xmi:id="_zKeWgVIFEemVYZ-fKVkVmQ" name="Single InterfaceRequirement" sections="_0HUZQFIFEemVYZ-fKVkVmQ" automaticContext="true" datacontexts="_zKeWqFIFEemVYZ-fKVkVmQ">
+      <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_zKeWglIFEemVYZ-fKVkVmQ" name="isSingleInterfaceRequirement">
+        <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+        <properties xsi:type="constraints:ValueProperty" xmi:id="_zKeWg1IFEemVYZ-fKVkVmQ" name="stereotypeName" value="RequirementsExtension::InterfaceRequirement"/>
+      </constraints>
+    </views>
+    <views xmi:id="_zKeWhFIFEemVYZ-fKVkVmQ" elementMultiplicity="-1" name="Multiple InterfaceRequirement" sections="_0HUZQVIFEemVYZ-fKVkVmQ" automaticContext="true" datacontexts="_zKeWqFIFEemVYZ-fKVkVmQ">
+      <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_zKeWhVIFEemVYZ-fKVkVmQ" name="isMultipleInterfaceRequirement">
+        <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+        <properties xsi:type="constraints:ValueProperty" xmi:id="_zKeWhlIFEemVYZ-fKVkVmQ" name="stereotypeName" value="RequirementsExtension::InterfaceRequirement"/>
+      </constraints>
+    </views>
+    <views xmi:id="_zKeWh1IFEemVYZ-fKVkVmQ" name="Single ExtendedRequirement" sections="_0HVAUFIFEemVYZ-fKVkVmQ" automaticContext="true" datacontexts="_zKeWqlIFEemVYZ-fKVkVmQ">
+      <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_zKeWiFIFEemVYZ-fKVkVmQ" name="isSingleExtendedRequirement">
+        <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+        <properties xsi:type="constraints:ValueProperty" xmi:id="_zKeWiVIFEemVYZ-fKVkVmQ" name="stereotypeName" value="RequirementsExtension::ExtendedRequirement"/>
+      </constraints>
+    </views>
+    <views xmi:id="_zKeWilIFEemVYZ-fKVkVmQ" elementMultiplicity="-1" name="Multiple ExtendedRequirement" sections="_0HVAUVIFEemVYZ-fKVkVmQ" automaticContext="true" datacontexts="_zKeWqlIFEemVYZ-fKVkVmQ">
+      <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_zKeWi1IFEemVYZ-fKVkVmQ" name="isMultipleExtendedRequirement">
+        <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+        <properties xsi:type="constraints:ValueProperty" xmi:id="_zKeWjFIFEemVYZ-fKVkVmQ" name="stereotypeName" value="RequirementsExtension::ExtendedRequirement"/>
+      </constraints>
+    </views>
+    <views xmi:id="_zKeWjVIFEemVYZ-fKVkVmQ" name="Single PhysicalRequirement" sections="_0HVnYFIFEemVYZ-fKVkVmQ" automaticContext="true" datacontexts="_zKeWrlIFEemVYZ-fKVkVmQ">
+      <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_zKeWjlIFEemVYZ-fKVkVmQ" name="isSinglePhysicalRequirement">
+        <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+        <properties xsi:type="constraints:ValueProperty" xmi:id="_zKeWj1IFEemVYZ-fKVkVmQ" name="stereotypeName" value="RequirementsExtension::PhysicalRequirement"/>
+      </constraints>
+    </views>
+    <views xmi:id="_zKeWkFIFEemVYZ-fKVkVmQ" elementMultiplicity="-1" name="Multiple PhysicalRequirement" sections="_0HVnYVIFEemVYZ-fKVkVmQ" automaticContext="true" datacontexts="_zKeWrlIFEemVYZ-fKVkVmQ">
+      <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_zKeWkVIFEemVYZ-fKVkVmQ" name="isMultiplePhysicalRequirement">
+        <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+        <properties xsi:type="constraints:ValueProperty" xmi:id="_zKeWklIFEemVYZ-fKVkVmQ" name="stereotypeName" value="RequirementsExtension::PhysicalRequirement"/>
+      </constraints>
+    </views>
+    <views xmi:id="_zKeWk1IFEemVYZ-fKVkVmQ" name="Single DesignConstraint" sections="_0HVnYlIFEemVYZ-fKVkVmQ" automaticContext="true" datacontexts="_zKeWqVIFEemVYZ-fKVkVmQ">
+      <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_zKeWlFIFEemVYZ-fKVkVmQ" name="isSingleDesignConstraint">
+        <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+        <properties xsi:type="constraints:ValueProperty" xmi:id="_zKeWlVIFEemVYZ-fKVkVmQ" name="stereotypeName" value="RequirementsExtension::DesignConstraint"/>
+      </constraints>
+    </views>
+    <views xmi:id="_zKeWllIFEemVYZ-fKVkVmQ" elementMultiplicity="-1" name="Multiple DesignConstraint" sections="_0HWOcFIFEemVYZ-fKVkVmQ" automaticContext="true" datacontexts="_zKeWqVIFEemVYZ-fKVkVmQ">
+      <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_zKeWl1IFEemVYZ-fKVkVmQ" name="isMultipleDesignConstraint">
+        <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+        <properties xsi:type="constraints:ValueProperty" xmi:id="_zKeWmFIFEemVYZ-fKVkVmQ" name="stereotypeName" value="RequirementsExtension::DesignConstraint"/>
+      </constraints>
+    </views>
+    <views xmi:id="_zKeWmVIFEemVYZ-fKVkVmQ" name="Single PerformanceRequirement" sections="_0HWOcVIFEemVYZ-fKVkVmQ" automaticContext="true" datacontexts="_zKeWplIFEemVYZ-fKVkVmQ">
+      <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_zKeWmlIFEemVYZ-fKVkVmQ" name="isSinglePerformanceRequirement">
+        <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+        <properties xsi:type="constraints:ValueProperty" xmi:id="_zKeWm1IFEemVYZ-fKVkVmQ" name="stereotypeName" value="RequirementsExtension::PerformanceRequirement"/>
+      </constraints>
+    </views>
+    <views xmi:id="_zKeWnFIFEemVYZ-fKVkVmQ" elementMultiplicity="-1" name="Multiple PerformanceRequirement" sections="_0HWOclIFEemVYZ-fKVkVmQ" automaticContext="true" datacontexts="_zKeWplIFEemVYZ-fKVkVmQ">
+      <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_zKeWnVIFEemVYZ-fKVkVmQ" name="isMultiplePerformanceRequirement">
+        <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+        <properties xsi:type="constraints:ValueProperty" xmi:id="_zKeWnlIFEemVYZ-fKVkVmQ" name="stereotypeName" value="RequirementsExtension::PerformanceRequirement"/>
+      </constraints>
+    </views>
+    <views xmi:id="_zKeWn1IFEemVYZ-fKVkVmQ" name="Single FunctionalRequirement" sections="_0HW1gFIFEemVYZ-fKVkVmQ" automaticContext="true" datacontexts="_zKeWp1IFEemVYZ-fKVkVmQ">
+      <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_zKeWoFIFEemVYZ-fKVkVmQ" name="isSingleFunctionalRequirement">
+        <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+        <properties xsi:type="constraints:ValueProperty" xmi:id="_zKeWoVIFEemVYZ-fKVkVmQ" name="stereotypeName" value="RequirementsExtension::FunctionalRequirement"/>
+      </constraints>
+    </views>
+    <views xmi:id="_zKeWolIFEemVYZ-fKVkVmQ" elementMultiplicity="-1" name="Multiple FunctionalRequirement" sections="_0HXckFIFEemVYZ-fKVkVmQ" automaticContext="true" datacontexts="_zKeWp1IFEemVYZ-fKVkVmQ">
+      <constraints xsi:type="constraints:SimpleConstraint" xmi:id="_zKeWo1IFEemVYZ-fKVkVmQ" name="isMultipleFunctionalRequirement">
+        <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.1"/>
+        <properties xsi:type="constraints:ValueProperty" xmi:id="_zKeWpFIFEemVYZ-fKVkVmQ" name="stereotypeName" value="RequirementsExtension::FunctionalRequirement"/>
+      </constraints>
+    </views>
+    <dataContexts xmi:id="_zKeWpVIFEemVYZ-fKVkVmQ" name="RequirementsExtension">
+      <elements xmi:id="_zKeWplIFEemVYZ-fKVkVmQ" name="PerformanceRequirement" supertypes="_zKeWqlIFEemVYZ-fKVkVmQ"/>
+      <elements xmi:id="_zKeWp1IFEemVYZ-fKVkVmQ" name="FunctionalRequirement" supertypes="_zKeWqlIFEemVYZ-fKVkVmQ"/>
+      <elements xmi:id="_zKeWqFIFEemVYZ-fKVkVmQ" name="InterfaceRequirement" supertypes="_zKeWqlIFEemVYZ-fKVkVmQ"/>
+      <elements xmi:id="_zKeWqVIFEemVYZ-fKVkVmQ" name="DesignConstraint" supertypes="_zKeWqlIFEemVYZ-fKVkVmQ"/>
+      <elements xmi:id="_zKeWqlIFEemVYZ-fKVkVmQ" name="ExtendedRequirement">
+        <properties xmi:id="_zKeWq1IFEemVYZ-fKVkVmQ" name="source"/>
+        <properties xmi:id="_zKeWrFIFEemVYZ-fKVkVmQ" name="risk" type="Enumeration"/>
+        <properties xmi:id="_zKeWrVIFEemVYZ-fKVkVmQ" name="verifyMethod" type="Enumeration"/>
+        <supertypes href="ppe:/context/org.eclipse.papyrus.sysml16.ui/resources/properties/SysML1.6.ctx#_z-ODvs1XEeSGVbFNM4m8gQ"/>
+      </elements>
+      <elements xmi:id="_zKeWrlIFEemVYZ-fKVkVmQ" name="PhysicalRequirement" supertypes="_zKeWqlIFEemVYZ-fKVkVmQ"/>
+      <modelElementFactory href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@modelElementFactories.2"/>
+    </dataContexts>
+  </contexts:Context>
+</xmi:XMI>

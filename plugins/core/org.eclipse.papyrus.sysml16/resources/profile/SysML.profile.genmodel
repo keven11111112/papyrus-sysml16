@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel"
+    copyrightText="Copyright (c) 2019 CEA LIST.&#xA;&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License 2.0&#xA;which accompanies this distribution, and is available at&#xA;https://www.eclipse.org/legal/epl-2.0/&#xA;&#xA;SPDX-License-Identifier: EPL-2.0&#xA;&#xA;Contributors:&#xA;  Nicolas FAUVERGUE (CEA LIST) nicolas.fauvergue@cea.fr - Initial API and implementation"
+    modelDirectory="/org.eclipse.papyrus.sysml16/src-gen" editDirectory="/org.eclipse.papyrus.sysml16.edit/src-gen"
+    editorDirectory="/org.eclipse.papyrus.sysml16.editor/src-gen" modelPluginID="org.eclipse.papyrus.sysml16"
+    modelName="SysML" editPluginClass="org.eclipse.papyrus.sysml16.provider.SysMLEditPlugin"
+    editorPluginClass="org.eclipse.papyrus.sysml16.presentation.SysMLEditorPlugin"
+    nonNLSMarkers="true" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    testsDirectory="/org.eclipse.papyrus.sysml16.tests/src-gen" testSuiteClass="org.eclipse.papyrus.sysml16.tests.SysMLAllTests"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="7.0" copyrightFields="false"
+    usedGenPackages="../../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../../org.eclipse.uml2.uml.profile.standard/model/Standard.genmodel#//standard ../../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../../org.eclipse.uml2.uml/model/UML.genmodel#//uml"
+    classNamePattern="" operationReflection="true" importOrganizing="true">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="DUPLICATE_FEATURES" value="DISCARD"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="IGNORE"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="DISCARD"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="PROCESS"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="DISCARD"/>
+    <details key="REDEFINING_OPERATIONS" value="REPORT"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="REPORT"/>
+    <details key="DUPLICATE_OPERATIONS" value="DISCARD"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUBSETTING_PROPERTIES" value="REPORT"/>
+    <details key="OPERATION_BODIES" value="IGNORE"/>
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
+    <details key="REDEFINING_PROPERTIES" value="REPORT"/>
+    <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="VALIDATION_DELEGATES" value="IGNORE"/>
+  </genAnnotations>
+  <foreignModel>SysML.profile.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="SysML" basePackage="org.eclipse.papyrus.sysml16"
+      disposableProviderFactory="true" classPackageSuffix="internal.impl" ecorePackage="SysML.profile.ecore#/">
+    <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="SysML.profile.ecore#//Dummy"/>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Activities" basePackage="org.eclipse.papyrus.sysml16"
+        disposableProviderFactory="true" classPackageSuffix="internal.impl" ecorePackage="SysML.profile.ecore#//activities">
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//activities/Continuous"/>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//activities/Rate">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//activities/Rate/base_ActivityEdge"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//activities/Rate/base_ObjectNode"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//activities/Rate/base_Parameter"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//activities/Rate/rate"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//activities/ControlOperator">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//activities/ControlOperator/base_Behavior"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//activities/ControlOperator/base_Operation"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//activities/Discrete"/>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//activities/NoBuffer">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//activities/NoBuffer/base_ObjectNode"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//activities/Optional">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//activities/Optional/base_Parameter"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//activities/Overwrite">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//activities/Overwrite/base_ObjectNode"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//activities/Probability">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//activities/Probability/base_ActivityEdge"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//activities/Probability/base_ParameterSet"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//activities/Probability/probability"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Allocations" basePackage="org.eclipse.papyrus.sysml16"
+        disposableProviderFactory="true" classPackageSuffix="internal.impl" ecorePackage="SysML.profile.ecore#//allocations">
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//allocations/Allocate">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//allocations/Allocate/base_Abstraction"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//allocations/Allocate/getAllocatedFrom">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//allocations/Allocate/getAllocatedFrom/ref"/>
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//allocations/Allocate/getAllocatedFrom/result"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//allocations/Allocate/getAllocatedTo">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//allocations/Allocate/getAllocatedTo/ref"/>
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//allocations/Allocate/getAllocatedTo/result"/>
+        </genOperations>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//allocations/AllocateActivityPartition">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//allocations/AllocateActivityPartition/base_ActivityPartition"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Blocks" basePackage="org.eclipse.papyrus.sysml16"
+        disposableProviderFactory="true" classPackageSuffix="internal.impl" ecorePackage="SysML.profile.ecore#//blocks">
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//blocks/AdjunctProperty">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/AdjunctProperty/base_Property"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/AdjunctProperty/principal"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//blocks/BindingConnector">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/BindingConnector/base_Connector"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//blocks/Block">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/Block/base_Class"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute SysML.profile.ecore#//blocks/Block/isEncapsulated"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//blocks/Block/getReferences"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//blocks/Block/getParts"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//blocks/Block/getFlowProperties"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//blocks/BoundReference">
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" notify="false"
+            createChild="false" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/BoundReference/bindingPath"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/BoundReference/boundEnd"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//blocks/EndPathMultiplicity">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/EndPathMultiplicity/base_Property"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute SysML.profile.ecore#//blocks/EndPathMultiplicity/lower"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute SysML.profile.ecore#//blocks/EndPathMultiplicity/upper"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//blocks/ClassifierBehaviorProperty">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/ClassifierBehaviorProperty/base_Property"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//blocks/ConnectorProperty">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/ConnectorProperty/base_Property"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/ConnectorProperty/connector"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//blocks/DistributedProperty">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/DistributedProperty/base_Property"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="SysML.profile.ecore#//blocks/ElementPropertyPath">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/ElementPropertyPath/base_Element"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/ElementPropertyPath/propertyPath"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//blocks/NestedConnectorEnd">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/NestedConnectorEnd/base_ConnectorEnd"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//blocks/ParticipantProperty">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/ParticipantProperty/base_Property"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/ParticipantProperty/end"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//blocks/PropertySpecificType">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/PropertySpecificType/base_Classifier"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//blocks/ValueType">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/ValueType/base_DataType"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/ValueType/quantityKind"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/ValueType/unit"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="SysML.profile.ecore#//blocks/DirectedRelationshipPropertyPath">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/DirectedRelationshipPropertyPath/base_DirectedRelationship"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/DirectedRelationshipPropertyPath/sourceContext"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/DirectedRelationshipPropertyPath/sourcePropertyPath"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/DirectedRelationshipPropertyPath/targetContext"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//blocks/DirectedRelationshipPropertyPath/targetPropertyPath"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="ConstraintBlocks" basePackage="org.eclipse.papyrus.sysml16"
+        disposableProviderFactory="true" classPackageSuffix="internal.impl" ecorePackage="SysML.profile.ecore#//constraintblocks">
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//constraintblocks/ConstraintBlock">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//constraintblocks/ConstraintBlock/getParameters"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="DeprecatedElements"
+        basePackage="org.eclipse.papyrus.sysml16" disposableProviderFactory="true"
+        classPackageSuffix="internal.impl" ecorePackage="SysML.profile.ecore#//deprecatedelements">
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//deprecatedelements/FlowPort">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//deprecatedelements/FlowPort/base_Port"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute SysML.profile.ecore#//deprecatedelements/FlowPort/direction"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" createChild="false"
+            ecoreFeature="ecore:EAttribute SysML.profile.ecore#//deprecatedelements/FlowPort/isAtomic"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//deprecatedelements/FlowPort/getIcon"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//deprecatedelements/FlowSpecification">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//deprecatedelements/FlowSpecification/base_Interface"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//deprecatedelements/FlowSpecification/getFlowProperties"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="PortsAndFlows" basePackage="org.eclipse.papyrus.sysml16"
+        disposableProviderFactory="true" classPackageSuffix="internal.impl" ecorePackage="SysML.profile.ecore#//portsandflows">
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="SysML.profile.ecore#//portsandflows/FeatureDirectionKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="SysML.profile.ecore#//portsandflows/FeatureDirectionKind/provided"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="SysML.profile.ecore#//portsandflows/FeatureDirectionKind/providedRequired"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="SysML.profile.ecore#//portsandflows/FeatureDirectionKind/required"/>
+      </genEnums>
+      <genEnums xsi:type="genmodel:GenEnum" typeSafeEnumCompatible="false" ecoreEnum="SysML.profile.ecore#//portsandflows/FlowDirectionKind">
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="SysML.profile.ecore#//portsandflows/FlowDirectionKind/in"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="SysML.profile.ecore#//portsandflows/FlowDirectionKind/inout"/>
+        <genEnumLiterals xsi:type="genmodel:GenEnumLiteral" ecoreEnumLiteral="SysML.profile.ecore#//portsandflows/FlowDirectionKind/out"/>
+      </genEnums>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//portsandflows/AcceptChangeStructuralFeatureEventAction">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//portsandflows/AcceptChangeStructuralFeatureEventAction/base_AcceptEventAction"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//portsandflows/ChangeStructuralFeatureEvent">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//portsandflows/ChangeStructuralFeatureEvent/base_ChangeEvent"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//portsandflows/ChangeStructuralFeatureEvent/structuralFeature"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//portsandflows/DirectedFeature">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//portsandflows/DirectedFeature/base_Feature"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute SysML.profile.ecore#//portsandflows/DirectedFeature/featureDirection"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//portsandflows/FlowProperty">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//portsandflows/FlowProperty/base_Property"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute SysML.profile.ecore#//portsandflows/FlowProperty/direction"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//portsandflows/FlowProperty/getIcon"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//portsandflows/FullPort">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//portsandflows/FullPort/base_Port"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//portsandflows/InterfaceBlock">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//portsandflows/InterfaceBlock/getConjugated"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//portsandflows/InvocationOnNestedPortAction">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//portsandflows/InvocationOnNestedPortAction/base_InvocationAction"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//portsandflows/InvocationOnNestedPortAction/onNestedPort"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//portsandflows/ItemFlow">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//portsandflows/ItemFlow/base_InformationFlow"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//portsandflows/ItemFlow/itemProperty"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//portsandflows/ProxyPort">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//portsandflows/ProxyPort/base_Port"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//portsandflows/TriggerOnNestedPort">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//portsandflows/TriggerOnNestedPort/base_Trigger"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//portsandflows/TriggerOnNestedPort/onNestedPort"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/original"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areConjugated">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areConjugated/df1"/>
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areConjugated/df2"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areConjugated.1">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areConjugated.1/fp1"/>
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areConjugated.1/fp2"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areConjugated.2">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areConjugated.2/r1"/>
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areConjugated.2/r2"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areConjugated.3">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areConjugated.3/o1"/>
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areConjugated.3/o2"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areConjugated.4">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areConjugated.4/p1"/>
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areConjugated.4/p2"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areSameConstraintSets">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areSameConstraintSets/cs1"/>
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areSameConstraintSets/cs2"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areSameParameterSets">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areSameParameterSets/ps1"/>
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/areSameParameterSets/ps2"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/haveSameSignatures">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/haveSameSignatures/bf1"/>
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//portsandflows/ConjugatedInterfaceBlock/haveSameSignatures/bf2"/>
+        </genOperations>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//portsandflows/AddFlowPropertyValueOnNestedPortAction">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//portsandflows/AddFlowPropertyValueOnNestedPortAction/onNestedPort"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//portsandflows/AddFlowPropertyValueOnNestedPortAction/base_AddStructuralFeatureValueAction"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="ModelElements" basePackage="org.eclipse.papyrus.sysml16"
+        disposableProviderFactory="true" classPackageSuffix="internal.impl" ecorePackage="SysML.profile.ecore#//modelelements">
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//modelelements/Conform">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//modelelements/Conform/base_Generalization"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//modelelements/ElementGroup">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//modelelements/ElementGroup/base_Comment"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" createChild="false"
+            ecoreFeature="ecore:EAttribute SysML.profile.ecore#//modelelements/ElementGroup/criterion.1"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" notify="false"
+            createChild="false" ecoreFeature="ecore:EReference SysML.profile.ecore#//modelelements/ElementGroup/member.1"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute SysML.profile.ecore#//modelelements/ElementGroup/name"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//modelelements/ElementGroup/orderedMember"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" createChild="false"
+            ecoreFeature="ecore:EAttribute SysML.profile.ecore#//modelelements/ElementGroup/size.1"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//modelelements/ElementGroup/allGroups">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//modelelements/ElementGroup/allGroups/e"/>
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//modelelements/ElementGroup/allGroups/result"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//modelelements/ElementGroup/criterion">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//modelelements/ElementGroup/criterion/result"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//modelelements/ElementGroup/member">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//modelelements/ElementGroup/member/result"/>
+        </genOperations>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//modelelements/ElementGroup/size">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//modelelements/ElementGroup/size/result"/>
+        </genOperations>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//modelelements/Expose">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//modelelements/Expose/base_Dependency"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//modelelements/Problem">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//modelelements/Problem/base_Comment"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//modelelements/Rationale">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//modelelements/Rationale/base_Comment"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//modelelements/Stakeholder">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//modelelements/Stakeholder/base_Classifier"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//modelelements/Stakeholder/concernList"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" createChild="false"
+            ecoreFeature="ecore:EAttribute SysML.profile.ecore#//modelelements/Stakeholder/concern"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//modelelements/View">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//modelelements/View/base_Class"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" notify="false"
+            createChild="false" ecoreFeature="ecore:EReference SysML.profile.ecore#//modelelements/View/stakeholder"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" notify="false"
+            createChild="false" ecoreFeature="ecore:EReference SysML.profile.ecore#//modelelements/View/viewPoint"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//modelelements/Viewpoint">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//modelelements/Viewpoint/base_Class"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" createChild="false"
+            ecoreFeature="ecore:EAttribute SysML.profile.ecore#//modelelements/Viewpoint/concern"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//modelelements/Viewpoint/concernList"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute SysML.profile.ecore#//modelelements/Viewpoint/language"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" notify="false"
+            createChild="false" ecoreFeature="ecore:EReference SysML.profile.ecore#//modelelements/Viewpoint/method"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute SysML.profile.ecore#//modelelements/Viewpoint/presentation"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute SysML.profile.ecore#//modelelements/Viewpoint/purpose"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//modelelements/Viewpoint/stakeholder"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Requirements" basePackage="org.eclipse.papyrus.sysml16"
+        disposableProviderFactory="true" classPackageSuffix="internal.impl" ecorePackage="SysML.profile.ecore#//requirements">
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//requirements/Copy"/>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//requirements/Trace">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//requirements/Trace/getTracedFrom">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//requirements/Trace/getTracedFrom/ref"/>
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//requirements/Trace/getTracedFrom/result"/>
+        </genOperations>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//requirements/Requirement">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//requirements/Requirement/base_Class"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="SysML.profile.ecore#//requirements/AbstractRequirement">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//requirements/AbstractRequirement/base_NamedElement"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" notify="false"
+            createChild="false" ecoreFeature="ecore:EReference SysML.profile.ecore#//requirements/AbstractRequirement/derived"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" notify="false"
+            createChild="false" ecoreFeature="ecore:EReference SysML.profile.ecore#//requirements/AbstractRequirement/derivedFrom"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute SysML.profile.ecore#//requirements/AbstractRequirement/id"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" notify="false"
+            createChild="false" ecoreFeature="ecore:EReference SysML.profile.ecore#//requirements/AbstractRequirement/master"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" notify="false"
+            createChild="false" ecoreFeature="ecore:EReference SysML.profile.ecore#//requirements/AbstractRequirement/refinedBy"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" notify="false"
+            createChild="false" ecoreFeature="ecore:EReference SysML.profile.ecore#//requirements/AbstractRequirement/satisfiedBy"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute SysML.profile.ecore#//requirements/AbstractRequirement/text"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" notify="false"
+            createChild="false" ecoreFeature="ecore:EReference SysML.profile.ecore#//requirements/AbstractRequirement/tracedTo"/>
+        <genFeatures xsi:type="genmodel:GenFeature" property="Readonly" notify="false"
+            createChild="false" ecoreFeature="ecore:EReference SysML.profile.ecore#//requirements/AbstractRequirement/verifiedBy"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//requirements/AbstractRequirement/getSatisfiedBy"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//requirements/AbstractRequirement/getVerifiedBy"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//requirements/AbstractRequirement/getTracedTo"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//requirements/AbstractRequirement/getDerived"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//requirements/AbstractRequirement/getDerivedFrom"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//requirements/AbstractRequirement/getRefinedBy"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//requirements/AbstractRequirement/getMaster"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//requirements/DeriveReqt"/>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//requirements/Refine">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//requirements/Refine/getRefines">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//requirements/Refine/getRefines/ref"/>
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//requirements/Refine/getRefines/result"/>
+        </genOperations>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//requirements/Satisfy">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//requirements/Satisfy/getSatisfies">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//requirements/Satisfy/getSatisfies/ref"/>
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//requirements/Satisfy/getSatisfies/result"/>
+        </genOperations>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//requirements/TestCase">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//requirements/TestCase/base_Behavior"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference SysML.profile.ecore#//requirements/TestCase/base_Operation"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="SysML.profile.ecore#//requirements/Verify">
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="SysML.profile.ecore#//requirements/Verify/getVerifies">
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//requirements/Verify/getVerifies/ref"/>
+          <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="SysML.profile.ecore#//requirements/Verify/getVerifies/result"/>
+        </genOperations>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composite xmlns:j="clr-namespace:java.lang"
+	xmlns:ppel="clr-namespace:org.eclipse.papyrus.infra.properties.ui.widgets.layout"
+	xmlns:x="http://www.eclipse.org/xwt" xmlns="http://www.eclipse.org/xwt/presentation"
+	xmlns:ppe="clr-namespace:org.eclipse.papyrus.infra.properties.ui.widgets">
+	<Composite.layout>
+		<ppel:PropertiesLayout></ppel:PropertiesLayout>
+	</Composite.layout>
+	<Composite>
+		<Composite.layout>
+			<ppel:PropertiesLayout numColumns="1"></ppel:PropertiesLayout>
+		</Composite.layout>
+		<ppe:ReferenceDialog input="{Binding}"
+			property="SysML:Blocks:DirectedRelationshipPropertyPath:sourceContext"></ppe:ReferenceDialog>
+		<ppe:ReferenceDialog input="{Binding}"
+			property="SysML:Blocks:DirectedRelationshipPropertyPath:targetContext"></ppe:ReferenceDialog>
+	</Composite>
+	<Composite>
+		<Composite.layout>
+			<ppel:PropertiesLayout numColumns="1"></ppel:PropertiesLayout>
+		</Composite.layout>
+		<ppe:MultiReference input="{Binding}"
+			property="SysML:Blocks:DirectedRelationshipPropertyPath:sourcePropertyPath"></ppe:MultiReference>
+		<ppe:MultiReference input="{Binding}"
+			property="SysML:Blocks:DirectedRelationshipPropertyPath:targetPropertyPath"></ppe:MultiReference>
+	</Composite>
+</Composite>

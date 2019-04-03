@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.4"?>
+
+<!--
+ Copyright (c) 2019 CEA LIST.
+ 
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License 2.0
+  which accompanies this distribution, and is available at
+  https://www.eclipse.org/legal/epl-2.0/ 
+
+  SPDX-License-Identifier: EPL-2.0
+ 
+ Contributors:
+   Nicolas FAUVERGUE (CEA LIST) nicolas.fauvergue@cea.fr - Initial API and implementation
+ 
+-->
+
+<plugin>
+
+
+  <extension name="org.eclipse.papyrus.sysml16.validation.constraintProviders" point="org.eclipse.emf.validation.constraintProviders">
+     <category id="org.eclipse.papyrus.sysml16.requirements.extension.validation.category" mandatory="false" name="SysML 1.6 Requirements Extension constraints"/>          
+      <constraintProvider cache="false" mode="Batch">
+         <package namespaceUri="http://www.eclipse.org/papyrus/SysML/1.6/RequirementsExtension"/>
+         
+         <constraints categories="org.eclipse.papyrus.sysml16.requirements.extension.validation.category">
+            
+            <constraint
+                  class="org.eclipse.papyrus.sysml16.requirements.extension.validation.rules.FunctionalRequirementConstraint"
+                  id="constraint.functionalrequirement"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="functionalrequirement"
+                  severity="ERROR"
+                  statusCode="3">
+               <message>%inv_FunctionalRequirementConstraint</message>
+               <description>%inv_FunctionalRequirementConstraint</description>
+            </constraint>
+            <constraint
+                  class="org.eclipse.papyrus.sysml16.requirements.extension.validation.rules.InterfaceRequirementConstraint"
+                  id="constraint.interfacerequirement"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="interfacerequirement"
+                  severity="ERROR"
+                  statusCode="3">
+               <message>%inv_InterfaceRequirementConstraint</message>
+               <description>%inv_InterfaceRequirementConstraint</description>
+            </constraint>
+            <constraint
+                  class="org.eclipse.papyrus.sysml16.requirements.extension.validation.rules.PerformanceRequirementConstraint"
+                  id="constraint.performancerequirement"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="performancerequirement"
+                  severity="ERROR"
+                  statusCode="3">
+               <message>%inv_PerformanceRequirementConstraint</message>
+               <description>%inv_PerformanceRequirementConstraint</description>
+            </constraint>
+            <constraint
+                  class="org.eclipse.papyrus.sysml16.requirements.extension.validation.rules.PhysicalRequirementConstraint"
+                  id="constraint.physicalrequirement"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="physicalrequirement"
+                  severity="ERROR"
+                  statusCode="3">
+               <message>%inv_PhysicalRequirementConstraint</message>
+               <description>%inv_PhysicalRequirementConstraint</description>
+            </constraint>
+            <constraint
+                  class="org.eclipse.papyrus.sysml16.requirements.extension.validation.rules.DesignConstraintConstraint"
+                  id="constraint.designconstraint"
+                  isEnabledByDefault="true"
+                  lang="Java"
+                  mode="Batch"
+                  name="designconstraint"
+                  severity="ERROR"
+                  statusCode="3">
+               <message>%inv_DesignConstraintConstraint</message>
+               <description>%inv_DesignConstraintConstraint</description>
+            </constraint>            
+         </constraints>
+      </constraintProvider>
+   </extension>
+</plugin>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ Copyright (c) 2019 CEA LIST.
+ 
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License 2.0
+  which accompanies this distribution, and is available at
+  https://www.eclipse.org/legal/epl-2.0/ 
+
+  SPDX-License-Identifier: EPL-2.0
+ 
+ Contributors:
+   Nicolas FAUVERGUE (CEA LIST) nicolas.fauvergue@cea.fr - Initial API and implementation
+ 
+-->
+
+<plugin>
+
+  <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://SysML16_LIBRARIES/"
+            target="platform:/plugin/org.eclipse.papyrus.sysml16/resources/library/"/>
+      <mapping
+            source="pathmap://SysML16_PROFILES/"
+            target="platform:/plugin/org.eclipse.papyrus.sysml16/resources/profile/"/>
+      <mapping
+            source="pathmap://SysML16_OMG/"
+            target="platform:/plugin/org.eclipse.papyrus.sysml16/resources/doc/">
+      </mapping>
+   </extension>
+
+   <extension
+         point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            class="org.eclipse.papyrus.sysml16.blocks.BlocksFactoryCustomImpl"
+            uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks">
+      </factory>
+   </extension>
+    <extension
+         point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            class="org.eclipse.papyrus.sysml16.constraintblocks.ConstraintBlocksFactoryCustomImpl"
+            uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ConstraintBlocks">
+      </factory>
+   </extension>    
+   <extension
+         point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            class="org.eclipse.papyrus.sysml16.deprecatedelements.DeprecatEdelementsCustomFactoryImpl"
+            uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/DeprecatedElements">
+      </factory>
+   </extension>
+   <extension
+         point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            class="org.eclipse.papyrus.sysml16.requirements.RequirementsFactoryCustomImpl"
+            uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements">
+      </factory>
+   </extension>
+   <extension
+         point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            class="org.eclipse.papyrus.sysml16.modelelements.ModelElementsFactoryCustomImpl"
+            uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements">
+      </factory>
+   </extension>
+ 
+   <extension
+         point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            class="org.eclipse.papyrus.sysml16.portsandflows.PortsAndFlowsCustomFactoryImpl"
+            uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows">
+      </factory>
+   </extension>
+   
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated SysML.profile -->
+      <package
+            uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML"
+            class="org.eclipse.papyrus.sysml16.sysml.SysMLPackage"
+            genModel="resources/profile/SysML.profile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated SysML.profile -->
+      <package
+            uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Activities"
+            class="org.eclipse.papyrus.sysml16.activities.ActivitiesPackage"
+            genModel="resources/profile/SysML.profile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated SysML.profile -->
+      <package
+            uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Allocations"
+            class="org.eclipse.papyrus.sysml16.allocations.AllocationsPackage"
+            genModel="resources/profile/SysML.profile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated SysML.profile -->
+      <package
+            uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks"
+            class="org.eclipse.papyrus.sysml16.blocks.BlocksPackage"
+            genModel="resources/profile/SysML.profile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated SysML.profile -->
+      <package
+            uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ConstraintBlocks"
+            class="org.eclipse.papyrus.sysml16.constraintblocks.ConstraintBlocksPackage"
+            genModel="resources/profile/SysML.profile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated SysML.profile -->
+      <package
+            uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/DeprecatedElements"
+            class="org.eclipse.papyrus.sysml16.deprecatedelements.DeprecatedElementsPackage"
+            genModel="resources/profile/SysML.profile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated SysML.profile -->
+      <package
+            uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows"
+            class="org.eclipse.papyrus.sysml16.portsandflows.PortsAndFlowsPackage"
+            genModel="resources/profile/SysML.profile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated SysML.profile -->
+      <package
+            uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements"
+            class="org.eclipse.papyrus.sysml16.modelelements.ModelElementsPackage"
+            genModel="resources/profile/SysML.profile.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated SysML.profile -->
+      <package
+            uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements"
+            class="org.eclipse.papyrus.sysml16.requirements.RequirementsPackage"
+            genModel="resources/profile/SysML.profile.genmodel"/>
+   </extension>
+   
+   <extension point="org.eclipse.uml2.uml.generated_package">
+     <profile uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML"
+           location="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+     <profile
+           location="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"
+           uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Activities">
+     </profile>
+     <profile
+           location="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"
+           uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Allocations">
+     </profile>
+     <profile
+           location="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"
+           uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks">
+     </profile>
+     <profile
+           location="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"
+           uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ConstraintBlocks">
+     </profile>
+     <profile
+           location="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"
+           uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/DeprecatedElements">
+     </profile>
+     <profile
+           location="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"
+           uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows">
+     </profile>
+     <profile
+           location="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"
+           uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements">
+     </profile>
+     <profile
+           location="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"
+           uri="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements">
+     </profile>
+  </extension>
+   
+</plugin>

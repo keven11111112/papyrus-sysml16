@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
+  <uml:Package xmi:id="SysML.package_packagedElement_Libraries" name="Libraries">
+    <packagedElement xmi:type="uml:Package" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_ControlValues" name="ControlValues">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_ControlValues.enumeration_packagedElement_ControlValue" name="ControlValueKind">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_ControlValues.enumeration_packagedElement_ControlValue.enumerationLiteral_ownedLiteral_disable" name="disable">
+          <ownedComment xmi:type="uml:Comment" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_ControlValues.enumeration_packagedElement_ControlValue.enumerationLiteral_ownedLiteral_disable._ownedComment.0" annotatedElement="SysML.package_packagedElement_Libraries.package_packagedElement_ControlValues.enumeration_packagedElement_ControlValue.enumerationLiteral_ownedLiteral_disable SysML.package_packagedElement_Libraries.package_packagedElement_ControlValues.enumeration_packagedElement_ControlValue">
+            <body>The disable literal means a termination of an executing behavior that can only be started again from the beginning (compare to suspend).</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_ControlValues.enumeration_packagedElement_ControlValue.enumerationLiteral_ownedLiteral_enable" name="enable">
+          <ownedComment xmi:type="uml:Comment" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_ControlValues.enumeration_packagedElement_ControlValue.enumerationLiteral_ownedLiteral_enable._ownedComment.0" annotatedElement="SysML.package_packagedElement_Libraries.package_packagedElement_ControlValues.enumeration_packagedElement_ControlValue.enumerationLiteral_ownedLiteral_enable SysML.package_packagedElement_Libraries.package_packagedElement_ControlValues">
+            <body>The enable literal means to start a new execution of a behavior (compare to resume).</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes" name="PrimitiveBlocks:ValueTypes">
+      <packagedElement xmi:type="uml:DataType" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Boolean" name="Boolean">
+        <ownedComment xmi:type="uml:Comment" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Boolean._ownedComment.0" annotatedElement="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Boolean">
+          <body>A Boolean value type consists of the predefined values true and false.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Complex" name="Complex">
+        <ownedComment xmi:type="uml:Comment" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Complex._ownedComment.0" annotatedElement="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Complex">
+          <body>A Complex value type represents the mathematical concept of a complex number. A complex number consists of a real part defined by a real number, and an imaginary part defined by a real number multiplied by the square root of -1. Complex numbers are used to express solutions to various forms of mathematical equations.</body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Complex._generalization.SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Number" general="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Number"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Complex_ownedAttribute.imaginaryPart" name="imaginaryPart" type="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Real">
+          <ownedComment xmi:type="uml:Comment" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Complex_ownedAttribute.imaginaryPart._ownedComment.0" annotatedElement="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Complex_ownedAttribute.imaginaryPart">
+            <body>A real number used to express the imaginary part of a complex number.</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Complex_ownedAttribute.realPart" name="realPart" type="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Real">
+          <ownedComment xmi:type="uml:Comment" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Complex_ownedAttribute.realPart._ownedComment.0" annotatedElement="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Complex_ownedAttribute.realPart">
+            <body>A real number used to express the real part of a complex number.</body>
+          </ownedComment>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Integer" name="Integer">
+        <ownedComment xmi:type="uml:Comment" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Integert._ownedComment.0" annotatedElement="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Integer">
+          <body>An Integer value type represents the mathematical concept of an integer number. An Integer value type may be used to type values that hold negative or positive integer quantities, without committing to a specific representation such as a binary or decimal digits with fixed precision or scale.</body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Integer._generalization.SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Number" general="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Number"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Number" name="Number" isAbstract="true">
+        <ownedComment xmi:type="uml:Comment" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Number._ownedComment.0" annotatedElement="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Number">
+          <body>Number is an abstract value type from which other value types that express concepts of mathematical numbers are specialized.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Real" name="Real">
+        <ownedComment xmi:type="uml:Comment" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Real._ownedComment.0" annotatedElement="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Real">
+          <body>A Real value type represents the mathematical concept of a real number. A Real value type may be used to type values that hold continuous quantities, without committing a specific representation such as a floating point data type with restrictions on precision and scale.</body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Real._generalization.SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Number" general="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Number"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_String" name="String">
+        <ownedComment xmi:type="uml:Comment" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_String._ownedComment.0" annotatedElement="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_String">
+          <body>A String value type consists of a sequence of characters in some suitable character set. Character sets may include non-Roman alphabets and characters.</body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind" name="UnitAndQuantityKind">
+      <packagedElement xmi:type="uml:Association" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.association_packagedElement_A_quantityKind_unit" name="A_quantityKind_unit" memberEnd="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.association_packagedElement_A_quantityKind_unit_ownedEnd.unit SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.quantityKind">
+        <ownedEnd xmi:type="uml:Property" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.association_packagedElement_A_quantityKind_unit_ownedEnd.unit" name="unit" type="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit" association="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.association_packagedElement_A_quantityKind_unit">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.association_packagedElement_A_quantityKind_unit_ownedEnd.unit_lowerValue"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.association_packagedElement_A_quantityKind_unit_ownedEnd.unit_upperValue" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind" name="QuantityKind">
+        <ownedComment xmi:type="uml:Comment" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind._ownedComment.0" annotatedElement="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind">
+          <body>A QuantityKind is a kind of quantity that may be stated by means of defined units.</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.definitionURI" name="definitionURI">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.definitionURI_lowerValue"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.description" name="description">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.description_lowerValue"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.symbol" name="symbol">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.symbol_lowerValue"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit" name="Unit">
+        <ownedComment xmi:type="uml:Comment" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit._ownedComment.0" annotatedElement="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit">
+          <body>A Unit is a quantity in terms of which the magnitudes of other quantities that have the same quantity kind can be stated. A unit often relies on precise and reproducible ways to measure the unit.</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.definitionURI" name="definitionURI">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.definitionURI_lowerValue"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.description" name="description">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.description_lowerValue"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.quantityKind" name="quantityKind" type="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind" association="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.association_packagedElement_A_quantityKind_unit">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.quantityKind_lowerValue"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.quantityKind_upperValue" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.symbol" name="symbol">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.symbol_lowerValue"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_7DGgkDthEeWLFIpRJHQiHw" name="Requirements">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_8IATIDthEeWLFIpRJHQiHw" name="VerdictKind">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_8IATITthEeWLFIpRJHQiHw" annotatedElement="_8IATIDthEeWLFIpRJHQiHw">
+          <body>Type of a return parameter of a TestCase must be VerdictKind, consistent with the UML Testing Profile.</body>
+        </ownedComment>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8IATIjthEeWLFIpRJHQiHw" name="error"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8IATIzthEeWLFIpRJHQiHw" name="fail"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8IATJDthEeWLFIpRJHQiHw" name="inconclusive"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8IATJTthEeWLFIpRJHQiHw" name="pass"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_FzrM4MrPEee5xeGZ3-9rfg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FzuQMMrPEee5xeGZ3-9rfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ekh0IE--EemOD7qwxw9iGA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ekkQYE--EemOD7qwxw9iGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_eklegE--EemOD7qwxw9iGA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ekmFkE--EemOD7qwxw9iGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ekmsoE--EemOD7qwxw9iGA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ekmsoU--EemOD7qwxw9iGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ekmsok--EemOD7qwxw9iGA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ekmso0--EemOD7qwxw9iGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_eknTsE--EemOD7qwxw9iGA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eknTsU--EemOD7qwxw9iGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ekn6wE--EemOD7qwxw9iGA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ekn6wU--EemOD7qwxw9iGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ekn6wk--EemOD7qwxw9iGA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ekn6w0--EemOD7qwxw9iGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ekoh0E--EemOD7qwxw9iGA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ekoh0U--EemOD7qwxw9iGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ekpI4E--EemOD7qwxw9iGA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ekpI4U--EemOD7qwxw9iGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+  </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_B_vLwcrQEee5xeGZ3-9rfg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B_vy0MrQEee5xeGZ3-9rfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+  </uml:Package>
+  <Blocks:ValueType xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Boolean.stereotypeApplication_SysML.package_packagedElement_Blocks.stereotype_packagedElement_ValueType" base_DataType="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Boolean"/>
+  <Blocks:ValueType xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Complex.stereotypeApplication_SysML.package_packagedElement_Blocks.stereotype_packagedElement_ValueType" base_DataType="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Complex"/>
+  <Blocks:ValueType xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Integer.stereotypeApplication_SysML.package_packagedElement_Blocks.stereotype_packagedElement_ValueType" base_DataType="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Integer"/>
+  <Blocks:ValueType xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Number.stereotypeApplication_SysML.package_packagedElement_Blocks.stereotype_packagedElement_ValueType" base_DataType="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Number"/>
+  <Blocks:ValueType xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Real.stereotypeApplication_SysML.package_packagedElement_Blocks.stereotype_packagedElement_ValueType" base_DataType="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Real"/>
+  <Blocks:ValueType xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_String.stereotypeApplication_SysML.package_packagedElement_Blocks.stereotype_packagedElement_ValueType" base_DataType="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_String"/>
+  <standard:ModelLibrary xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.stereotypeApplication_ModelLibrary" base_Package="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind"/>
+  <Blocks:Block xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind.stereotypeApplication_SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block" base_Class="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+  <Blocks:Block xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit.stereotypeApplication_SysML.package_packagedElement_Blocks.stereotype_packagedElement_Block" base_Class="SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit"/>
+  <standard:ModelLibrary xmi:id="SysML.package_packagedElement_Libraries.stereotypeApplication_ModelLibrary" base_Package="SysML.package_packagedElement_Libraries"/>
+  <standard:ModelLibrary xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_ControlValues.stereotypeApplication_ModelLibrary" base_Package="SysML.package_packagedElement_Libraries.package_packagedElement_ControlValues"/>
+  <Blocks:ValueType xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_ControlValues.enumeration_packagedElement_ControlValue.stereotypeApplication_SysML.package_packagedElement_Blocks.stereotype_packagedElement_ValueType" base_DataType="SysML.package_packagedElement_Libraries.package_packagedElement_ControlValues.enumeration_packagedElement_ControlValue"/>
+  <standard:ModelLibrary xmi:id="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.stereotypeApplication_ModelLibrary" base_Package="SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes"/>
+</xmi:XMI>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+  <properties>
+    <title>SysML - User</title>
+  </properties>
+
+  <body>
+    <section name="Embedded libraries in SysML 1.6">
+    	<subsection name="QUDV Library">
+    		<p>QUDV libray is embeded in SysML 1.6</p>
+    		<p>You can find it in:</p>
+    		<source>/org.eclipse.papyrus-sysml/core/org.eclipse.papyrus.sysml16/resources/library/QUDV.uml</source>
+    		<p>You can also reference it directly from the Eclipse Nexus repository <a href="https://repo.eclipse.org/content/repositories/papyrus-releases/">https://repo.eclipse.org/content/repositories/papyrus-releases/</a></p>
+    	</subsection>
+    	<subsection name="ISO80000">
+			<p>Due to performance problem, we are not able at the present time to add the ISO80000 library</p>
+			<p><a href=" https://bugs.eclipse.org/bugs/show_bug.cgi?id=478131"> https://bugs.eclipse.org/bugs/show_bug.cgi?id=478131</a></p>
+		</subsection>
+    </section>
+
+  </body>
+
+</document>

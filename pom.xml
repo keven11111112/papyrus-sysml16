@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>org.eclipse.papyrus.components</groupId>
+		<artifactId>org.eclipse.papyrus.components.parent</artifactId>
+		<version>0.0.27</version>
+	</parent>
+	
+	<groupId>org.eclipse.papyrus.sysml</groupId>
+	<artifactId>org.eclipse.papyrus.sysml16.parent</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>SysML</name>
+	<description>A Papyrus DSML for the SysML 1.6 OMG norm</description>
+	<url>https://eclipse.org/papyrus/components/${component.shortname}/</url>
+	<inceptionYear>2015</inceptionYear>
+
+	<modules>
+		<module>plugins</module>
+		<module>tests</module>
+		<module>features</module>
+		<module>releng</module>
+	</modules>
+	<properties>
+		<component.shortname>sysml</component.shortname>
+		<component.fullartifactId>org.eclipse.papyrus.sysml16</component.fullartifactId>
+		<component.hudson.tabname>Sysml</component.hudson.tabname>
+		<component.bugzilla.name>SysML1.6</component.bugzilla.name>
+		<component.package.rootname>org.eclipse.papyrus.sysml</component.package.rootname>
+		<component.rcp.name>org.eclipse.papyrus.sysml16.rcp</component.rcp.name>
+		<component.servicetype>org.eclipse.papyrus.sysml16.service.types</component.servicetype>
+		<eclipse.targetrelease>2018-12</eclipse.targetrelease>
+		<target.version>${project.version}</target.version>
+		<sonar.exclusions>**/src-gen/**</sonar.exclusions>
+	</properties>
+
+	<mailingLists>
+		<mailingList>
+			<name>Papyrus SysML users Mailing List</name>
+			<post>papyrus-sysml-users@eclipse.org</post>
+			<subscribe>https://dev.eclipse.org/mailman/listinfo/papyrus-sysml-users/</subscribe>
+			<unsubscribe>https://dev.eclipse.org/mailman/listinfo/papyrus-sysml-users/</unsubscribe>
+			<archive>https://dev.eclipse.org/mailman/listinfo/papyrus-sysml-users/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<ciManagement>
+		<system>Hudson</system>
+		<url>https://hudson.eclipse.org/papyrus/view/${component.hudson.tabname}/</url>
+	</ciManagement>
+	<issueManagement>
+		<url>https://bugs.eclipse.org/bugs/buglist.cgi?product=Papyrus&amp;component=${component.bugzilla.name}</url>
+		<system>Bugzilla</system>
+	</issueManagement>
+
+	<developers>
+		<developer>
+			<name>Nicolas FAUVRGUE</name>
+			<organization>CEA Tech LIST</organization>
+			<organizationUrl>http://www-list.cea.fr/</organizationUrl>
+			<id>nfauvergue</id>
+		</developer>
+	</developers>
+
+	<licenses>
+		<license>
+			<name>Eclipse Public License 2.0</name>
+			<url>https://www.eclipse.org/legal/epl-2.0/</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	
+	<distributionManagement>
+		<site>
+			<id>git.eclipse.org.server</id>
+			<url>scm:git:https://git.eclipse.org/gitroot/www.eclipse.org/papyrus/components/${component.shortname}</url>
+		</site>
+	</distributionManagement>
+
+	<scm>
+		<url>https://git.eclipse.org/c/papyrus/org.eclipse.papyrus-${component.shortname}.git</url>
+		<connection>scm:git:git://git.eclipse.org/gitroot/papyrus/org.eclipse.papyrus-${component.shortname}.git</connection>
+	</scm>
+
+	<repositories>
+		<!--repository>
+			<id>pap.repo.eclipse.org</id>
+			<name>Papyrus Repository - Releases</name>
+			<url>https://repo.eclipse.org/content/repositories/papyrus-releases/</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>paps.repo.eclipse.org</id>
+			<name>Papyrus Repository - Snapshots</name>
+			<url>https://repo.eclipse.org/content/repositories/papyrus-snapshots/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+			</snapshots>
+		</repository-->
+		<repository>
+				<id>pap.repo.eclipse.org</id>
+				<name>Papyrus Repository - Releases</name>
+				<url>https://repo.eclipse.org/content/repositories/papyrus/</url>
+		</repository> 
+	</repositories>
+	
+</project>

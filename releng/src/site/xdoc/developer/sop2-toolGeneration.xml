@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+	<properties>
+		<title>SysML - Tools Generation Standard Operating Procedure</title>
+	</properties>
+
+	<body>
+		<section name="Pre-requisit">
+			<p>Have your profile myprofile.profile.uml, in our case
+				SysML16.profile.uml
+			</p>
+			<p>Have a Papyrus instance with UML2Extension and Developer tools
+				installed
+			</p>
+		</section>
+
+		<section name="Step 1: generation of model,edit plugins code">
+			<subsection name="1.0: Purpose">
+				<p>Generate the "static profile" (the java code related to the UML profile)</p>
+			</subsection>
+			<subsection name="1.1: Create the EMF generator Model">
+				<p>right-click on the profile, select new EMF Generator Model</p>
+				<p>Options</p>
+				<ul>
+					<li>load</li>
+					<li>skip warning</li>
+					<li>next</li>
+					<li>select SysML</li>
+				</ul>
+			</subsection>
+			<subsection name="1.2: Generate the code">
+				<p>Modify the options</p>
+				<ul>
+					<li>switch the default output directory from src to src-gen</li>
+					<li>for the EditPluginClass remove intermediate package name, to
+						reflect .provider.SysmlEditPlugin
+					</li>
+					<li>switch NLS on</li>
+				</ul>
+				<p>Right click generate Model and Edit code</p>
+			</subsection>
+			<subsection name="1.x: Validation">
+				<p>Code should compile at this step</p>
+			</subsection>
+		</section>
+
+
+		<section name="Step 2: generation of ElementType configuration files">
+			<subsection name="2.0: Purpose">
+				<p>Generate semantic and diagramatics elementtypes related to the profile</p>
+			</subsection>
+			<subsection name="2.1: Semantic Elementtypeconfiguration">
+				<ul>
+					<li>Open the profil with Papyrus</li>
+					<li>Select generate Tooling Model Elementtype
+					</li>
+					<li>base: uml o.e.p.uml.servicetype</li>
+					<li>identifier o.e.p.sysML16</li>
+					<li>file name: SysML.elemeznttypeconfiguration</li>
+				</ul>
+				<p>Move it to the right plugin place</p>
+			</subsection>
+			<subsection name="2.1: UI Elementtypeconfiguration">
+				<ul>
+					<li>Open the profil with Papyrus</li>
+					<li>Select generate Tooling Model> Elementtype
+					</li>
+					<li>base: uml o.e.p.uml.uml.diagramclass and composite</li>
+					<li>identifier o.e.p.sysML16</li>
+					<li>file name: SysML.elemeznttypeconfiguration</li>
+				</ul>
+				<p>Move it to the common plugin place and do it foreach root
+					diagrams</p>
+			</subsection>
+			<subsection name="2.x: Validation">
+				<p>to be completed...</p>
+			</subsection>
+		</section>
+
+		<section name="Step 3: generation of New Child Menu">
+			<subsection name="3.0: Purpose">
+				<p>Generate the new child menu present in the model explorer</p>
+			</subsection>
+			<subsection name="3.1: Action">
+				<p>to be completed...</p>
+			</subsection>
+			<subsection name="3.x: Validation">
+				<p>to be completed...</p>
+			</subsection>
+		</section>
+
+		<section name="Step 4: generation of Property view">
+			<subsection name="4.0: Purpose">
+				<p>Generate the default property views (one context .ctx file and multiple xwt files)</p>
+			</subsection>
+			<subsection name="4.1: Action">
+				<ul>
+					<li>Select New...> Other</li>
+					<li>Select Papyrus Category</li>
+					<li>Select Property view Configuration</li>
+					<li>Choose create from UML Profile</li>
+					<li>Source: /org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.uml</li>
+					<li>Choose Standard Layout Generator</li>
+					<li>Target: /org.eclipse.papyrus.sysml16.ui/resources/properties/SysML1.6.ctx</li>
+				</ul>
+			</subsection>
+			<subsection name="4.x: Validation">
+				<p>Should generate one *.ctx file and many *.xwt files</p>
+			</subsection>
+		</section>
+
+		<section name="Step 5: generation of Assistant">
+			<subsection name="5.0: Purpose">
+				<p>Generate the tooling to have assistants in customized diagrams</p>
+			</subsection>
+			<subsection name="5.1: Action">
+				<p>to be completed...</p>
+			</subsection>
+			<subsection name="5.x: Validation">
+				<p>to be completed...</p>
+			</subsection>
+		</section>
+
+	</body>
+
+</document>

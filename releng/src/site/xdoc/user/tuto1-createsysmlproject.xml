@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+  <properties>
+    <title>SysML - User</title>
+  </properties>
+
+  <body>
+    <section name="Explore Papyrus for SysML 1.6">
+    	<subsection name="SysML 1.6">
+    		<p>The Systems Modeling Language (SysML) is a general-purpose modeling language for systems engineering applications. It supports the specification, analysis, design, verification and validation of a broad range of systems and systems-of-systems.
+			SysML was originally developed by an open source specification project, and includes an open source license for distribution and use. SysML is defined as an extension of a subset of the Unified Modeling Language (UML) using UML's profile mechanism.</p>
+    		<p>There are a lot of tutorials on SysML. We have selected this one <a href="http://www.omgsysml.org/INCOSE-OMGSysML-Tutorial-Final-090901.pdf">http://www.omgsysml.org/INCOSE-OMGSysML-Tutorial-Final-090901.pdf</a></p>
+    		<p>This guide explores basic of SysML Model Project creation.</p>
+    	</subsection>
+    	<subsection name="Create a basic project.">
+			<p>At first, select File>New Project>Papyrus project.</p>
+			<p>Select the SysML 1.6 language for the new diagrams..</p>
+			<img alt="creation menu" src="../images/rcptt-screenshots/projectcreation-selectsysml16project.png" />
+			<p>Give a name to your project and eventually add a specific model name.</p>
+			<img alt="project name" src="../images/rcptt-screenshots/projectcreation-projectname.png" />
+			<p>You can add directly at creation a library in the model by clicking on the check-box in the new model wizard. You can also add additional libraries after in the model explorer by importing registered packages.</p>
+			<p>Eventually, you can preselect specific SysML1.6 diagrams and tables to populate quickly your model: </p>
+			<ul>
+				<li>SysML 1.6 Block Definition</li>
+				<li>SysML 1.6 Internal Block</li>
+				<li>SysML 1.6 Parametric</li>
+				<li>SysML 1.6 Requirement</li>
+				<li>SysML 1.6 Allocation Table</li>
+				<li>SysML 1.6 Requirement table</li>
+			</ul>
+			<img alt="diagrams and tables" src="../images/rcptt-screenshots/projectcreation-diagrams.png" />
+			<p>Open the Papyrus Perspective to enable the Model Explorer, Diagram, Outline and Palette views.</p>
+			<img alt="papyrus perspective" src="../images/rcptt-screenshots/projectcreation-papyrusperspective.png" />
+		</subsection>
+		<subsection name="Create a Block Definition Diagram.">
+			<p>Block diagram describes the relationship among blocks (e.g., composition, association,specialization)</p>
+			<p>Right click on the Model explorer enable to display to a menu to create elements and diagrams specific to UML and SysML</p>
+			<p>Select New Diagram/SysML 1.6 Block Definition</p>
+			<p>It will create a BD diagram where you can create a block from the right palette.</p>
+			<img alt="block diagram" src="../images/rcptt-screenshots/projectcreation-papyrus-bdd.png" />
+			<img alt="block diagram" src="../images/rcptt-screenshots/projectcreation-diwithpalette.png" />
+			<p>From the palette at right, you can create typed part. By default Papyrus will propose you to create new Block for the property.</p>
+			<img alt="block diagram" src="../images/rcptt-screenshots/projectcreation-papyrus-bdd2.png" />	
+		</subsection>
+		<subsection name="Model Explorer View">
+			<p>Model explorer allows you to browse the tree of your model.</p>
+			<img alt="block diagram" src="../images/rcptt-screenshots/projectcreation-modelexplorer2.png" />
+		</subsection>
+		<subsection name="Outline View">
+			<p>Outline view offers you a quick overview display of the current diagram. It is essential when you want to manage huge models.</p>
+			<img alt="block diagram" src="../images/rcptt-screenshots/projectcreation-outline.png" />
+		</subsection>
+		<subsection name="Create a Internal Block Diagram.">
+			<p>Internal block diagram describes the internal structure of a block in terms of its properties and connectors</p>
+			<p>From the Modelexplorer, by right clicking,n you can select the IBD creation.</p>
+			<img alt="ibd" src="../images/rcptt-screenshots/projectcreation-ibd-diwithpalette.png" />
+			<p>You can create new internal properties referencing previous blocks or new blocks.</p>
+			<img alt="block diagram" src="../images/rcptt-screenshots/projectcreation-papyrus-ibd-2.png" />
+			<p>From the palette, you can create new node, such as port, and connector as edge between them.</p>
+			<p>Ports are usefull to specify interaction points on blocks and parts</p>
+			<img alt="block diagram" src="../images/rcptt-screenshots/projectcreation-papyrus-ibd-3.png" />	
+		</subsection>
+		<subsection name="Create Requirements.">
+			<p>With SysML you can use Requirement diagrams to efficiently capture functional, performance, and interface requirements, whereas with UML you are subject to the limitations of Use Case Diagram to define high-level functional requirements.</p>
+			<p>From the Model Explorer, with the New Child Menu, you can create Requirement table or requirement.</p>
+			<p>Requirement from a given model depth will populate automatically your requirement table</p>
+			<p>You can edit Requirement feature (id, name and text) from the properties view</p>
+			<img alt="block diagram" src="../images/rcptt-screenshots/projectcreation-req.png" />
+			<img alt="block diagram" src="../images/rcptt-screenshots/projectcreation-req-properties.png" />	
+		</subsection>
+    </section>
+
+  </body>
+
+</document>

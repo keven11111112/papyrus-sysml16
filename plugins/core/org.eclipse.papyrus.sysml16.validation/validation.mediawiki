@@ -1,0 +1,159 @@
+=DONE=
+==ModelElements==
+* (Conform) 1_general_is_viewpoint
+* (Conform) 2_specific_is_view
+* (Expose) 1_client_is_view
+* (Stakeholder) 1_not_association ??
+* (View) 1_single_viewpoint
+* (Viewpoint) 2_create_view_operation
+==Blocks==
+* (BindingConnector) 1_compatible_types
+* (Block) 1_associations_binary
+* (Block) 2_connectors_binary
+* (Block) 6_valueproperties_composite
+* (Block) 8_specializations_are_blocks
+* (BoundReference) 1_bindingconnector_end
+* (BoundReference) 2_opposite_bindingconnector_end
+* (BoundReference) 3_navigable
+* (BoundReference) 4_propertypath_consistency
+* (BoundReference) 5_reference_or_valueproperty
+* (BoundReference) 6_ordered_nonunique
+* (BoundReference) 7_cannot_redefine_boundreference
+* (BoundReference) 8_notbounded_to_itslef
+* (ClassifierBehaviorProperty) 1_owner_classifierbehavior
+* (ClassifierBehaviorProperty) 2_composite
+* (ClassifierBehaviorProperty) 3_typed_by_classifierbehavior
+* (ConnectorProperty) 1_block_property
+* (ConnectorProperty) 2_owned_or_inherited
+* (ConnectorProperty) 3_composite
+* (ConnectorProperty) 4_typed_by_associationblock
+* (ConnectorProperty) 5_same_name
+* (DirectedRelationshipPropertyPath) 1_sourcecontext_iif_property
+* (DirectedRelationshipPropertyPath) 2_targetcontext_iif_property
+* (DirectedRelationshipPropertyPath) 3_sourcepropertypath_implies_property
+* (DirectedRelationshipPropertyPath) 4_targetpropertypath_implies_property
+* (DirectedRelationshipPropertyPath) 5_sourcecontext_owns_sourcepath_first
+* (DirectedRelationshipPropertyPath) 6_targetcontext_owns_targetpath_first
+* (DirectedRelationshipPropertyPath) 8_sourcepath_last_type_owns_source
+* (DirectedRelationshipPropertyPath) 9_targetpath_last_type_owns_target
+* (DistributedProperty) 1_block_or_valuetype
+* (ElementPropertyPath) 1_path_consistency
+* (EndPathMultiplicity) 1_redefinition
+* (EndPathMultiplicity) 2_non_negative
+* (NestedConnectorEnd) 1_propertypath_first_owned_by_connector_owner
+* (NestedConnectorEnd) 2_propertypath_last_type_owns_role
+* (ParticipantProperty) 1_associationblock
+* (ParticipantProperty) 2_memberend
+* (ParticipantProperty) 3_aggregationkind_none
+* (ParticipantProperty) 4_end_owner
+* (ParticipantProperty) 5_same_type
+* (ParticipantProperty) 6_multiplicity_1
+* (PropertySpecificType) 1_only_one_property
+* (ValueType) 1_specializations_are_valuetypes
+* (ValueType) 2_unit
+* (ValueType) 3_quantitykind
+==PortsAndFlows==
+* (AcceptChangeStructuralFeatureEventAction) 1_one_trigger
+* (AcceptChangeStructuralFeatureEventAction) 2_two_resultpins
+* (AcceptChangeStructuralFeatureEventAction) 3_context_owns_structuralfeature
+* (AcceptChangeStructuralFeatureEventAction) 4_can_access_structuralfeature
+* (AddFlowPropertyValueOnNestedPortAction) 1_feature_flowproperty
+* (AddFlowPropertyValueOnNestedPortAction) 2_onnestedport_first_owned_by_target_type
+* (AddFlowPropertyValueOnNestedPortAction) 3_path_consistency
+* (AddFlowPropertyValueOnNestedPortAction) 4_onnestedport_last_type_owns_invocation_onPort
+* (ChangeStructuralFeatureEvent) 1_not_static
+* (ChangeStructuralFeatureEvent) 2_one_featuringclassifier
+* (DirectedFeature) 1_behavioralfeature_or_not_flowproperty
+* (FlowProperty) 1_restricted_types
+* (FullPort) 1_not_proxy
+* (FullPort) 2_not_bound_to_fullport
+* (FullPort) 3_not_behavioral
+* (InterfaceBlock) 1_no_behavior
+* (InterfaceBlock) 3_interfaceblock_typed_ports
+* (InterfaceBlock) isconjugated_not_used
+* (InvocationOnNestedPortAction) 1_onPort_defined
+* (InvocationOnNestedPortAction) 2_onnestedport_first_owned_by_target_type
+* (InvocationOnNestedPortAction) 3_path_consistency
+* (InvocationOnNestedPortAction) 4_onnestedport_last_type_owns_invocation_onPort
+* (ItemFlow) 2_type_restricted
+* (ItemFlow) 4_association_xor_itemproperty
+* (ItemFlow) 5_same_type
+* (ItemFlow) 6_same_name
+* (ProxyPort) 1_not_fullport
+* (ProxyPort) 2_interfaceblock
+* (ProxyPort) 3_subports_are_proxyports
+* (TriggerOnNestedPort) 1_single_proxyport
+* (TriggerOnNestedPort) 2_no_fullport
+* (TriggerOnNestedPort) 3_onnestedport_first_owned_by_context
+* (TriggerOnNestedPort) 4_path_consistency
+* (~InterfaceBlock) enforced_name
+==ConstraintBlocks==
+* (ConstraintBlock) 3_composite
+==Activities==
+* (ControlOperator) 1_one_parameter_controlvalue
+* (ControlOperator) 2_controloperator_operation_method
+* (Discrete) 1_not_continuous
+* (NoBuffer) 1_not_overwrite
+* (Overwrite) 1_not_nobuffer
+* (Optional) 1_lower_is_0
+* (Probability) 1_source_decisionnode_or_objectnode
+* (Probability) 2_all_outgoing_edges
+* (Probability) 3_all_parametersets
+* (Probability) 4_all_outputparameter_in_parametersets
+* (Rate) 1_streaming
+* (Rate) 2_edges_rates
+==Allocations==
+* (Allocate) 2_binary
+* (AllocateActivityPartition) 1_actions_on_client_ends
+==Requirements==
+* (Copy) 1_source_and_taget_are_requirements
+* (Copy) 2_same_text
+* (DeriveReqt) 1_supplier_is_requirement
+* (DeriveReqt) 2_client_is_requirement
+* (Refine) 2_binary
+* (Requirement) 1_no_operation
+* (Requirement) 2_no_attribute
+* (Requirement) 3_no_association
+* (Requirement) 4_no_generalization
+* (Requirement) 5_nestedclassifiers_are_requirements
+* (Requirement) 6_not_a_type
+* (TestCase) 1_return_verdictkind
+* (Satisfy) 1_supplier_is_requirement
+* (Trace) 2_binary
+* (Verify) 1_supplier_is_requirement 
+
+=TODO=
+==ModelElements==
+* (View) 2_viewpoint_derived_from_conform
+* (View) 3_stakeholder_derived_from_conform
+* (Viewpoint) 1_method_derived_from_create_operations
+==Blocks==
+* (AdjunctProperty) 1_principal_kind
+* (AdjunctProperty) 2_same_name
+* (AdjunctProperty) 3_connector_and_callaction_composite
+* (AdjunctProperty) 4_same_owner
+* (AdjunctProperty) 5_compatible_type
+* (AdjunctProperty) 6_connector_principal_associationblock
+* (AdjunctProperty) 7_adjunctproperty_connectorproperty_consistent
+* (AdjunctProperty) 8_callAction_composite_and_consitent_type
+* (AdjunctProperty) 9_objectnode_multiplicity
+* (AdjunctProperty) 10_multiplicity_same_or_less_restrictive
+* (AdjunctProperty) 11_submachine_and_interactionuse_composite_and
+* (Block) 5_uml_connector_constraint_removed => remove an uml constraint
+* (Block) 7_composition_acyclic => inconsistency between ocl rule and text
+* (Block) 9_uml constraint_removed => remove an uml constraint
+* (DirectedRelationshipPropertyPath) 7_path_and_owners_consistency
+==PortsAndFlows==
+* (AcceptChangeStructuralFeatureEventAction) 5_uml_constraint_removed
+* (DirectedFeature) 2_method_if_provided => it seems that this constraint is conflicting with the (DirectedFeature) 1_behavioralfeature_or_not_flowproperty constraint
+* (InterfaceBlock) 2_no_part => change since 1.4 but it seems that the definition is not consistent with the OCL expression
+* (ItemFlow) 1_source_and_target_linked
+* (ItemFlow) 3_itemproperty_common_owner
+* (TriggerOnNestedPort) 5_onnestedport_last_type_owns_trigger_port
+* (~InterfaceBlock) inverted_features
+==ConstraintBlocks==
+* (ConstraintBlock) 1_constraintparameters_only
+==Activities==
+==Allocations==
+* (AllocateActivityPartition) 2_not_uml_semantics
+==Requirements==

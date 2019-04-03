@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<expansionmodel:DiagramExpansion xmlns:expansionmodel="http:///expansionmodel.ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="SysML 1.6 IBD" xmi:id="org.eclipse.papyrus.sysml16.ibd.expansionmodel" xmi:version="2.0">
+  <usages diagramType="SysML 1.6 Internal Block Diagram" name="SysML 1.6 IBD Context" representations="_x0QaAFLcEeWce8tK71CTcg _j7dP0HytEeWustL01XNGSA" xmi:id="_rC19oNnoEeSqwOe5_frWm1">
+    <gmftRepresentations editPartQualifiedName="org.eclipse.papyrus.uml.diagram.composite.edit.parts.ClassCompositeEditPart" name="Block based on Class representation of composite diagram" reusedID="Class_Shape" subRepresentations="" viewFactory="org.eclipse.papyrus.sysml16.diagram.internalblock.internal.factory.BlockCompositeViewFactory" xmi:id="_x0QaAFLcEeWce8tK71CTcg"/>
+    <gmftRepresentations editPartQualifiedName="org.eclipse.papyrus.sysml16.diagram.common.edit.parts.SysMLConnectorEditPart" name="SysmlConnector based on Composite Connector" reusedID="Connector_Edge" subRepresentations="_EDXlcHzEEeWVMv-LGO6tZw" viewFactory="org.eclipse.papyrus.sysml16.diagram.common.internal.factory.SysMLConnectorViewFactory" xmi:id="_j7dP0HytEeWustL01XNGSA"/>
+    <gmftRepresentations editPartQualifiedName="org.eclipse.papyrus.sysml16.diagram.common.edit.parts.SysMLConnectorAppliedStereotypeEditPart" name="Applied Stereotype label for a connector" reusedID="6025" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.DecorationNodeViewFactory" xmi:id="_EDXlcHzEEeWVMv-LGO6tZw"/>
+  </usages>
+  <libraries name="Independent Representations" xmi:id="_rC19oNnoEeSqwOe5_frWm3">
+  </libraries>
+</expansionmodel:DiagramExpansion>

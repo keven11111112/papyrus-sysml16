@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nattableconfiguration:TableConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:nattableaxis="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis" xmlns:nattableaxisconfiguration="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration" xmlns:nattableaxisprovider="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider" xmlns:nattablecelleditor="http://www.eclipse.org/papyrus/nattable/model/table/nattablecelleditor" xmlns:nattableconfiguration="http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration" xmlns:nattablelabelprovider="http://www.eclipse.org/papyrus/nattable/model/table/nattablecontentprovider" xmlns:nattablestyle="http://www.eclipse.org/papyrus/nattable/model/table/nattablestyle" xmlns:umlexpressions="http://www.eclipse.org/papyrus/umlexpressions" xmi:id="Allocation_Requirment_Matrix" description="This table allows to display SysML 1.6 allocate relationship between Classes and Requirements " name="Allocation Requirement Matrix" type="AllocationRequirementMatrix" iconPath="platform:/plugin/org.eclipse.papyrus.sysml16.nattable.allocation/icons/table_SysML_Allocation.png" cellEditorDeclaration="COLUMN" defaultRowAxisProvider="_Pe60EcZPEeijBIWPt_NRXw" defaultColumnAxisProvider="_Pe60EsZPEeijBIWPt_NRXw">
+  <styles xmi:type="nattablestyle:TableDisplayStyle" xmi:id="_Pe4X0cZPEeijBIWPt_NRXw" displayStyle="HIERARCHIC_SINGLE_TREE_COLUMN"/>
+  <styles xmi:type="nattablestyle:StringListValueStyle" xmi:id="_Pe4X0sZPEeijBIWPt_NRXw" name="dragRegions">
+    <stringListValue>ROW_HEADER</stringListValue>
+  </styles>
+  <styles xmi:type="nattablestyle:IntListValueStyle" xmi:id="_Pe4X08ZPEeijBIWPt_NRXw" name="hiddenCategoriesByDepth">
+    <intListValue>1</intListValue>
+  </styles>
+  <styles xmi:type="nattablestyle:BooleanValueStyle" xmi:id="_Pe4X1MZPEeijBIWPt_NRXw" name="expandAll" booleanValue="true"/>
+  <rowHeaderAxisConfiguration xmi:type="nattableaxisconfiguration:TableHeaderAxisConfiguration" xmi:id="_Pe4-4MZPEeijBIWPt_NRXw" indexStyle="NUMERIC" displayLabel="true" displayFilter="false" displayIndex="true">
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:ObjectLabelProviderConfiguration" xmi:id="_Pe4-4cZPEeijBIWPt_NRXw" displayIcon="true" displayLabel="true"/>
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:FeatureLabelProviderConfiguration" xmi:id="_Pe4-4sZPEeijBIWPt_NRXw" displayIcon="true" displayLabel="true" displayIsDerived="true" displayType="false" displayMultiplicity="false" displayName="true"/>
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:OperationLabelProviderConfiguration" xmi:id="_Pe4-48ZPEeijBIWPt_NRXw" displayIcon="true" displayLabel="true" displayType="false" displayMultiplicity="false" displayName="true"/>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_Pe4-5MZPEeijBIWPt_NRXw" depth="1" labelProvider="_Pe4-4sZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_Pe4-5cZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+      </axisUsedAsAxisProvider>
+      <filterRule xmi:type="umlexpressions:IsKindOfExpression" xmi:id="_SUHXIEr3EemPZPxrFrrvTw" name="IsAllocationEndNamedElementRow1" description="Check if this is a NamedElement">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement"/>
+      </filterRule>
+    </ownedAxisConfigurations>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_Pe4-5sZPEeijBIWPt_NRXw" depth="2" labelProvider="_Pe4-4sZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_Pe5l8MZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+      </axisUsedAsAxisProvider>
+      <filterRule xmi:type="umlexpressions:IsKindOfExpression" xmi:id="_V1xgAEr3EemPZPxrFrrvTw" name="IsAllocationEndNamedElementRow2" description="Check if this is a NamedElement">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement"/>
+      </filterRule>
+    </ownedAxisConfigurations>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_Pe5l8cZPEeijBIWPt_NRXw" depth="3" labelProvider="_Pe4-4sZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_Pe5l8sZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+      </axisUsedAsAxisProvider>
+      <filterRule xmi:type="umlexpressions:IsKindOfExpression" xmi:id="_V-kPoEr3EemPZPxrFrrvTw" name="IsAllocationEndNamedElementRow3" description="Check if this is a NamedElement">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement"/>
+      </filterRule>
+    </ownedAxisConfigurations>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_Pe5l88ZPEeijBIWPt_NRXw" depth="4" labelProvider="_Pe4-4sZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_Pe5l9MZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+      </axisUsedAsAxisProvider>
+      <filterRule xmi:type="umlexpressions:IsKindOfExpression" xmi:id="_Wpn-0Er3EemPZPxrFrrvTw" name="IsAllocationEndNamedElementRow4" description="Check if this is a NamedElement">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement"/>
+      </filterRule>
+    </ownedAxisConfigurations>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_Pe5l9cZPEeijBIWPt_NRXw" depth="5" labelProvider="_Pe4-4sZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_Pe5l9sZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+      </axisUsedAsAxisProvider>
+      <filterRule xmi:type="umlexpressions:IsKindOfExpression" xmi:id="_WlfswEr3EemPZPxrFrrvTw" name="IsAllocationEndNamedElementRow5" description="Check if this is a NamedElement">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement"/>
+      </filterRule>
+    </ownedAxisConfigurations>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_Pe5l98ZPEeijBIWPt_NRXw" depth="6" labelProvider="_Pe4-4sZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_Pe5l-MZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+      </axisUsedAsAxisProvider>
+      <filterRule xmi:type="umlexpressions:IsKindOfExpression" xmi:id="_WfYdsEr3EemPZPxrFrrvTw" name="IsAllocationEndNamedElementRow6" description="Check if this is a NamedElement">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement"/>
+      </filterRule>
+    </ownedAxisConfigurations>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_Pe5l-cZPEeijBIWPt_NRXw" depth="7" labelProvider="_Pe4-4sZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_Pe5l-sZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+      </axisUsedAsAxisProvider>
+      <filterRule xmi:type="umlexpressions:IsKindOfExpression" xmi:id="_WaWzwEr3EemPZPxrFrrvTw" name="IsAllocationEndNamedElementRow7" description="Check if this is a NamedElement">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement"/>
+      </filterRule>
+    </ownedAxisConfigurations>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_Pe5l-8ZPEeijBIWPt_NRXw" depth="8" labelProvider="_Pe4-4sZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_Pe5l_MZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+      </axisUsedAsAxisProvider>
+      <filterRule xmi:type="umlexpressions:IsKindOfExpression" xmi:id="_WU5sAEr3EemPZPxrFrrvTw" name="IsAllocationEndNamedElementRow8" description="Check if this is a NamedElement">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement"/>
+      </filterRule>
+    </ownedAxisConfigurations>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_Pe6NAMZPEeijBIWPt_NRXw" depth="9" labelProvider="_Pe4-4sZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_Pe6NAcZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+      </axisUsedAsAxisProvider>
+      <filterRule xmi:type="umlexpressions:IsKindOfExpression" xmi:id="_WPqmsEr3EemPZPxrFrrvTw" name="IsAllocationEndNamedElementRow9" description="Check if this is a NamedElement">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement"/>
+      </filterRule>
+    </ownedAxisConfigurations>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_Pe6NAsZPEeijBIWPt_NRXw" depth="10" labelProvider="_Pe4-4sZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_Pe6NA8ZPEeijBIWPt_NRXw" alias="">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+      </axisUsedAsAxisProvider>
+      <filterRule xmi:type="umlexpressions:IsKindOfExpression" xmi:id="_WJ5V4Er3EemPZPxrFrrvTw" name="IsNamedElement" description="Check if this is a NamedElement">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement"/>
+      </filterRule>
+    </ownedAxisConfigurations>
+    <axisManagers xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" xmi:id="_Pe6NBMZPEeijBIWPt_NRXw" axisManagerId="org.eclipse.papyrus.infra.uml.nattable.tree.axis.manager" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.labelprovider" headerLabelConfiguration="_Pe4-4cZPEeijBIWPt_NRXw" specificAxisConfigurations="_Pe4-5MZPEeijBIWPt_NRXw _Pe6NAsZPEeijBIWPt_NRXw _Pe4-5sZPEeijBIWPt_NRXw _Pe5l8cZPEeijBIWPt_NRXw _Pe5l88ZPEeijBIWPt_NRXw _Pe5l9cZPEeijBIWPt_NRXw _Pe5l98ZPEeijBIWPt_NRXw _Pe5l-cZPEeijBIWPt_NRXw _Pe5l-8ZPEeijBIWPt_NRXw _Pe6NAMZPEeijBIWPt_NRXw"/>
+  </rowHeaderAxisConfiguration>
+  <columnHeaderAxisConfiguration xmi:type="nattableaxisconfiguration:TableHeaderAxisConfiguration" xmi:id="_Pe6NBcZPEeijBIWPt_NRXw" displayLabel="true" displayFilter="false" displayIndex="true">
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:ObjectLabelProviderConfiguration" xmi:id="_Pe6NBsZPEeijBIWPt_NRXw" displayIcon="true" displayLabel="true"/>
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:FeatureLabelProviderConfiguration" xmi:id="_Pe6NB8ZPEeijBIWPt_NRXw" displayIcon="true" displayLabel="true" displayIsDerived="true" displayType="false" displayMultiplicity="false" displayName="true"/>
+    <ownedLabelConfigurations xmi:type="nattablelabelprovider:OperationLabelProviderConfiguration" xmi:id="_Pe6NCMZPEeijBIWPt_NRXw" displayIcon="true" displayLabel="true" displayType="false" displayMultiplicity="false" displayName="true"/>
+    <ownedAxisConfigurations xmi:type="nattableaxisconfiguration:TreeFillingConfiguration" xmi:id="_Pe6NCcZPEeijBIWPt_NRXw" depth="1" labelProvider="_Pe6NB8ZPEeijBIWPt_NRXw" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.treefilling.feature.labelprovider">
+      <axisUsedAsAxisProvider xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_Pe6NCsZPEeijBIWPt_NRXw">
+        <element xmi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element/ownedElement"/>
+      </axisUsedAsAxisProvider>
+      <filterRule xmi:type="umlexpressions:IsKindOfExpression" xmi:id="_W96MwEr3EemPZPxrFrrvTw" name="IsAllocationEndNamedElementColumn1" description="Check if this is a NamedElement">
+        <umlEClass xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement"/>
+      </filterRule>
+    </ownedAxisConfigurations>
+    <axisManagers xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" xmi:id="_Pe60EMZPEeijBIWPt_NRXw" axisManagerId="org.eclipse.papyrus.infra.emf.nattable.axis.column.eobject.matrix.manager" labelProviderContext="org.eclipse.papyrus.infra.nattable.header.labelprovider" headerLabelConfiguration="_Pe6NBsZPEeijBIWPt_NRXw" specificAxisConfigurations="_Pe6NCcZPEeijBIWPt_NRXw"/>
+  </columnHeaderAxisConfiguration>
+  <rowAxisProviders xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_Pe60EcZPEeijBIWPt_NRXw" description="This axis provider manages the rows, according to the wanted hierarchy" name="HierarchicalRowAxisManager" disconnectSlave="true"/>
+  <columnAxisProviders xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_Pe60EsZPEeijBIWPt_NRXw" description="This axis provider manages the columns, according to the wanted hierarchy" name="HierarchicalColumnsAxisManager" disconnectSlave="true"/>
+  <ownedCellEditorConfigurations xmi:type="nattablecelleditor:GenericRelationshipMatrixCellEditorConfiguration" xmi:id="_Pe60E8ZPEeijBIWPt_NRXw" cellEditorId="GenericRelationshipMatrixEditorConfiguration" direction="FROM_ROW_TO_COLUMN" relationshipOwnerStrategy="DEFAULT">
+    <editedElement xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Allocate_Abstraction"/>
+  </ownedCellEditorConfigurations>
+</nattableconfiguration:TableConfiguration>

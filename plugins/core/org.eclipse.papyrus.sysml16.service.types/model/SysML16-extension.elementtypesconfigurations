@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elementtypesconfigurations:ElementTypeSetConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:applystereotypeadvice="http://www.eclipse.org/papyrus/uml/types/applystereotypeadvice/1.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:setvaluesadvice="http://www.eclipse.org/papyrus/emf/types/setvaluesadvice/1.1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="org.eclipse.papyrus.sysml16.service.types.elementTypeSet.extension" description="SysML 1.6 extension element type set" identifier="org.eclipse.papyrus.sysml16.service.types.elementTypeSet.extension" name="SysML 1.6" metamodelNsURI="http://www.eclipse.org/uml2/5.0.0/UML">
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.AbstractDefinition" identifier="org.eclipse.papyrus.SysML16.AbstractDefinition" name="AbstractDefinition" hint="UML::Classifier" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_p4UK8UcKEemrpM9dj3x64Q" iconPath="/icons/full/obj16/Classifier.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4UyAEcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Classifier"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.AbstractDefinitionClass" identifier="org.eclipse.papyrus.SysML16.AbstractDefinitionClass" name="AbstractDefinitionClass" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_p4UyAkcKEemrpM9dj3x64Q" iconPath="/icons/full/obj16/Classifier.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4UyA0cKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16-extension.elementtypesconfigurations#org.eclipse.papyrus.SysML16.AbstractDefinition"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.Unit" identifier="org.eclipse.papyrus.SysML16.Unit" name="Unit" hint="UML::InstanceSpecification" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <iconEntry xmi:type="elementtypesconfigurations:IconEntry" xmi:id="_p4VZEUcKEemrpM9dj3x64Q" iconPath="/icons/full/obj16/InstanceSpecification.gif" bundleId="org.eclipse.uml2.uml.edit"/>
+    <editHelperAdviceConfiguration xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_p4VZEkcKEemrpM9dj3x64Q" description="" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.UnitEditHelperAdvice"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4VZE0cKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.InstanceSpecification"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.QuantityKind" identifier="org.eclipse.papyrus.SysML16.QuantityKind" name="QuantityKind" hint="UML::InstanceSpecification" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <editHelperAdviceConfiguration xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_p4WAIUcKEemrpM9dj3x64Q" description="" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.QuantityKindEditHelperAdvice"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4WAIkcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.InstanceSpecification"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.ConstraintProperty" description="Create a constraint Property" identifier="org.eclipse.papyrus.SysML16.ConstraintProperty" name="ConstraintProperty" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <editHelperAdviceConfiguration xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_p4WnMUcKEemrpM9dj3x64Q" description="" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.ConstraintPropertyEditHelperAdvice"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4WnMkcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.ConstraintPropertyMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.ActorPart" description="Create an actor Part" identifier="org.eclipse.papyrus.SysML16.ActorPart" name="ActorPart" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <editHelperAdviceConfiguration xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_p4XOQEcKEemrpM9dj3x64Q" description="" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.ActorPartEditHelperAdvice"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4XOQUcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.Value" description="Create a value" identifier="org.eclipse.papyrus.SysML16.Value" name="Value" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <editHelperAdviceConfiguration xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_p4XOQ0cKEemrpM9dj3x64Q" description="" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.AfterConfigureCommandEditHelperAdvice"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4X1UEcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.Reference" description="Create a reference" identifier="org.eclipse.papyrus.SysML16.Reference" name="Reference" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <editHelperAdviceConfiguration xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_p4X1UkcKEemrpM9dj3x64Q" description="" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.AfterConfigureCommandEditHelperAdvice"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4YcYEcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.ReferencePropertyMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.Part" description="Create a part" identifier="org.eclipse.papyrus.SysML16.Part" name="Part" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <editHelperAdviceConfiguration xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_p4YcYkcKEemrpM9dj3x64Q" description="" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.AfterConfigureCommandEditHelperAdvice"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4YcY0cKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.Parameter" description="Create a parameter" identifier="org.eclipse.papyrus.SysML16.Parameter" name="Parameter" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <editHelperAdviceConfiguration xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_p4ZDcUcKEemrpM9dj3x64Q" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.AfterConfigureCommandEditHelperAdvice"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4ZDckcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.ConfiguredFlowProperty" description="Create a FlowProperty" identifier="org.eclipse.papyrus.SysML16.ConfiguredFlowProperty" name="FlowProperty" hint="UML::Property" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <editHelperAdviceConfiguration xmi:type="elementtypesconfigurations:EditHelperAdviceConfiguration" xmi:id="_p4ZqgEcKEemrpM9dj3x64Q" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.AfterConfigureCommandEditHelperAdvice"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4ZqgUcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml16.stereotypeinstance.Block" identifier="org.eclipse.papyrus.sysml16.stereotypeinstance.Block" name="SysML::StereotypeInstance::Block" hint="SysML::StereotypeInstance::Block" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" editHelperClassName="org.eclipse.papyrus.infra.gmfdiag.common.helper.DefaultEditHelper">
+    <eClass xmi:type="ecore:EClass" href="platform:/plugin/org.eclipse.papyrus.sysml16/resources/profile/sysml.profile.ecore#//blocks/Block"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.Activity" description="Create a TestCase Activity" identifier="org.eclipse.papyrus.SysML16.Activity" name="Activity" hint="UML::Activity" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4aRkEcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Activity"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.FunctionBehavior" description="Create a TestCase FunctionBehavior" identifier="org.eclipse.papyrus.SysML16.FunctionBehavior" name="TestCase FunctionBehavior" hint="UML::FunctionBehavior" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4aRkkcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.FunctionBehavior"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.Interaction" description="Create a TestCase Interaction" identifier="org.eclipse.papyrus.SysML16.Interaction" name="TestCase Interaction" hint="UML::Interaction" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4a4oUcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Interaction"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.OpaqueBehavior" description="Create a TestCase OpaqueBehavior" identifier="org.eclipse.papyrus.SysML16.OpaqueBehavior" name="TestCase OpaqueBehavior" hint="UML::OpaqueBehavior" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4a4o0cKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.OpaqueBehavior"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.ProtocolStateMachine" description="Create a TestCase ProtocolStateMachine" identifier="org.eclipse.papyrus.SysML16.ProtocolStateMachine" name="TestCase ProtocolStateMachine" hint="UML::ProtocolStateMachine" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4bfsUcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.ProtocolStateMachine"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.StateMachine" description="Create a TestCase StateMachine" identifier="org.eclipse.papyrus.SysML16.StateMachine" name="TestCase StateMachine" hint="UML::StateMachine" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4bfs0cKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.StateMachine"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.PrivatePackageImport" description="Create a PrivatePackageImport" identifier="org.eclipse.papyrus.SysML16.PrivatePackageImport" name="PrivatePackageImport" hint="UML::PackageImport" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4cGwUcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.PackageImport"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.AssociationBlock" description="Create an AssociationBlock" identifier="org.eclipse.papyrus.SysML16.AssociationBlock" name="AssociationBlock" hint="UML::AssociationClass" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4cGw0cKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.AssociationClass"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.ContinuousControlFlow" description="Create an ContinuousControlFlow" identifier="org.eclipse.papyrus.SysML16.ContinuousControlFlow" name="ContinuousControlFlow" hint="UML::ControlFlow" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4ct0UcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.ControlFlow"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.StakeholderClass" identifier="org.eclipse.papyrus.SysML16.StakeholderClass" name="Stakeholder" hint="UML::Class" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4dU4EcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Stakeholder"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Class"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.DiscreteControlFlow" description="Create an DiscreteControlFlow" identifier="org.eclipse.papyrus.SysML16.DiscreteControlFlow" name="DiscreteControlFlow" hint="UML::ControlFlow" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4dU4kcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.ControlFlow"/>
+  </elementTypeConfigurations>
+  <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.RateControlFlow" description="Create an RateControlFlow" identifier="org.eclipse.papyrus.SysML16.RateControlFlow" name="RateControlFlow" hint="UML::ControlFlow" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4d78EcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.ControlFlow"/>
+  </elementTypeConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_p4d78UcKEemrpM9dj3x64Q" identifier="org.eclipse.papyrus.SysML16.apply.continuous" target="org.eclipse.papyrus.SysML16.ContinuousControlFlow">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_p4d78kcKEemrpM9dj3x64Q" stereotypeQualifiedName="SysML::Activities::Continuous" updateName="true">
+      <requiredProfiles>SysML</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_p4ejAEcKEemrpM9dj3x64Q" identifier="org.eclipse.papyrus.SysML16.apply.discrete" target="org.eclipse.papyrus.SysML16.DiscreteControlFlow">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_p4ejAUcKEemrpM9dj3x64Q" stereotypeQualifiedName="SysML::Activities::Discrete" updateName="true">
+      <requiredProfiles>SysML</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_p4ejAkcKEemrpM9dj3x64Q" identifier="org.eclipse.papyrus.SysML16.apply.rate" target="org.eclipse.papyrus.SysML16.RateControlFlow">
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_p4ejA0cKEemrpM9dj3x64Q" stereotypeQualifiedName="SysML::Activities::Rate" updateName="true">
+      <requiredProfiles>SysML</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_p4fKEEcKEemrpM9dj3x64Q" description="satisfy org.eclipse.papyrus.sysml16.service.types.REQ_001" identifier="org.eclipse.papyru.sysml16.advice.ConformCreation" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.ConformCreationEditHelperAdvice">
+    <target xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Classifier"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4fKEUcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_p4fKEkcKEemrpM9dj3x64Q" description="satisfy org.eclipse.papyrus.sysml16.service.types.REQ_001" identifier="org.eclipse.papyru.sysml16.advice.ConformReorient" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.ConformReorientEditHelperAdvice">
+    <target xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Conform"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4fKE0cKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_p4fxIEcKEemrpM9dj3x64Q" description="satisfy org.eclipse.papyrus.sysml16.service.types.REQ_002" identifier="org.eclipse.papyru.sysml16.advice.ElementGroup" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.ElementGroupEditHelperAdvice">
+    <target xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Comment"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4fxIUcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_p4fxIkcKEemrpM9dj3x64Q" description="satisfy org.eclipse.papyrus.sysml16.service.types.REQ_004" identifier="org.eclipse.papyrus.sysml16.service.types.advice.PartCreationEditHelperAdvice" target="org.eclipse.papyrus.SysML16.Part" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.PartCreationEditHelperAdvice">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4fxI0cKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_p4gYMEcKEemrpM9dj3x64Q" description="satisfy org.eclipse.papyrus.sysml16.service.types.REQ_004" identifier="org.eclipse.papyrus.sysml16.service.types.advice.ReferenceCreationEditHelperAdvice" target="org.eclipse.papyrus.SysML16.Reference" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.ReferenceCreationEditHelperAdvice">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4gYMUcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_p4gYMkcKEemrpM9dj3x64Q" description="satisfy org.eclipse.papyrus.sysml16.service.types.REQ_007" identifier="org.eclipse.papyru.sysml16.advice.ConnectorReorientEditHelperAdvice" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.ConnectorReorientEditHelperAdvice">
+    <target xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Connector"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4gYM0cKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_p4g_QEcKEemrpM9dj3x64Q" description="satisfy org.eclipse.papyrus.sysml16.service.types.REQ_007" identifier="org.eclipse.papyru.sysml16.advice.ConnectorCreationEditHelperAdvice" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.ConnectorCreationEditHelperAdvice">
+    <target xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Block"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4g_QUcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_p4g_QkcKEemrpM9dj3x64Q" description="satisfy org.eclipse.papyrus.sysml16.service.types.REQ_007" identifier="org.eclipse.papyru.sysml16.advice.ConnectorCreationConstraintBlockEditHelperAdvice" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.ConnectorCreationEditHelperAdvice">
+    <target xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.ConstraintBlock"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4hmUEcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_p4hmUUcKEemrpM9dj3x64Q" description="satisfy org.eclipse.papyrus.sysml16.service.types.REQ_007" identifier="org.eclipse.papyrus.sysml16.service.types.advice.SetEncapsulatedEditHelperAdvice" target="org.eclipse.papyrus.sysml16.stereotypeinstance.Block" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.SetEncapsulatedEditHelperAdvice">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4hmUkcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_p4hmU0cKEemrpM9dj3x64Q" identifier="org.eclipse.papyrus.SysML16.testcase.Activity" target="org.eclipse.papyrus.SysML16.Activity">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4iNYEcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_p4iNYUcKEemrpM9dj3x64Q" stereotypeQualifiedName="SysML::Requirements::TestCase">
+      <requiredProfiles>SysML</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_p4iNYkcKEemrpM9dj3x64Q" identifier="org.eclipse.papyrus.SysML16.testcase.FunctionBehavior" target="org.eclipse.papyrus.SysML16.FunctionBehavior">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4iNY0cKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_p4i0cEcKEemrpM9dj3x64Q" stereotypeQualifiedName="SysML::Requirements::TestCase">
+      <requiredProfiles>SysML</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_p4i0cUcKEemrpM9dj3x64Q" identifier="org.eclipse.papyrus.SysML16.testcase.Interaction" target="org.eclipse.papyrus.SysML16.Interaction">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4i0ckcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_p4jbgEcKEemrpM9dj3x64Q" stereotypeQualifiedName="SysML::Requirements::TestCase">
+      <requiredProfiles>SysML</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_p4jbgUcKEemrpM9dj3x64Q" identifier="org.eclipse.papyrus.SysML16.testcase.OpaqueBehavior" target="org.eclipse.papyrus.SysML16.OpaqueBehavior">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4jbgkcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_p4jbg0cKEemrpM9dj3x64Q" stereotypeQualifiedName="SysML::Requirements::TestCase">
+      <requiredProfiles>SysML</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_p4kCkEcKEemrpM9dj3x64Q" identifier="org.eclipse.papyrus.SysML16.testcase.ProtocolStateMachine" target="org.eclipse.papyrus.SysML16.ProtocolStateMachine">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4kCkUcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_p4kCkkcKEemrpM9dj3x64Q" stereotypeQualifiedName="SysML::Requirements::TestCase">
+      <requiredProfiles>SysML</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_p4kCk0cKEemrpM9dj3x64Q" identifier="org.eclipse.papyrus.SysML16.testcase.StateMachine" target="org.eclipse.papyrus.SysML16.StateMachine">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4kpoEcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_p4kpoUcKEemrpM9dj3x64Q" stereotypeQualifiedName="SysML::Requirements::TestCase">
+      <requiredProfiles>SysML</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="applystereotypeadvice:ApplyStereotypeAdviceConfiguration" xmi:id="_p4kpokcKEemrpM9dj3x64Q" identifier="org.eclipse.papyrus.SysML16.testcase.StateMachine" target="org.eclipse.papyrus.SysML16.AssociationBlock">
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4kpo0cKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+    <stereotypesToApply xmi:type="applystereotypeadvice:StereotypeToApply" xmi:id="_p4lQsEcKEemrpM9dj3x64Q" stereotypeQualifiedName="SysML::Blocks::Block">
+      <requiredProfiles>SysML</requiredProfiles>
+    </stereotypesToApply>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_p4lQsUcKEemrpM9dj3x64Q" identifier="Allocate_Abstraction.DirectedRelationshipPropertyPathEditHelperAdvice" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.DirectedRelationshipPropertyPathEditHelperAdvice">
+    <target xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4lQskcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_p4l3wEcKEemrpM9dj3x64Q" identifier="Allocate_Abstraction.ReorientDirectedRelationshipPPEditHelperAdvice" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.ReorientDirectedRelationshipPPEditHelperAdvice">
+    <target xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.Allocate_Abstraction"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4l3wUcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_p4l3wkcKEemrpM9dj3x64Q" identifier="org.eclipse.papyrus.sysml16.service.types.advice.ConstraintCreationEditHelperAdvice" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.ConstraintCreationEditHelperAdvice">
+    <target xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="setvaluesadvice:SetValuesAdviceConfiguration" xmi:id="_p4l3w0cKEemrpM9dj3x64Q" description="Set visibility to private " identifier="org.eclipse.papyrus.SysML16.PrivatePackageImport.setPrivate" target="org.eclipse.papyrus.SysML16.PrivatePackageImport">
+    <featuresToSet xmi:type="setvaluesadvice:FeatureToSet" xmi:id="_p4me0EcKEemrpM9dj3x64Q" featureName="visibility">
+      <value xmi:type="setvaluesadvice:ConstantValue" xmi:id="_p4me0UcKEemrpM9dj3x64Q">
+        <valueInstance xmi:type="uml:InstanceValue" xmi:id="_p4me0kcKEemrpM9dj3x64Q">
+          <type xmi:type="uml:Enumeration" href="pathmap://UML_METAMODELS/UML.metamodel.uml#VisibilityKind"/>
+          <instance xmi:type="uml:EnumerationLiteral" href="pathmap://UML_METAMODELS/UML.metamodel.uml#VisibilityKind-private"/>
+        </valueInstance>
+      </value>
+    </featuresToSet>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_p4me00cKEemrpM9dj3x64Q" description="" identifier="org.eclipse.papyru.sysml16.advice.DeriveReqtClient" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.DeriveReqtClientEditHelperAdvice">
+    <target xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Element"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4nF4EcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_p4nF4UcKEemrpM9dj3x64Q" description="" identifier="org.eclipse.papyru.sysml16.advice.DeriveReqtSupplier" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.DeriveReqtSupplierEditHelperAdvice">
+    <target xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Package"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4nF4kcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="elementtypesconfigurations:AdviceBindingConfiguration" xmi:id="_p4nF40cKEemrpM9dj3x64Q" description="" identifier="org.eclipse.papyru.sysml16.advice.ConnectorPropertyEditHelperAdvice" inheritance="all" editHelperAdviceClassName="org.eclipse.papyrus.sysml16.service.types.advice.ConnectorPropertyEditHelperAdvice">
+    <target xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml16.service.types/model/SysML16.elementtypesconfigurations#org.eclipse.papyrus.SysML16.ConnectorProperty"/>
+    <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4ns8EcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>
+  </adviceBindingsConfigurations>
+  <adviceBindingsConfigurations xmi:type="setvaluesadvice:SetValuesAdviceConfiguration" xmi:id="_p4ns8UcKEemrpM9dj3x64Q" description="Set abstract to true " identifier="org.eclipse.papyrus.SysML16.AbstractDefinition.setAbstract" target="org.eclipse.papyrus.SysML16.AbstractDefinition">
+    <featuresToSet xmi:type="setvaluesadvice:FeatureToSet" xmi:id="_p4ns8kcKEemrpM9dj3x64Q" featureName="isAbstract">
+      <value xmi:type="setvaluesadvice:ConstantValue" xmi:id="_p4oUAEcKEemrpM9dj3x64Q">
+        <valueInstance xmi:type="uml:LiteralBoolean" xmi:id="_p4oUAUcKEemrpM9dj3x64Q" value="true"/>
+      </value>
+    </featuresToSet>
+  </adviceBindingsConfigurations>
+</elementtypesconfigurations:ElementTypeSetConfiguration>

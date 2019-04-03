@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+
+<!--
+ Copyright (c) 2019 CEA LIST.
+ 
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License 2.0
+  which accompanies this distribution, and is available at
+  https://www.eclipse.org/legal/epl-2.0/ 
+
+  SPDX-License-Identifier: EPL-2.0
+ 
+ Contributors:
+   Nicolas FAUVERGUE (CEA LIST) nicolas.fauvergue@cea.fr - Initial API and implementation
+ 
+-->
+
+<plugin>
+   <extension
+         point="org.eclipse.papyrus.infra.nattable.configuration">
+      <configuration
+            file="resources/requirement.nattableconfiguration"
+            type="PapyrusSysML16RequirementTable">
+      </configuration>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.infra.nattable.configuration">
+      <configuration
+            file="resources/requirementTree.nattableconfiguration"
+            type="PapyrusSysML16RequirementTreeTable">
+      </configuration>
+   </extension>   
+   <extension
+         point="org.eclipse.papyrus.infra.nattable.celleditor.configuration">
+      <cellAxisConfiguration
+            class="org.eclipse.papyrus.sysml16.nattable.requirement.config.RequirementTextStringCellEditorConfiguration"
+            order="149"><!--This configuration has priority over the RichTextCellEditorConfiguration-->
+      </cellAxisConfiguration>
+   </extension>
+</plugin>

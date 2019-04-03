@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+	<properties>
+		<title>SysML - User</title>
+	</properties>
+
+	<body>
+		<section name="Download">
+			<p>The user guide could be downloaded as a pdf <a href="../pdf/user-guide.pdf">here</a></p>
+		</section>
+		<section name="SysML">
+			<subsection name="Context">
+				<p>The Systems Modeling Language (SysML) is a general-purpose
+					modeling language for systems engineering applications. It supports
+					the specification, analysis, design, verification and validation of
+					a broad range of systems and systems-of-systems.</p>
+				<p>
+					SysML was originally developed by an open source specification project,
+					and includes an open source license for distribution and use.[2]
+					SysML is defined as an extension of a subset of the Unified
+					Modeling Language (UML) using UML's profile mechanism.
+				</p>
+			</subsection>
+			<subsection name="Tutorials">
+				<ul>
+					<li><a href="tuto1-createsysmlproject.html" >Creation of a SysML project.</a></li>
+				</ul>
+			</subsection>
+			<subsection name="User FAQ">
+				<ul>
+					<li><a href="faq-user.html" >FAQ.</a></li>
+				</ul>
+			</subsection>
+			<subsection name="References">
+				<p>
+					<a href="http://www.omgsysml.org/">http://www.omgsysml.org/</a>
+				</p>
+				<p>
+					<a
+						href="./norm/formal-15-06-03.pdf#3">Embedded norm as pdf</a>
+				</p>
+			</subsection>
+		</section>
+
+	</body>
+
+</document>

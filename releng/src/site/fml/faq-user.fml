@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faqs xmlns="http://maven.apache.org/FML/1.0.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/FML/1.0.1 http://maven.apache.org/xsd/fml-1.0.1.xsd"
+  title="Frequently Asked Questions"
+  toplink="false">
+
+  <part id="faq-user-general">
+    <title>General</title>
+
+    <faq id="faq-user-requirement-table">
+      <question>
+        How to customize my SysML 1.6 Requirement tables?
+      </question>
+      <answer>
+        <p>Please have a look to the official papyrus Nattable documentation <a href="https://wiki.eclipse.org/Papyrus_User_Guide/Table_Documentation">https://wiki.eclipse.org/Papyrus_User_Guide/Table_Documentation</a></p>
+        <p>For instance, you can display or hide colums or rows elements, or customize them.</p>
+      </answer>
+    </faq>
+ 
+   </part>
+
+</faqs>

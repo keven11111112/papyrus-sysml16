@@ -1,0 +1,24 @@
+Bundle-ActivationPolicy: lazy
+Manifest-Version: 1.0
+Export-Package: org.eclipse.papyrus.sysml16.tests,
+ org.eclipse.papyrus.sysml16.tests.blocks,
+ org.eclipse.papyrus.sysml16.tests.constraintblocks,
+ org.eclipse.papyrus.sysml16.tests.deprecatedelements,
+ org.eclipse.papyrus.sysml16.tests.library,
+ org.eclipse.papyrus.sysml16.tests.modelelements,
+ org.eclipse.papyrus.sysml16.tests.portsandflows,
+ org.eclipse.papyrus.sysml16.tests.requirements,
+ org.eclipse.papyrus.sysml16.tests.resources,
+ org.eclipse.papyrus.sysml16.tests.util
+Bundle-Vendor: %Bundle-Vendor
+Bundle-Version: 1.0.0.qualifier
+Bundle-Name: %Bundle-Name
+Bundle-Description: %Bundle-Description
+Bundle-Localization: plugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.eclipse.papyrus.sysml16.tests
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.junit;bundle-version="[4.11.0,5.0.0)",
+ org.eclipse.papyrus.sysml16;bundle-version="1.0.0"
+Automatic-Module-Name: org.eclipse.papyrus.sysml16.tests
+ 

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<expansionmodel:DiagramExpansion xmlns:expansionmodel="http:///expansionmodel.ecore" xmlns:elementtypesconfigurations="http://www.eclipse.org/papyrus/infra/elementtypesconfigurations/1.2" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="SysML 1.6 Parametric" xmi:id="org.eclipse.papyrus.sysml16.parametric.expansionmodel" xmi:version="2.0">
+  <usages diagramType="SysML 1.6 Parametric Diagram" name="SysML 1.6 Parametric Context" representations="_mUSiYILiEeW6xruev4cRfQ" xmi:id="_rC19oNnoEeSqwOe5_frWm1">
+    <gmftRepresentations editPartQualifiedName="org.eclipse.papyrus.uml.diagram.composite.edit.parts.ClassCompositeEditPart" inducedRepresentations="_U9-hYILjEeW6xruev4cRfQ _ZMHeQPRlEeakH_jG3IBwLw" name="Block based on Class representation of composite diagram" reusedID="Class_Shape" subRepresentations="_Zs7FQPRlEeakH_jG3IBwLw" viewFactory="org.eclipse.papyrus.sysml16.diagram.parametric.internal.factory.BlockCompositeViewFactory" xmi:id="_mUSiYILiEeW6xruev4cRfQ"/>
+  </usages>
+  <libraries name="Overload existing compartment of the composite diagram" xmi:id="_T4rGMILjEeW6xruev4cRfQ">
+    <representations children="_CKVjwIMFEeW6xruev4cRfQ" hint="Class_StructureCompartment" name="Reuse compartment of internal structure of the Composite class" xmi:id="_U9-hYILjEeW6xruev4cRfQ" xsi:type="expansionmodel:InducedRepresentation">
+      <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_1uXq8N0DEeS-X4lB2Ut-YA"/>
+    </representations>
+  </libraries>
+  <libraries name="Sub representations" xmi:id="_9nQaIIMEEeW6xruev4cRfQ">
+    <representations editPartQualifiedName="org.eclipse.papyrus.uml.diagram.composite.edit.parts.PropertyPartEditPartCN" inducedRepresentations="_-La5QIPXEeWhLaOZG6fRyw" name="ConstraintBlockProperty" subRepresentations="_meiusIOfEeWhLaOZG6fRyw" viewFactory="org.eclipse.papyrus.sysml16.diagram.parametric.internal.factory.ConstraintPropertyViewFactory" xmi:id="_CKVjwIMFEeW6xruev4cRfQ" xsi:type="expansionmodel:Representation">
+      <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.ConstraintPropertyComposite" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+    </representations>
+    <representations editPartQualifiedName="org.eclipse.papyrus.sysml16.diagram.parametric.edit.part.ParameterBorderItermEditPart" inducedRepresentations="_uamt4IPBEeWhLaOZG6fRyw" name="Border item that represents PropertyValue of SysML" viewFactory="org.eclipse.papyrus.sysml16.diagram.parametric.internal.factory.BorderItemViewFactory" xmi:id="_meiusIOfEeWhLaOZG6fRyw" xsi:type="expansionmodel:Representation">
+      <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_EoAOIN0DEeSiOexlyH3Ifw"/>
+    <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Parameter_BorderItem" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+    </representations>
+    <representations editPartQualifiedName="org.eclipse.papyrus.sysml16.diagram.common.edit.parts.LabelInListEditpart" name="Constraint As Label" viewFactory="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal.ShapeViewFactory" xmi:id="_CvOcoFVqEeW77p7V_ZuW3Q" xsi:type="expansionmodel:Representation">
+      <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Constraint_Label" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+    </representations>
+    <representations children="_Zs7FQPRlEeakH_jG3IBwLw" description="Add border item children in Class_Shape" hint="Class_Shape" name="BorderItemClassShapeInducedRepresentation" xmi:id="_ZMHeQPRlEeakH_jG3IBwLw" xsi:type="expansionmodel:InducedRepresentation">
+      <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_EoAOIN0DEeSiOexlyH3Ifw"/>
+    </representations>
+    <representations description="Border item that represents PropertyValue of SysML on Class_Shape" editPartQualifiedName="org.eclipse.papyrus.sysml16.diagram.parametric.edit.part.ParameterBorderItermEditPart" inducedRepresentations="_uamt4IPBEeWhLaOZG6fRyw" name="BorderItemClassShapeRepresentation" viewFactory="org.eclipse.papyrus.sysml16.diagram.parametric.internal.factory.BorderItemViewFactory" xmi:id="_Zs7FQPRlEeakH_jG3IBwLw" xsi:type="expansionmodel:Representation">
+      <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_EoAOIN0DEeSiOexlyH3Ifw"/>
+    <graphicalElementTypeRef href="platform:/plugin/org.eclipse.papyrus.sysml16.diagram.common/resources/SysML16Di-extension.elementtypesconfigurations#org.eclipse.papyrus.sysml16di.Parameter_BorderItemClassShape" xsi:type="elementtypesconfigurations:SpecializationTypeConfiguration"/>
+    </representations>
+  </libraries>
+  <libraries name="inducedRepresentation" xmi:id="_sYz1QIPBEeWhLaOZG6fRyw">
+    <representations editPartQualifiedName="org.eclipse.papyrus.sysml16.diagram.parametric.edit.part.ParameterBorderItemNameEditPart" hint="ParameterLabel" name="a parameterLabel" xmi:id="_uamt4IPBEeWhLaOZG6fRyw" xsi:type="expansionmodel:InducedRepresentation">
+      <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_dG-hoN0HEeSfTfTnKh2G1Q"/>
+    </representations>
+    <representations children="_CvOcoFVqEeW77p7V_ZuW3Q" hint="constraints" name="Compartment constraint" xmi:id="_-La5QIPXEeWhLaOZG6fRyw" xsi:type="expansionmodel:InducedRepresentation">
+      <kind href="platform:/plugin/org.eclipse.papyrus.uml.diagram.common/model/UMLRepresentationKind.xmi#_vbTKYN0DEeS-X4lB2Ut-YA"/>
+    </representations>
+  </libraries>
+</expansionmodel:DiagramExpansion>

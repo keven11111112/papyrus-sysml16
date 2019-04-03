@@ -1,0 +1,301 @@
+/*****************************************************************************
+ * Copyright (c) 2015 CEA LIST.
+ * 
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License 2.0
+ * which accompanies this distribution, and is available at
+ * https://www.eclipse.org/legal/epl-2.0/
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ *
+ * Contributors:
+ *  Benoit Maggi (CEA LIST) benoit.maggi@cea.fr
+ *  Benoit Maggi (CEA LIST) benoit.maggi@cea.fr : #521319
+ *****************************************************************************/
+/*
+ * SHARED ELEMENTS
+ */
+ 
+Compartment{
+	visible: false;
+	showTitle: false;
+}
+
+Compartment[kind=structure]{
+	showTitle: false;
+}
+
+Package > Compartment[kind="packagedelements"],
+Model > Compartment[kind="packagedelements"]{
+	visible: true;
+	showTitle: false;
+}
+
+[deprecated=true] {
+	lineColor: orange;
+}
+
+[appliedStereotypes~="FlowSpecification"]{
+	elementIcon:false;
+	displayIcon:false;
+}
+
+[appliedStereotypes~="FlowSpecification"] > Compartment[kind=flowproperties]{
+	visible: true;
+}
+
+[appliedStereotypes~="ValueType"] > Compartment[kind=attributes],
+[appliedStereotypes~="ValueType"] > Compartment[kind=operations],
+[appliedStereotypes~="ValueType"] > Compartment[type=StereotypeCompartment]{
+	visible: true;
+	showTitle: true;
+}
+
+/*
+ * Comment
+ */
+Class[appliedStereotypes~="Comment"]{
+	visible:true;
+}
+
+/*
+ * Stereotype ElementGroup
+ */
+ 
+Class[appliedStereotypes~="ElementGroup"] {
+    visible:true;
+    showTitle:true;
+}
+
+Class[appliedStereotypes~="ElementGroup"] > Compartment[type=StereotypeCompartment] {
+    visible:true;
+    showTitle:false;
+}
+
+Class[appliedStereotypes~="ElementGroup"] > Compartment[type=StereotypeCompartment] > [property="name"]
+Class[appliedStereotypes~="ElementGroup"] > Compartment[type=StereotypeCompartment] > [property="criterion"],
+Class[appliedStereotypes~="ElementGroup"] > Compartment[type=StereotypeCompartment] > [property="size"],
+Class[appliedStereotypes~="ElementGroup"] > Compartment[type=StereotypeCompartment] > [property="member"],
+Class[appliedStereotypes~="ElementGroup"] > Compartment[type=StereotypeCompartment] > [property="orderedMember"]{
+	visible:true;
+}
+
+/*
+ * Stereotype FlowProperty
+ */
+Class[appliedStereotypes~="FlowProperty"] {
+    visible:true;
+    showTitle:true;
+}
+
+/*
+ * Problem
+ */
+Class[appliedStereotypes~="Problem"]{
+	visible:true;
+}
+
+/*
+ * Rationale
+ */
+Class[appliedStereotypes~="Rational"]{
+	visible:true;
+}
+
+/*
+ * Stakeholder
+ */
+Class[appliedStereotypes~="Stakeholder"] > Compartment[type=StereotypeCompartment] {
+    visible:true;
+    showTitle:false;
+} 
+ 
+[appliedStereotypes~="Stakeholder"] > Compartment[kind=attributes],
+[appliedStereotypes~="Stakeholder"] > Compartment[kind=operations],
+[appliedStereotypes~="Stakeholder"] > Compartment[kind=constraints]{
+	visible: true;
+}
+
+Class[appliedStereotypes~="Stakeholder"] > Compartment[type=StereotypeCompartment] > [property="concernList"],
+Class[appliedStereotypes~="Stakeholder"] > Compartment[type=StereotypeCompartment] > [property="concern"]{
+	visible:true;
+}
+
+/*
+ * Stereotype View
+ */
+Class[appliedStereotypes~="View"] > Compartment[kind=attributes],
+Class[appliedStereotypes~="View"] > Compartment[kind=operations]{
+    visible:true;
+    showTitle:false;
+} 
+
+Class[appliedStereotypes~="View"] > Compartment[kind="nestedclassifiers"]{
+    visible:false;
+    showTitle:false;
+} 
+ 
+Class[appliedStereotypes~="View"] > Compartment[type=StereotypeCompartment] {
+    visible:true;
+    showTitle:true;
+}
+
+Class[appliedStereotypes~="View"] > Compartment[type=StereotypeCompartment] > [property="stakeholder"],
+Class[appliedStereotypes~="View"] > Compartment[type=StereotypeCompartment] > [property="viewpoint"]{
+	visible:true;
+}
+
+/*
+ * Stereotype Viewpoint
+ */
+Class[appliedStereotypes~="Viewpoint"] > Compartment[type=StereotypeCompartment] {
+    visible:true;
+    showTitle:false;
+} 
+ 
+[appliedStereotypes~="Viewpoint"] > Compartment[kind=attributes],
+[appliedStereotypes~="Viewpoint"] > Compartment[kind=operations]{
+	visible:true;
+}
+
+[appliedStereotypes~="Viewpoint"] > Compartment[kind="internal structure"],
+[appliedStereotypes~="Viewpoint"] > Compartment[kind="symbol"]{
+	visible:false;
+}
+
+Class[appliedStereotypes~="Viewpoint"] > Compartment[type=StereotypeCompartment] > [property="stakeholder"],
+Class[appliedStereotypes~="Viewpoint"] > Compartment[type=StereotypeCompartment] > [property="purpose"],
+Class[appliedStereotypes~="Viewpoint"] > Compartment[type=StereotypeCompartment] > [property="concernList"],
+Class[appliedStereotypes~="Viewpoint"] > Compartment[type=StereotypeCompartment] > [property="language"],
+Class[appliedStereotypes~="Viewpoint"] > Compartment[type=StereotypeCompartment] > [property="method"],
+Class[appliedStereotypes~="Viewpoint"] > Compartment[type=StereotypeCompartment] > [property="presentation"],
+Class[appliedStereotypes~="Viewpoint"] > Compartment[type=StereotypeCompartment] > [property="concern"]{
+	visible:true;
+}
+
+/*
+ * SPECIFIC ELEMENTS
+ */
+BlockDefinitionDiagram Compartment{
+	visible: false;
+	showTitle: true;
+}
+
+BlockDefinitionDiagram Property > Compartment[kind=structure]{
+	visible: true;
+}
+
+BlockDefinitionDiagram DataType > Compartment[kind=attributes],
+BlockDefinitionDiagram Enumeration > Compartment[kind=EnumerationLiteralCompartment],
+BlockDefinitionDiagram InstanceSpecification > Compartment[kind=slots],
+BlockDefinitionDiagram Interface > Compartment[kind=attributes],
+BlockDefinitionDiagram Interface > Compartment[kind=operations]{
+	showTitle:true;
+	visible: true;
+}
+
+/*
+ * Stereotype Block
+ */
+[appliedStereotypes~="Block"] > Compartment[kind=attributes],
+[appliedStereotypes~="Block"] > Compartment[kind=operations],
+[appliedStereotypes~="Block"] > Compartment[kind=constraints],
+[appliedStereotypes~="Block"] > Compartment[kind="parts"]{
+	visible: true;
+	showTitle:true;
+} 
+ 
+[appliedStereotypes~="Block"] > Compartment[kind=nestedclassifiers],
+[appliedStereotypes~="Block"] > Compartment[kind=StereotypeCompartment],
+[appliedStereotypes~="Block"] > Compartment[kind=FullPorts] {
+    visible:false;
+    showTitle:false;
+}
+
+/*
+ * Stereotype ConstraintBlock
+ */
+
+Class[appliedStereotypes~="ConstraintBlock"] > Compartment[kind=attributes], 
+Class[appliedStereotypes~="ConstraintBlock"] > Compartment[kind=nestedclassifiers],
+Class[appliedStereotypes~="ConstraintBlock"] > Compartment[kind=StereotypeCompartment],
+Class[appliedStereotypes~="ConstraintBlock"] > Compartment[kind=operations]  {
+    visible:false;
+    showTitle:false;
+}
+
+Class[appliedStereotypes~="ConstraintBlock"] > Compartment[kind=structure],
+Class[appliedStereotypes~="ConstraintBlock"] > Compartment[kind=basiccompartment],
+Class[appliedStereotypes~="ConstraintBlock"] > Compartment[kind=Parameters],
+Class[appliedStereotypes~="ConstraintBlock"] > Compartment[kind=constraints]{
+	visible: true;
+	showTitle:true;
+}
+
+
+/*
+ * Stereotype InterfaceBlock
+ */
+Class[appliedStereotypes~=InterfaceBlock] > Compartment[kind=operations] {
+	visible: true;
+	showTitle:true;
+}
+
+/*
+ * Stereotype InterfaceBlock
+ */
+Class[appliedStereotypes~=ConjugatedInterfaceBlock] > Compartment[kind=operations] {
+	visible: true;
+	showTitle:true;
+} 
+
+/*
+ * Stereotype Requirement
+ */
+Class[appliedStereotypes~="Requirement"] > Compartment[kind=nestedclassifiers]{
+    visible:false;
+    showTitle:false;
+}
+ 
+Class[appliedStereotypes~="Requirement"] > Compartment[type=StereotypeCompartment] {
+    visible:true;
+    showTitle:false;
+}
+
+Class[appliedStereotypes~="Requirement"] > Compartment[type=StereotypeCompartment] > [property="derived"],
+Class[appliedStereotypes~="Requirement"] > Compartment[type=StereotypeCompartment] > [property="derivedFrom"],
+Class[appliedStereotypes~="Requirement"] > Compartment[type=StereotypeCompartment] > [property="satisfiedBy"],
+Class[appliedStereotypes~="Requirement"] > Compartment[type=StereotypeCompartment] > [property="refinedBy"],
+Class[appliedStereotypes~="Requirement"] > Compartment[type=StereotypeCompartment] > [property="tracedTo"],
+Class[appliedStereotypes~="Requirement"] > Compartment[type=StereotypeCompartment] > [property="verifiedBy"],
+Class[appliedStereotypes~="Requirement"] > Compartment[type=StereotypeCompartment] > [property="master"]{
+	visible:false;
+}
+
+Class[appliedStereotypes~="Requirement"] > Compartment[kind="operations"] {
+    visible:false;
+}
+
+/*
+ * Actor
+ */
+Actor
+{
+	displayBorder:false;
+	displayName:false;
+	diplayIcon:false;
+	displayTag:false;
+	followSVGSymbol:true;
+	maintainSymbolRatio:true;
+	transparency:100;
+	/*displayFloatingLabel:true;*/
+	maxNumberOfSymbol:1;
+	useOriginalColors:false;
+	gradient:none;
+	fillColor:white;
+}
+
+Actor > Compartment[kind="symbol"]
+{
+    visible:true;
+}
