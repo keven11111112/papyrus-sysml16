@@ -65,7 +65,6 @@ import org.eclipse.papyrus.sysml16.validation.tests.rules.activities.OptionalMul
 import org.eclipse.papyrus.sysml16.validation.tests.rules.activities.OverwriteNoNoBufferModelConstraintModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.activities.RateParameterIsStreamModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.allocations.AllocateOneClientSupplierModelConstraintTest;
-import org.eclipse.papyrus.sysml16.validation.tests.rules.allocations.AllocateOnlyAbstractionModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.blocks.AssociationBlockModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.blocks.BindingConnectorSameEndsTypeModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.blocks.BlockPropertyCompositeModelConstraintTest;
@@ -96,7 +95,6 @@ import org.eclipse.papyrus.sysml16.validation.tests.rules.modelelements.ViewSing
 import org.eclipse.papyrus.sysml16.validation.tests.rules.modelelements.ViewpointOwnedViewModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.portsandflows.FlowPropertyTypedByModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.portsandflows.FullPortNotBehavioralModelConstraintTest;
-import org.eclipse.papyrus.sysml16.validation.tests.rules.portsandflows.FullPortNotConjugatedModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.portsandflows.FullPortNotProxyPortModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.portsandflows.InterfaceBlockNoBehaviorConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.portsandflows.InterfaceBlockNoCompositePropertyModelConstraintTest;
@@ -108,7 +106,6 @@ import org.eclipse.papyrus.sysml16.validation.tests.rules.requirements.CopyBetwe
 import org.eclipse.papyrus.sysml16.validation.tests.rules.requirements.CopyReadOnlyModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.requirements.DeriveReqtClientModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.requirements.DeriveReqtSupplierModelConstraintTest;
-import org.eclipse.papyrus.sysml16.validation.tests.rules.requirements.RefineDependencyModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.requirements.RefineOneClientSupplierModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.requirements.RequirementEmptyOwnedAttributeModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.requirements.RequirementEmptyOwnedOperationModelConstraintTest;
@@ -119,7 +116,6 @@ import org.eclipse.papyrus.sysml16.validation.tests.rules.requirements.Requireme
 import org.eclipse.papyrus.sysml16.validation.tests.rules.requirements.SatisfySupplierModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.requirements.TestCaseParameterVerdictKindModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.requirements.TraceDependencyModelConstraintTest;
-import org.eclipse.papyrus.sysml16.validation.tests.rules.requirements.TraceOneClientSupplierModelConstraintTest;
 import org.eclipse.papyrus.sysml16.validation.tests.rules.requirements.VerifySupplierModelConstraintTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
@@ -208,7 +204,6 @@ import org.junit.runners.Suite.SuiteClasses;
 		OverwriteNoNoBufferModelConstraintModelConstraintTest.class,
 		RateParameterIsStreamModelConstraintTest.class,
 		AllocateOneClientSupplierModelConstraintTest.class,
-		AllocateOnlyAbstractionModelConstraintTest.class,
 		AssociationBlockModelConstraintTest.class,
 		BindingConnectorSameEndsTypeModelConstraintTest.class,
 		BlockPropertyCompositeModelConstraintTest.class,
@@ -239,7 +234,6 @@ import org.junit.runners.Suite.SuiteClasses;
 		ViewSingleViewpointModelConstraintTest.class,
 		FlowPropertyTypedByModelConstraintTest.class,
 		FullPortNotBehavioralModelConstraintTest.class,
-		FullPortNotConjugatedModelConstraintTest.class,
 		FullPortNotProxyPortModelConstraintTest.class,
 		InterfaceBlockNoBehaviorConstraintTest.class,
 		InterfaceBlockNoCompositePropertyModelConstraintTest.class,
@@ -251,7 +245,6 @@ import org.junit.runners.Suite.SuiteClasses;
 		CopyReadOnlyModelConstraintTest.class,
 		DeriveReqtClientModelConstraintTest.class,
 		DeriveReqtSupplierModelConstraintTest.class,
-		RefineDependencyModelConstraintTest.class,
 		RefineOneClientSupplierModelConstraintTest.class,
 		RequirementEmptyOwnedAttributeModelConstraintTest.class,
 		RequirementEmptyOwnedOperationModelConstraintTest.class,
@@ -262,7 +255,6 @@ import org.junit.runners.Suite.SuiteClasses;
 		SatisfySupplierModelConstraintTest.class,
 		TestCaseParameterVerdictKindModelConstraintTest.class,
 		TraceDependencyModelConstraintTest.class,
-		TraceOneClientSupplierModelConstraintTest.class,
 		VerifySupplierModelConstraintTest.class,
 })
 public class AllTests {

@@ -58,7 +58,7 @@
     <specializedTypes xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.service.types/model/uml.elementtypesconfigurations#org.eclipse.papyrus.uml.Property"/>
   </elementTypeConfigurations>
   <elementTypeConfigurations xmi:type="elementtypesconfigurations:MetamodelTypeConfiguration" xmi:id="org.eclipse.papyrus.sysml16.stereotypeinstance.Block" identifier="org.eclipse.papyrus.sysml16.stereotypeinstance.Block" name="SysML::StereotypeInstance::Block" hint="SysML::StereotypeInstance::Block" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" editHelperClassName="org.eclipse.papyrus.infra.gmfdiag.common.helper.DefaultEditHelper">
-    <eClass xmi:type="ecore:EClass" href="platform:/plugin/org.eclipse.papyrus.sysml16/resources/profile/sysml.profile.ecore#//blocks/Block"/>
+    <eClass xmi:type="ecore:EClass" href="platform:/plugin/org.eclipse.papyrus.sysml16/resources/profile/SysML.profile.ecore#//blocks/Block"/>
   </elementTypeConfigurations>
   <elementTypeConfigurations xmi:type="elementtypesconfigurations:SpecializationTypeConfiguration" xmi:id="org.eclipse.papyrus.SysML16.Activity" description="Create a TestCase Activity" identifier="org.eclipse.papyrus.SysML16.Activity" name="Activity" hint="UML::Activity" kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
     <matcherConfiguration xmi:type="elementtypesconfigurations:MatcherConfiguration" xmi:id="_p4aRkEcKEemrpM9dj3x64Q" matcherClassName="org.eclipse.papyrus.sysml16.service.types.matcher.internal.SysML16ProfileMatcher"/>

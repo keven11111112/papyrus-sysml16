@@ -27,7 +27,7 @@ public final class SysMLServiceTypeUtil {
 
 	/**
 	 * Say if an element is know in the SysML 1.6 context
-	 * 
+	 *
 	 * @param elementTypeId
 	 * @return
 	 */
@@ -38,9 +38,9 @@ public final class SysMLServiceTypeUtil {
 	}
 
 	public static final String SYSML16_CONTEXT_ID = "org.eclipse.papyrus.infra.services.edit.TypeContext"; //$NON-NLS-1$
-			//"org.eclipse.papyrus.sysml.architecture.SysML16"; //$NON-NLS-1$
+	// "org.eclipse.papyrus.sysml.architecture.SysML16"; //$NON-NLS-1$
 
-	
+
 	public static final String ORG_ECLIPSE_PAPYRUS_SYSML16_VALUETYPE = "org.eclipse.papyrus.SysML16.ValueType"; //$NON-NLS-1$
 
 	public static final String ORG_ECLIPSE_PAPYRUS_SYSML16_DISTRIBUTEDPROPERTY = "org.eclipse.papyrus.SysML16.DistributedProperty"; //$NON-NLS-1$

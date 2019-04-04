@@ -43,7 +43,7 @@ public class ModelValidationTest {
 	public static Collection<Object[]> data() {
 		return Arrays.asList(new Object[][] {
 				// FIXME should be valid{"/resources/style/parametricDiagram.css"},
-				{ "/resources/configuration/ParametricDiagramConfig.expansionmodel" }, //$NON-NLS-1$
+				{ "/resources/configuration/parametricDiagramConfig.expansionmodel" }, //$NON-NLS-1$
 				{ "/resources/palette/parametric.paletteconfiguration" }, //$NON-NLS-1$
 		});
 	}
