@@ -25,7 +25,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 			</activation>
 			<modules>
 				<!-- due to heterogeneous duration of test up to 300s -->
-				<module>org.eclipse.papyrus.sysml14.validation.tests</module>
+				<module>org.eclipse.papyrus.sysml16.validation.tests</module>
 			</modules>
 		</profile>
 	</profiles>
