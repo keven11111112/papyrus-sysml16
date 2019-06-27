@@ -4,7 +4,7 @@
 	<parent>
 		<artifactId>org.eclipse.papyrus.sysml16.plugins.tests</artifactId>
 		<groupId>org.eclipse.papyrus.sysml</groupId>
-		<version>1.0.0-SNAPSHOT</version>
+		<version>1.0.0</version>
 	</parent>	
 	<artifactId>org.eclipse.papyrus.sysml16.table.tests</artifactId>
 	<packaging>pom</packaging>

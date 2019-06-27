@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Papyrus SysML 1.6" uid="org.eclipse.papyrus.sysml16.product" id="org.eclipse.papyrus.sysml16.rcp.product" application="org.eclipse.ui.ide.workbench" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Papyrus SysML 1.6" uid="org.eclipse.papyrus.sysml16.product" id="org.eclipse.papyrus.sysml16.rcp.product" application="org.eclipse.ui.ide.workbench" version="1.0.0" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/org.eclipse.papyrus.sysml16.rcp/icons/papyrus_lg.png"/>

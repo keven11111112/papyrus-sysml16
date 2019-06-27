@@ -1,7 +1,7 @@
 Bundle-ActivationPolicy: lazy
 Manifest-Version: 1.0
 Bundle-Vendor: %Bundle-Vendor
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.0.0
 Bundle-Name: %Bundle-Name
 Bundle-Description: %Bundle-Description
 Bundle-Localization: plugin

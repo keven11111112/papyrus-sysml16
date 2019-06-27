@@ -23,7 +23,7 @@ Require-Bundle: org.junit;bundle-version="[4.11.0,5.0.0)",
  org.eclipse.papyrus.sysml16.service.types;bundle-version="1.0.0"
 Bundle-Vendor: %Bundle-Vendor
 Bundle-ActivationPolicy: lazy
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.0.0
 Bundle-Name: %Bundle-Name
 Bundle-Localization: plugin
 Bundle-ManifestVersion: 2

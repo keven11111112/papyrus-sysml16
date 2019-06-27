@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.papyrus.sysml16.requirements.extension.feature"
       label="%featureName"
-      version="1.0.0.qualifier"
+      version="1.0.0"
       provider-name="%providerName"
       plugin="org.eclipse.papyrus.sysml16.requirements.extension.ui"
       license-feature="org.eclipse.license"

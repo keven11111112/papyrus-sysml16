@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.eclipse.papyrus.sysml16.feature_1.0.0.qualifier.jar" id="org.eclipse.papyrus.sysml16.feature" version="1.0.0.qualifier">
+   <feature url="features/org.eclipse.papyrus.sysml16.feature_1.0.0.jar" id="org.eclipse.papyrus.sysml16.feature" version="1.0.0">
       <category name="org.eclipse.papyrus.category"/>
    </feature>
-   <feature url="features/org.eclipse.papyrus.sysml16.feature.source_1.0.0.jar" id="org.eclipse.papyrus.sysml16.feature.source" version="1.0.0.qualifier">
+   <feature url="features/org.eclipse.papyrus.sysml16.feature.source_1.0.0.jar" id="org.eclipse.papyrus.sysml16.feature.source" version="1.0.0">
       <category name="org.eclipse.papyrus.category"/>
    </feature>
-   <feature url="features/org.eclipse.papyrus.sysml16.requirements.extension.feature_1.0.0.qualifier.jar" id="org.eclipse.papyrus.sysml16.requirements.extension.feature" version="1.0.0.qualifier">
+   <feature url="features/org.eclipse.papyrus.sysml16.requirements.extension.feature_1.0.0.jar" id="org.eclipse.papyrus.sysml16.requirements.extension.feature" version="1.0.0">
       <category name="org.eclipse.papyrus.category"/>
    </feature>
-   <feature url="features/org.eclipse.papyrus.sysml16.requirements.extension.feature.source_1.0.0.jar" id="org.eclipse.papyrus.sysml16.requirements.extension.feature.source" version="1.0.0.qualifier">
+   <feature url="features/org.eclipse.papyrus.sysml16.requirements.extension.feature.source_1.0.0.jar" id="org.eclipse.papyrus.sysml16.requirements.extension.feature.source" version="1.0.0">
       <category name="org.eclipse.papyrus.category"/>
    </feature>
    <category-def name="org.eclipse.papyrus.category" label="Papyrus SysML Category">
