@@ -34,7 +34,7 @@
 								<update.site.nightly>https://ci.eclipse.org/papyrus/job/papyrus-sysml16-master/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml16.p2/target/repository/</update.site.nightly>
 							</symbols>
 							<associateSites>
-								<site>http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2018-12</site>
+								<site>http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2019-06</site>
 							</associateSites>
 							<siteTemplateFolder>siteTemplate</siteTemplateFolder>
 							<p2StatsUrl>http://download.eclipse.org/stats</p2StatsUrl>

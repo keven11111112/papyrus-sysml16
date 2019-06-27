@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<parent>
 		<groupId>org.eclipse.papyrus.components</groupId>
 		<artifactId>org.eclipse.papyrus.components.parent</artifactId>
 		<version>0.0.27</version>
 	</parent>
-	
+
 	<groupId>org.eclipse.papyrus.sysml</groupId>
 	<artifactId>org.eclipse.papyrus.sysml16.parent</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
@@ -16,7 +17,7 @@
 	<name>SysML</name>
 	<description>A Papyrus DSML for the SysML 1.6 OMG norm</description>
 	<url>https://eclipse.org/papyrus/components/${component.shortname}/</url>
-	<inceptionYear>2015</inceptionYear>
+	<inceptionYear>2018</inceptionYear>
 
 	<modules>
 		<module>plugins</module>
@@ -32,7 +33,7 @@
 		<component.package.rootname>org.eclipse.papyrus.sysml</component.package.rootname>
 		<component.rcp.name>org.eclipse.papyrus.sysml16.rcp</component.rcp.name>
 		<component.servicetype>org.eclipse.papyrus.sysml16.service.types</component.servicetype>
-		<eclipse.targetrelease>2018-12</eclipse.targetrelease>
+		<eclipse.targetrelease>2019-06</eclipse.targetrelease>
 		<target.version>${project.version}</target.version>
 		<sonar.exclusions>**/src-gen/**</sonar.exclusions>
 	</properties>
@@ -72,7 +73,7 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-	
+
 	<distributionManagement>
 		<site>
 			<id>git.eclipse.org.server</id>
@@ -86,35 +87,19 @@
 	</scm>
 
 	<repositories>
-		<!--repository>
+		<!--repository> <id>pap.repo.eclipse.org</id> <name>Papyrus Repository 
+			- Releases</name> <url>https://repo.eclipse.org/content/repositories/papyrus-releases/</url> 
+			<releases> <enabled>true</enabled> <updatePolicy>daily</updatePolicy> </releases> 
+			<snapshots> <enabled>false</enabled> </snapshots> </repository> <repository> 
+			<id>paps.repo.eclipse.org</id> <name>Papyrus Repository - Snapshots</name> 
+			<url>https://repo.eclipse.org/content/repositories/papyrus-snapshots/</url> 
+			<releases> <enabled>false</enabled> </releases> <snapshots> <enabled>true</enabled> 
+			<updatePolicy>daily</updatePolicy> </snapshots> </repository -->
+		<repository>
 			<id>pap.repo.eclipse.org</id>
 			<name>Papyrus Repository - Releases</name>
-			<url>https://repo.eclipse.org/content/repositories/papyrus-releases/</url>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>daily</updatePolicy>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
+			<url>https://repo.eclipse.org/content/repositories/papyrus/</url>
 		</repository>
-		<repository>
-			<id>paps.repo.eclipse.org</id>
-			<name>Papyrus Repository - Snapshots</name>
-			<url>https://repo.eclipse.org/content/repositories/papyrus-snapshots/</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>daily</updatePolicy>
-			</snapshots>
-		</repository-->
-		<repository>
-				<id>pap.repo.eclipse.org</id>
-				<name>Papyrus Repository - Releases</name>
-				<url>https://repo.eclipse.org/content/repositories/papyrus/</url>
-		</repository> 
 	</repositories>
-	
+
 </project>

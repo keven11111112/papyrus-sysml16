@@ -17,5 +17,5 @@
          Papyrus SysML Category
       </description>
    </category-def>
-   <repository-reference location="http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2018-12/" enabled="true" />
+   <repository-reference location="http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2019-06/" enabled="true" />
 </site>
