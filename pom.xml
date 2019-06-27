@@ -12,7 +12,7 @@
 
 	<groupId>org.eclipse.papyrus.sysml</groupId>
 	<artifactId>org.eclipse.papyrus.sysml16.parent</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.100-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>SysML</name>
 	<description>A Papyrus DSML for the SysML 1.6 OMG norm</description>

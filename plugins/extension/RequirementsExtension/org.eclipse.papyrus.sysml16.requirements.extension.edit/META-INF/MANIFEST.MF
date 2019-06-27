@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: org.eclipse.papyrus.sysml16.requirements.extension.edit;singleton:=true
 Automatic-Module-Name: org.eclipse.papyrus.sysml16.requirements.extension.edit
-Bundle-Version: 1.0.0
+Bundle-Version: 1.0.100.qualifier
 Bundle-ClassPath: .
 Bundle-Activator: org.eclipse.papyrus.sysml16.requirementsextension.provider.RequirementsExtensionEditPlugin$Implementation
 Bundle-Vendor: %Bundle-Vendor

@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: org.eclipse.papyrus.sysml16.modelexplorer;singleton:=true
-Bundle-Version: 1.0.0
+Bundle-Version: 1.0.100.qualifier
 Automatic-Module-Name: org.eclipse.papyrus.syml16.modelexplorer
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy

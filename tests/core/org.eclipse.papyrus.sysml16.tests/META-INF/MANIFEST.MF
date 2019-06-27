@@ -11,7 +11,7 @@ Export-Package: org.eclipse.papyrus.sysml16.tests,
  org.eclipse.papyrus.sysml16.tests.resources,
  org.eclipse.papyrus.sysml16.tests.util
 Bundle-Vendor: %Bundle-Vendor
-Bundle-Version: 1.0.0
+Bundle-Version: 1.0.100.qualifier
 Bundle-Name: %Bundle-Name
 Bundle-Description: %Bundle-Description
 Bundle-Localization: plugin

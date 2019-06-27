@@ -4,7 +4,7 @@
 	<parent>
 		<artifactId>org.eclipse.papyrus.sysml16.plugins</artifactId>
 		<groupId>org.eclipse.papyrus.sysml</groupId>
-		<version>1.0.0</version>
+		<version>1.0.100-SNAPSHOT</version>
 	</parent>	
 	<artifactId>org.eclipse.papyrus.sysml16.extensions</artifactId>
 	<packaging>pom</packaging>

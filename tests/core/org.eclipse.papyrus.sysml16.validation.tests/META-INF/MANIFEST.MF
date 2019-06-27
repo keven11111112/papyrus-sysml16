@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: org.eclipse.papyrus.sysml16.validation.tests
-Bundle-Version: 1.0.0
+Bundle-Version: 1.0.100.qualifier
 Require-Bundle: org.junit;bundle-version="[4.11.0,5.0.0)",
  org.eclipse.papyrus.uml.service.validation;bundle-version="[2.0.0,3.0.0)",
  org.eclipse.papyrus.infra.gmfdiag.commands;bundle-version="[3.0.0,4.0.0)",

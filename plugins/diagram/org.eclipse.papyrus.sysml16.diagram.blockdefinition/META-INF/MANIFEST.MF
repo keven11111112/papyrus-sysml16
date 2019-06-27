@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-Localization: plugin
 Bundle-SymbolicName: org.eclipse.papyrus.sysml16.diagram.blockdefinition;singleton:=true
-Bundle-Version: 1.0.0
+Bundle-Version: 1.0.100.qualifier
 Bundle-Activator: org.eclipse.papyrus.sysml16.diagram.blockdefinition.Activator
 Bundle-Vendor: %Bundle-Vendor
 Require-Bundle: org.eclipse.ui;bundle-version="[3.107.0,4.0.0)",

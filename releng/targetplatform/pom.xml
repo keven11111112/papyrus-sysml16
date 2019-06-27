@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.eclipse.papyrus.sysml</groupId>
 		<artifactId>org.eclipse.papyrus.sysml16.releng</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.100-SNAPSHOT</version>
 	</parent>
 	<artifactId>org.eclipse.papyrus.sysml16.targetplatform</artifactId>
 	<packaging>pom</packaging>

@@ -3,7 +3,7 @@ Manifest-Version: 1.0
 Bundle-SymbolicName: org.eclipse.papyrus.sysml16.edit.tests
 Export-Package: org.eclipse.papyrus.sysml16.edit.tests.requirements.provider
 Bundle-Vendor: %Bundle-Vendor
-Bundle-Version: 1.0.0
+Bundle-Version: 1.0.100.qualifier
 Bundle-Name: %Bundle-Name
 Bundle-Description: %Bundle-Description
 Bundle-Localization: plugin
