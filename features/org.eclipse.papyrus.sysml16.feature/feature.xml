@@ -6,7 +6,7 @@
       provider-name="%providerName"
       plugin="org.eclipse.papyrus.sysml16.ui"
       license-feature="org.eclipse.license"
-      license-feature-version="2.0.1">
+      license-feature-version="2.0.2">
 
    <description url="https://eclipse.org/papyrus/">
       This feature enables to create, manage, validate SysML 1.6 models. It contains diagram bundles (BDD, IBD, PAR, REQ), tables bundles and also all user interface elements.
