@@ -2,13 +2,13 @@
 <feature
       id="org.eclipse.papyrus.sysml16.rcp.feature"
       label="%featureName"
-      version="1.0.100.qualifier"
+      version="2.0.0.qualifier"
       provider-name="%providerName"
       license-feature="org.eclipse.license"
       license-feature-version="2.0.2">
 
    <description url="https://eclipse.org/papyrus/">
-      This feature defines the Rich Client Platform dedicated to SysML 1.6 
+      This feature defines the Rich Client Platform dedicated to SysML 1.6
    </description>
 
    <copyright url="https://www.eclipse.org/legal/epl-2.0/">

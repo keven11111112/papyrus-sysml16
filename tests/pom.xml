@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<artifactId>org.eclipse.papyrus.sysml16.parent</artifactId>
 		<groupId>org.eclipse.papyrus.sysml</groupId>
-		<version>1.0.100-SNAPSHOT</version>
-	</parent>	
+		<version>2.0.0-SNAPSHOT</version>
+	</parent>
+
 	<artifactId>org.eclipse.papyrus.sysml16.plugins.tests</artifactId>
 	<packaging>pom</packaging>
 	<name>SysML Tests Plug-ins</name>
 	<description>SysML Tests Plug-ins.</description>
+
 	<modules>
 		<module>core</module>
 		<module>gui</module>
 		<module>diagram</module>
 		<module>table</module>
 	</modules>
-	
+
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-surefire-plugin</artifactId>
+				<version>${tycho.version}</version>
 				<configuration>
 					<failIfNoTests>false</failIfNoTests>
 					<useUIHarness>true</useUIHarness>
@@ -46,10 +50,10 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 						</bundle>
 					</bundleStartLevel>
 					<dependencies>
-                        <dependency>
-                            <type>p2-installable-unit</type>
-                            <artifactId>org.apache.felix.scr</artifactId>
-                        </dependency>
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>org.apache.felix.scr</artifactId>
+						</dependency>
 						<dependency>
 							<type>p2-installable-unit</type>
 							<artifactId>org.eclipse.equinox.event</artifactId>

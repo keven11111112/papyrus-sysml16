@@ -11,14 +11,14 @@ Export-Package: org.eclipse.papyrus.sysml16.tests,
  org.eclipse.papyrus.sysml16.tests.resources,
  org.eclipse.papyrus.sysml16.tests.util
 Bundle-Vendor: %Bundle-Vendor
-Bundle-Version: 1.0.100.qualifier
+Bundle-Version: 2.0.0.qualifier
 Bundle-Name: %Bundle-Name
 Bundle-Description: %Bundle-Description
 Bundle-Localization: plugin
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: org.eclipse.papyrus.sysml16.tests
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Require-Bundle: org.junit;bundle-version="[4.11.0,5.0.0)",
- org.eclipse.papyrus.sysml16;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Require-Bundle: org.eclipse.papyrus.sysml16;bundle-version="[2.0.0,3.0.0)",
+ org.eclipse.uml2.uml.profile.standard;bundle-version="[1.5.0,2.0.0)",
+ org.junit;bundle-version="[4.13.0,5.0.0)"
 Automatic-Module-Name: org.eclipse.papyrus.sysml16.tests
- 

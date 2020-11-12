@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.eclipse.papyrus.sysml</groupId>
 		<artifactId>org.eclipse.papyrus.sysml16.releng</artifactId>
-		<version>1.0.100-SNAPSHOT</version>
+		<version>2.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>org.eclipse.papyrus.sysml16.product</artifactId>
 	<packaging>eclipse-repository</packaging>
+	<name>org.eclipse.papyrus.sysml16.product</name>
+	<description>This plugins defines the product used in the RCP SysML 1.6.</description>
+
 	<properties>
 		<product-id>org.eclipse.papyrus.sysml16.product</product-id>
 	</properties>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -24,6 +29,7 @@
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-p2-director-plugin</artifactId>
+				<version>${tycho.version}</version>
 				<configuration>
 					<profile>org.eclipse.papyrus.sysml</profile>
 					<formats>
@@ -52,15 +58,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-deploy-plugin</artifactId>
-				<configuration>
-					<skip>true</skip>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
-	<name>org.eclipse.papyrus.sysml16.product</name>
-	<description>This plugins defines the product used in the RCP SysML 1.6.</description>
 </project>

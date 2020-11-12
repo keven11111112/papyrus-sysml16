@@ -52,7 +52,7 @@ mvn clean install -Dtycho.localArtifacts=ignore
 
 ### Building against a specific Eclipse Release ###
 
-By default SysML16 is build against latest stable Eclipse Release Train (2019-06).
+By default SysML16 is build against latest stable Eclipse Release Train (2020-12).
 
 ### Building for Eclipser server ###
 

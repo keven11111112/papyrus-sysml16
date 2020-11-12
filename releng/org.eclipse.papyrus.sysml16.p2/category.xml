@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.eclipse.papyrus.sysml16.feature_1.0.100.qualifier.jar" id="org.eclipse.papyrus.sysml16.feature" version="1.0.100.qualifier">
+   <feature url="features/org.eclipse.papyrus.sysml16.feature_2.0.0.qualifier.jar" id="org.eclipse.papyrus.sysml16.feature" version="2.0.0.qualifier">
       <category name="org.eclipse.papyrus.category"/>
    </feature>
-   <feature url="features/org.eclipse.papyrus.sysml16.feature.source_1.0.100.qualifier.jar" id="org.eclipse.papyrus.sysml16.feature.source" version="1.0.100.qualifier">
+   <feature url="features/org.eclipse.papyrus.sysml16.feature.source_2.0.0.qualifier.jar" id="org.eclipse.papyrus.sysml16.feature.source" version="2.0.0.qualifier">
       <category name="org.eclipse.papyrus.category"/>
    </feature>
-   <feature url="features/org.eclipse.papyrus.sysml16.requirements.extension.feature_1.0.100.qualifier.jar" id="org.eclipse.papyrus.sysml16.requirements.extension.feature" version="1.0.100.qualifier">
+   <feature url="features/org.eclipse.papyrus.sysml16.requirements.extension.feature_2.0.0.qualifier.jar" id="org.eclipse.papyrus.sysml16.requirements.extension.feature" version="2.0.0.qualifier">
       <category name="org.eclipse.papyrus.category"/>
    </feature>
-   <feature url="features/org.eclipse.papyrus.sysml16.requirements.extension.feature.source_1.0.100.qualifier.jar" id="org.eclipse.papyrus.sysml16.requirements.extension.feature.source" version="1.0.100.qualifier">
+   <feature url="features/org.eclipse.papyrus.sysml16.requirements.extension.feature.source_2.0.0.qualifier.jar" id="org.eclipse.papyrus.sysml16.requirements.extension.feature.source" version="2.0.0.qualifier">
       <category name="org.eclipse.papyrus.category"/>
    </feature>
    <category-def name="org.eclipse.papyrus.category" label="Papyrus SysML Category">
@@ -17,5 +17,5 @@
          Papyrus SysML Category
       </description>
    </category-def>
-   <repository-reference location="http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2019-06/" enabled="true" />
+   <repository-reference location="https://download.eclipse.org/modeling/mdt/papyrus/updates/nightly/master/" enabled="true" />
 </site>

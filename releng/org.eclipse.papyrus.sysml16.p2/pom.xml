@@ -5,10 +5,12 @@
 	<parent>
 		<groupId>org.eclipse.papyrus.sysml</groupId>
 		<artifactId>org.eclipse.papyrus.sysml16.releng</artifactId>
-		<version>1.0.100-SNAPSHOT</version>
+		<version>2.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>org.eclipse.papyrus.sysml16.p2</artifactId>
 	<packaging>eclipse-repository</packaging>
+	<name>org.eclipse.papyrus.sysml16.p2</name>
+	<description>This plugin defines the update site of SysML 1.6 plugins and feature.</description>
 
 	<build>
 		<plugins>
@@ -16,6 +18,7 @@
 				<!-- https://github.com/jbosstools/jbosstools-maven-plugins/wiki -->
 				<groupId>org.jboss.tools.tycho-plugins</groupId>
 				<artifactId>repository-utils</artifactId>
+				<version>${jboss.utils.version}</version>
 				<executions>
 					<execution>
 						<id>generate-facade</id>
@@ -24,6 +27,8 @@
 							<goal>generate-repository-facade</goal>
 						</goals>
 						<configuration>
+							<!-- do not generate the pesky web folder and index.html -->
+							<skipWebContentGeneration>true</skipWebContentGeneration>
 							<symbols>
 								<update.site.name>SysML 1.6</update.site.name>
 								<update.site.description>Use this URL in Eclipse to install	SysML 1.6</update.site.description>
@@ -34,30 +39,13 @@
 								<update.site.nightly>https://ci.eclipse.org/papyrus/job/papyrus-sysml16-master/lastSuccessfulBuild/artifact/releng/org.eclipse.papyrus.sysml16.p2/target/repository/</update.site.nightly>
 							</symbols>
 							<associateSites>
-								<site>http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2019-06</site>
+								<site>https://download.eclipse.org/modeling/mdt/papyrus/updates/nightly/master/</site>
 							</associateSites>
-							<siteTemplateFolder>siteTemplate</siteTemplateFolder>
 							<p2StatsUrl>http://download.eclipse.org/stats</p2StatsUrl>
 						</configuration>
 					</execution>
 				</executions>
-				<dependencies>
-					<dependency>
-						<groupId>org.eclipse.tycho</groupId>
-						<artifactId>tycho-packaging-plugin</artifactId>
-						<version>${tycho-version}</version>
-					</dependency>
-				</dependencies>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-deploy-plugin</artifactId>
-				<configuration>
-					<skip>true</skip>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-	<name>org.eclipse.papyrus.sysml16.p2</name>
-	<description>This plugin defines the update site of SysML 1.6 plugins and feature.</description>
 </project>

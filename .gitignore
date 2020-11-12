@@ -13,3 +13,6 @@ sonarlint/
 # Files and directory used by RcpTT
 workspace/
 *.log
+# Project files that should never be committed
+.project
+!**/org.eclipse.papyrus.*/.project

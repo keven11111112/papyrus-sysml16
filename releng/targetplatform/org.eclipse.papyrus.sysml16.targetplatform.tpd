@@ -1,6 +1,6 @@
-target "SysML 1.6 - 2019-06" with source requirements
+target "SysML 1.6 - 2020-12" with source requirements
 
-location "http://download.eclipse.org/releases/2019-06/" eclipse-2019-06 {
+location "http://download.eclipse.org/releases/2020-12/" eclipse-2020-12 {
  org.eclipse.platform.feature.group lazy
  org.eclipse.rcp.feature.group lazy
  org.eclipse.jdt.feature.group lazy
@@ -9,11 +9,11 @@ location "http://download.eclipse.org/releases/2019-06/" eclipse-2019-06 {
  org.eclipse.ocl.uml.feature.group lazy
 }
 
-location "http://download.eclipse.org/cbi/updates/license/" eclipse-license {
+location "https://download.eclipse.org/cbi/updates/license/" eclipse-license {
  org.eclipse.license.feature.group lazy
 }
 
-location "http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2019-06/" Papyrus-2019-06 {
+location "https://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2020-12/5.0.0/" Papyrus-2020-12 {
  org.eclipse.papyrus.junit.feature.feature.group lazy
  org.eclipse.papyrus.sdk.feature.feature.group lazy
  org.eclipse.papyrus.toolsmiths.feature.feature.group lazy
